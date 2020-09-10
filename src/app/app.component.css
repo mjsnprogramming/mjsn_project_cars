@@ -1,24 +1,24 @@
-$full_width: 100%;
-
 body {
   margin: 0;
   box-sizing: border-box;
 }
+
 #main_slider,
 #second_main_slider,
 #third_main_slider,
 #fourth_main_slider,
 #fifth_main_slider {
-  width: $full_width;
+  width: 100%;
   margin: 0;
 }
+
 #main_photo img,
 #second_main_photo img,
 #third_main_photo img,
 #fourth_main_photo img,
-#fifth_main_photo img
-{
-  width: $full_width;
+#fifth_main_photo img {
+  width: 100%;
   margin: 0;
 }
 
+/*# sourceMappingURL=app.component.css.map */
