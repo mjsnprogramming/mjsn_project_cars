@@ -19,6 +19,7 @@ body {
 #fifth_main_photo img {
   width: 100%;
   margin: 0;
+  display: block;
 }
 
 /*# sourceMappingURL=app.component.css.map */
