@@ -1,3 +1,4 @@
+@import "../../fontawesome-free-5.13.0-web/css/fontawesome.css";
 body {
   margin: 0;
   box-sizing: border-box;
@@ -20,6 +21,27 @@ body {
   width: 100%;
   margin: 0;
   display: block;
+}
+
+section:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/rain.png");
+  animation: rain 0.2s linear infinite;
+  opacity: 0.2;
+}
+
+@keyframes rain {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 20% 100%;
+  }
 }
 
 /*# sourceMappingURL=app.component.css.map */
