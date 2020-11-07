@@ -1,0 +1,47 @@
+:host #app-header {
+  position: fixed;
+  height: 90px;
+  width: 100%;
+  background-color: #141314;
+  z-index: 5;
+}
+:host ul li {
+  display: inline-block;
+  padding: 15px;
+  color: white;
+  position: relative;
+  left: 70px;
+  top: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+:host #app-header ul li:after {
+  content: '';
+  display: block;
+  border-bottom: 1px solid #fdfdfd;
+  width: 0;
+  position: relative;
+  left: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+:host #app-header ul li:hover:after {
+  width: 100%;
+  transform-origin: left bottom;
+}
+:host .navs {
+  height: 1px;
+  background-color: #dedede;
+  margin: 5px 0;
+  display: block;
+}
+:host #nav {
+  width: 27px;
+  display: block;
+  margin: 1em 0 0 1em;
+  position: relative;
+  top: -44%;
+  left: 94%;
+  height: 22px;
+  cursor: pointer;
+}

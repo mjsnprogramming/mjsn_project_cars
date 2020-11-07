@@ -1,8 +1,8 @@
 const circle = document.querySelector('#circle');
 
-const circle_on_click = (circle) => {
-  circle.addEventListener('click', (circle_animation) => {
-    circle_animation.style.transform = "translate(100%)";
+const circle_on_click = () => {
+  circle.addEventListener('click', (circle_button) => {
+    circle_button.style.transform = "translate(0, 0)";
     console.log('clicking');
   })
 };

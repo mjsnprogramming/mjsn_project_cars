@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ScrollDownButtonComponent } from './scroll-down-button/scroll-down-button.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ScrollDownButtonComponent
+    ScrollDownButtonComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

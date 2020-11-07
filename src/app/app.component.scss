@@ -31,7 +31,7 @@ section:before {
   left: 0;
   width: $full_width;
   height: 110%;
-  background-image: url("../assets/rain.png");
+  //background-image: url("../assets/rain.png");
   animation: rain 0.2s linear infinite;
   opacity: 0.2;
   display: inline-flex;
@@ -61,5 +61,10 @@ section:before {
   cursor: pointer;
   margin-bottom: -70px;
   padding: 0;
+  animation: ease 0.5s circle;
 }
+@keyframes circle {
+
+}
+
 

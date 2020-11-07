@@ -1,6 +1,6 @@
 @import "../../../fontawesome-free-5.13.0-web/css/fontawesome.css";
-:host button {
-  width: 5%;
+:host button .fas {
+  width: 30px;
   height: 40px;
   position: absolute;
   top: 600px;
