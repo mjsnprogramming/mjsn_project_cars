@@ -129,5 +129,8 @@
       }
     }
   },
-  "defaultProject": "cars"
+  "defaultProject": "cars",
+  "cli": {
+    "analytics": false
+  }
 }
