@@ -1,9 +1,12 @@
+$header_color: #141314;
+
 :host #app-header {
   position: fixed;
   height: 90px;
   width: 100%;
-  background-color: #141314;
+  background-color: $header_color;
   z-index: 5;
+  font-weight: 300;
 }
 :host ul li {
   display: inline-block;
@@ -14,6 +17,9 @@
   top: 8px;
   cursor: pointer;
   font-size: 16px;
+}
+:host #drop_years ul li {
+  color: #727272;
 }
 :host #app-header ul li:after {
   content: '';
@@ -28,6 +34,9 @@
 :host #app-header ul li:hover:after {
   width: 100%;
   transform-origin: left bottom;
+}
+:host #drop_years ul li:hover {
+  color: white;
 }
 :host .navs {
   height: 1px;
@@ -45,7 +54,17 @@
   height: 22px;
   cursor: pointer;
 }
-:host #drop_brands {
+:host #drop_years {
+  height: 300px;
+  width: 600px;
+  background-color: $header_color;
+  position: fixed;
+  top: 90px;
+  left: 50px;
   visibility: hidden;
+}
+:host #drop_years ul {
+  position: relative;
+  lefT: -35px;
 }
 

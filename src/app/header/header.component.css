@@ -4,6 +4,7 @@
   width: 100%;
   background-color: #141314;
   z-index: 5;
+  font-weight: 300;
 }
 
 :host ul li {
@@ -15,6 +16,10 @@
   top: 8px;
   cursor: pointer;
   font-size: 16px;
+}
+
+:host #drop_years ul li {
+  color: #727272;
 }
 
 :host #app-header ul li:after {
@@ -33,6 +38,10 @@
   transform-origin: left bottom;
 }
 
+:host #drop_years ul li:hover {
+  color: white;
+}
+
 :host .navs {
   height: 1px;
   background-color: #dedede;
@@ -49,6 +58,21 @@
   left: 94%;
   height: 22px;
   cursor: pointer;
+}
+
+:host #drop_years {
+  height: 300px;
+  width: 600px;
+  background-color: #141314;
+  position: fixed;
+  top: 90px;
+  left: 50px;
+  visibility: hidden;
+}
+
+:host #drop_years ul {
+  position: relative;
+  lefT: -35px;
 }
 
 /*# sourceMappingURL=header.component.css.map */
