@@ -25,14 +25,18 @@ const drop_nav = document.querySelector('#drop_nav');
   years.addEventListener("mouseout", () => {
     drop_years.style.visibility = "hidden";
   });
-
-  nav.addEventListener("click", () => {
-    drop_nav.style.visibility = "visible";
-  });
-  nav.addEventListener("click", () => {
-    drop_nav.style.visibility = "hidden";
-  });
+  nav.addEventListener('click', () => {
+    if (drop_nav.style.display === "") {
+      drop_nav.style.display = "block";
+    }
+    else {
+      drop_nav.style.display = "";
+    }
+  })
 };
+
+
+
 
 
 

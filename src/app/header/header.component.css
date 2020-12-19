@@ -96,10 +96,30 @@
 }
 
 :host #drop_nav {
-  width: 400px;
-  height: 200px;
+  width: 100%;
+  height: 500px;
+  position: fixed;
+  top: 90px;
   background-color: #141314;
-  visibility: hidden;
+  display: none;
+  animation-name: click_drop;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+:host #drop_show {
+  display: flex;
+  flex-direction: column;
+}
+
+:host #languages ul li:hover {
+  transition: none !important;
+  transform-origin: unset;
+}
+
+:host #languages {
+  width: 10%;
+  border: solid white 1px;
 }
 
 /*# sourceMappingURL=header.component.css.map */
