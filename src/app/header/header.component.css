@@ -112,14 +112,39 @@
   flex-direction: column;
 }
 
-:host #languages ul li:hover {
+:host #languages ul li:after {
   transition: none !important;
-  transform-origin: unset;
+  transform-origin: unset !important;
+  border-bottom: none;
 }
 
 :host #languages {
-  width: 10%;
-  border: solid white 1px;
+  width: 500px;
+  position: relative;
+  top: 195px;
+  left: 300px;
+}
+
+:host #languages p {
+  position: relative;
+  left: 60px;
+  top: 20px;
+  color: #727272;
+}
+
+:host #languages ul {
+  position: relative;
+  left: -65px;
+  top: 0;
+}
+
+:host #drop_nav hr {
+  position: relative;
+  top: 170px;
+  width: 90%;
+  left: 200px;
+  opacity: 0.1;
+  color: #a6a6a6;
 }
 
 /*# sourceMappingURL=header.component.css.map */
