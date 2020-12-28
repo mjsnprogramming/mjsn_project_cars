@@ -1,12 +1,10 @@
 @import "../../../fontawesome-free-5.13.0-web/css/fontawesome.css";
-:host button .fas {
-  width: 30px;
-  height: 40px;
-  position: absolute;
-  top: 600px;
-  left: 50%;
-  right: 50%;
+:host fa-icon {
+  position: relative;
   border: none;
+  color: white;
+  font-size: 30px;
+  top: 8px;
 }
 
 /*# sourceMappingURL=scroll-down-button.component.css.map */

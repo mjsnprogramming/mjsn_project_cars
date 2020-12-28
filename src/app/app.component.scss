@@ -56,15 +56,23 @@ section:before {
   z-index: 3;
   left: 50%;
   bottom: 20%;
-  transform: translate(-50%, -50%);
   justify-content: center;
   cursor: pointer;
   margin-bottom: -70px;
   padding: 0;
-  animation: ease 0.5s circle;
+  text-align: center;
+}
+#circle:hover {
+  animation: 1s circle ease-out forwards;
 }
 @keyframes circle {
-
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(10px);
+  }
 }
+
 
 

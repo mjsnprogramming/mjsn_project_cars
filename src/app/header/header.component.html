@@ -1,8 +1,8 @@
 <div id = "app-header">
     <ul>
-      <li id = "brands">BRANDS</li>
-      <li id = "countries">COUNTRIES</li>
-      <li id = "years">YEARS</li>
+      <li id = "brands"><a routerLink="/brands" routerLinkActive="active">BRANDS</a></li>
+      <li id = "countries"><a routerLink="/countries" routerLinkActive="active">COUNTRIES</a></li>
+      <li id = "years"><a routerLink="/years" routerLinkActive="active">YEARS</a></li>
     </ul>
   <div id = "drop_brands">
 
@@ -10,23 +10,23 @@
 
       <div id = "drop_years">
         <ul>
-          <li>1900 - 1910</li>
-          <li>1910 - 1920</li>
-          <li>1920 - 1930</li>
-          <li>1930 - 1940</li>
-          <li>1940 - 1950</li>
-          <li>1950 - 1960</li>
-          <li>1960 - 1970</li>
-          <li>1970 - 1980</li>
-          <li>1980 - 1990</li>
-          <li>1990 - 2000</li>
-          <li>2000 - 2010</li>
-          <li>2010 - 2020</li>
-          <li>2020 - 2030</li>
+          <li><a routerLink="1900" routerLinkActive="active">1900 - 1910</a></li>
+          <li><a routerLink="1910" routerLinkActive="active">1910 - 1920</a></li>
+          <li><a routerLink="1920" routerLinkActive="active">1920 - 1930</a></li>
+          <li><a routerLink="1930" routerLinkActive="active">1930 - 1940</a></li>
+          <li><a routerLink="1940" routerLinkActive="active">1940 - 1950</a></li>
+          <li><a routerLink="1950" routerLinkActive="active">1950 - 1960</a></li>
+          <li><a routerLink="1960" routerLinkActive="active">1960 - 1970</a></li>
+          <li><a routerLink="1970" routerLinkActive="active">1970 - 1980</a></li>
+          <li><a routerLink="1980" routerLinkActive="active">1980 - 1990</a></li>
+          <li><a routerLink="1990" routerLinkActive="active">1990 - 2000</a></li>
+          <li><a routerLink="2000" routerLinkActive="active">2000 - 2010</a></li>
+          <li><a routerLink="2010" routerLinkActive="active">2010 - 2020</a></li>
+          <li><a routerLink="2020" routerLinkActive="active">2020 - 2030</a></li>
         </ul>
       </div>
 
-
+  <fa-icon [icon]="faSearch"></fa-icon>
   <div id = "nav">
     <div class = "navs"></div>
     <div class = "navs"></div>
@@ -38,17 +38,17 @@
     <div id = "languages">
       <p>LANGUAGES</p>
       <ul>
-        <li>ENGLISH</li>
-        <li>POLSKI</li>
-        <li>DEUTSCH</li>
-        <li>ITALIANO</li>
-        <li>ESPAÑOL</li>
-        <li>MAGYAR</li>
-        <li>PORTUGUÊS</li>
-        <li>NEDERLANDS</li>
-        <li>ČEŠTINA</li>
-        <li>SLOVENČINA</li>
-        <li>HRVATSKI</li>
+        <li><a routerLink="/languages/english" routerLinkActive="active">ENGLISH</a></li>
+        <li><a routerLink="/languages/polish" routerLinkActive="active">POLSKI</a></li>
+        <li><a routerLink="/languages/german" routerLinkActive="active">DEUTSCH</a></li>
+        <li><a routerLink="/languages/italian" routerLinkActive="active">ITALIANO</a></li>
+        <li><a routerLink="/languages/spanish" routerLinkActive="active">ESPAÑOL</a></li>
+        <li><a routerLink="/languages/hungarian" routerLinkActive="active">MAGYAR</a></li>
+        <li><a routerLink="/languages/portuguese" routerLinkActive="active">PORTUGUÊS</a></li>
+        <li><a routerLink="/languages/dutch" routerLinkActive="active">NEDERLANDS</a></li>
+        <li><a routerLink="/languages/czech" routerLinkActive="active">ČEŠTINA</a></li>
+        <li><a routerLink="/languages/slovak" routerLinkActive="active">SLOVENČINA</a></li>
+        <li><a routerLink="/languages/croatian" routerLinkActive="active">HRVATSKI</a></li>
       </ul>
     </div>
   </div>
@@ -58,6 +58,7 @@
         <li></li>
       </ul>
   </div>
+  <router-outlet></router-outlet>
 
 </div>
 
