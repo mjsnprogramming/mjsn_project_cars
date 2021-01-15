@@ -190,4 +190,36 @@
   font-weight: 900;
 }
 
+:host #close_searching {
+  color: white;
+  position: relative;
+  top: 150px;
+  left: 80%;
+  font-size: 25px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+:host .faTimes {
+  color: white !important;
+  position: relative;
+  top: -34px;
+  left: 10%;
+}
+
+:host #search_input {
+  position: relative;
+  top: 400px;
+  left: 250px;
+}
+
+:host .search_input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: #141314;
+  font-size: 50px;
+  opacity: 0.1;
+}
+
 /*# sourceMappingURL=header.component.css.map */

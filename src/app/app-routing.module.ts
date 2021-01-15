@@ -74,8 +74,8 @@ const routes: Routes = [
     {
       path: '2020', component: TwentyTwentyComponent
     }
-  ]},
-  { path: 'languages', component: LanguagesComponent,  children: [
+    ]},
+    { path: 'languages', component: LanguagesComponent,  children: [
     {
       path: 'english', component: EnglishComponent
     },

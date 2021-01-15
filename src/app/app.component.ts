@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {faCarSide} from '@fortawesome/free-solid-svg-icons/faCarSide';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -8,4 +8,5 @@ import {faCarSide} from '@fortawesome/free-solid-svg-icons/faCarSide';
 })
 export class AppComponent {
   title = 'cars';
+  faTimes = faTimes;
 }

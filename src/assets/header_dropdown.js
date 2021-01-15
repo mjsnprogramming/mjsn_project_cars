@@ -42,6 +42,7 @@ const drop_search = document.querySelector('#drop_search');
     else {
       drop_search.style.display = "";
     }
+
     if (drop_search.style.display === "block") {
       drop_brands.style.visibility = "hidden";
       drop_countries.style.visibility = "hidden";
