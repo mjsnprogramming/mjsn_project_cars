@@ -9,6 +9,7 @@ const nav = document.querySelector('#nav');
 const drop_nav = document.querySelector('#drop_nav');
 const search = document.querySelector('fa-icon');
 const drop_search = document.querySelector('#drop_search');
+const close_searching = document.querySelector('#close_searching');
   brands.addEventListener("mouseover", () => {
     drop_brands.style.visibility = "visible";
   });
@@ -30,26 +31,35 @@ const drop_search = document.querySelector('#drop_search');
   nav.addEventListener('click', () => {
     if (drop_nav.style.display === "") {
       drop_nav.style.display = "block";
+
     }
     else {
       drop_nav.style.display = "";
     }
   });
-  search.addEventListener('click', () => {
+      search.addEventListener('click', () => {
     if (drop_search.style.display === "") {
       drop_search.style.display = "block";
     }
     else {
       drop_search.style.display = "";
     }
+    close_searching.addEventListener('click', () => {
+      if (drop_search.style.display === "block") {
+        drop_search.style.display = "";
+      }
+    });
 
-    if (drop_search.style.display === "block") {
-      drop_brands.style.visibility = "hidden";
-      drop_countries.style.visibility = "hidden";
+    if (drop_search.style.display === "block" || drop_nav.style.display === "block") {
+      drop_brands.style.display = "none";
+      drop_countries.style.display = "none";
       drop_years.style.visibility = "hidden";
       drop_brands.style.cursor = "default";
     }
   });
+     
+
+
 
 
 };
