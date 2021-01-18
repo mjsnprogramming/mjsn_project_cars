@@ -1,4 +1,5 @@
 window.onload = () => {
+  //query selectors
 const brands = document.querySelector("#brands");
 const countries = document.querySelector('#countries');
 const years = document.querySelector('#years');
@@ -10,6 +11,8 @@ const drop_nav = document.querySelector('#drop_nav');
 const search = document.querySelector('fa-icon');
 const drop_search = document.querySelector('#drop_search');
 const close_searching = document.querySelector('#close_searching');
+
+  // listeners
   brands.addEventListener("mouseover", () => {
     drop_brands.style.visibility = "visible";
   });
@@ -31,7 +34,6 @@ const close_searching = document.querySelector('#close_searching');
   nav.addEventListener('click', () => {
     if (drop_nav.style.display === "") {
       drop_nav.style.display = "block";
-
     }
     else {
       drop_nav.style.display = "";
@@ -49,17 +51,15 @@ const close_searching = document.querySelector('#close_searching');
         drop_search.style.display = "";
       }
     });
-
-    if (drop_search.style.display === "block" || drop_nav.style.display === "block") {
-      drop_brands.style.display = "none";
-      drop_countries.style.display = "none";
-      drop_years.style.visibility = "hidden";
-      drop_brands.style.cursor = "default";
-    }
   });
-     
+  const circle = document.querySelector('#circle');
+  circle.addEventListener('click', () => {
+    document.documentElement.scrollTo( {
+      top: 1300,
+      behavior: 'smooth'
 
-
+    });
+  })
 
 
 };

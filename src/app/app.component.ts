@@ -8,5 +8,4 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
 })
 export class AppComponent {
   title = 'cars';
-  faTimes = faTimes;
 }

@@ -68,7 +68,7 @@
 
 :host #drop_brands {
   height: 300px;
-  width: 600px;
+  width: 100%;
   background-color: #141314;
   position: fixed;
   top: 90px;
@@ -79,21 +79,21 @@
 
 :host #drop_countries {
   height: 300px;
-  width: 600px;
+  width: 100%;
   background-color: #141314;
   position: fixed;
   top: 90px;
-  left: 30px;
+  left: 0;
   visibility: hidden;
 }
 
 :host #drop_years {
   height: 300px;
-  width: 600px;
+  width: 100%;
   background-color: #141314;
   position: fixed;
   top: 90px;
-  left: 50px;
+  left: 0;
   visibility: hidden;
 }
 
@@ -112,6 +112,7 @@
   animation-name: click_drop;
   font-weight: 500;
   letter-spacing: 2px;
+  animation: drop_nav_animation ease-out 0.4s;
 }
 
 :host #languages ul li:after {
@@ -171,6 +172,7 @@
   z-index: 1;
   display: none;
   margin-top: -50px;
+  animation: drop_search_animation ease-out 0.4s;
 }
 
 :host #mjsncars {
@@ -220,6 +222,23 @@
   background-color: #141314;
   font-size: 50px;
   opacity: 0.1;
+}
+
+@keyframes drop_search_animation {
+  from {
+    transform: translateY(-100vh);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes drop_nav_animation {
+  from {
+    transform: translateY(-500px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 
 /*# sourceMappingURL=header.component.css.map */
