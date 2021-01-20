@@ -46,7 +46,7 @@ section:before {
     background-position: 20% 100%;
   }
 }
-#circle {
+.circle {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -62,7 +62,7 @@ section:before {
   text-align: center;
 }
 
-#circle:hover {
+.circle:hover {
   animation: 1s circle ease-out forwards;
 }
 
@@ -73,6 +73,13 @@ section:before {
   to {
     transform: translateY(10px);
   }
+}
+#hypercars {
+  position: relative;
+  top: -900px;
+  right: -300px;
+  color: white;
+  font-size: 100px;
 }
 
 /*# sourceMappingURL=app.component.css.map */

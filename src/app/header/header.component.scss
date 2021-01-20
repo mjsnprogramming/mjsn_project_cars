@@ -66,8 +66,9 @@ $header_color: #141314;
   position: fixed;
   top: 90px;
   left: 0;
-  visibility: hidden;
+  display: none;
   z-index: 1;
+  animation: drop_br_co_ye ease-out 0.4s;
 }
 :host #drop_countries {
   height: 300px;
@@ -76,7 +77,8 @@ $header_color: #141314;
   position: fixed;
   top: 90px;
   left: 0;
-  visibility: hidden;
+  display: none;
+  animation: drop_br_co_ye ease-out 0.4s;
 }
 :host #drop_years {
   height: 300px;
@@ -85,7 +87,8 @@ $header_color: #141314;
   position: fixed;
   top: 90px;
   left: 0;
-  visibility: hidden;
+  display: none;
+  animation: drop_br_co_ye ease-out 0.4s;
 }
 :host #drop_years ul {
   position: relative;
@@ -98,10 +101,9 @@ $header_color: #141314;
   top: 90px;
   background-color: $header_color;
   display: none;
-  animation-name: click_drop;
   font-weight: 500;
   letter-spacing: 2px;
-  animation: drop_nav_animation ease-out 0.4s
+  animation: drop_nav_animation ease-out 0.4s;
 }
 :host #languages ul li:after{
   transition: none!important;
@@ -180,7 +182,7 @@ $header_color: #141314;
   cursor: pointer;
 }
 :host .faTimes {
-  color: white !important;
+  color: white!important;
   position: relative;
   top: -34px;
   left: 10%;
@@ -209,6 +211,14 @@ $header_color: #141314;
 @keyframes drop_nav_animation {
   from {
     transform: translateY(-500px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes drop_br_co_ye {
+  from {
+    transform: translateY(-300px);
   }
   to {
     transform: translateY(0);

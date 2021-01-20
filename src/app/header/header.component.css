@@ -73,8 +73,9 @@
   position: fixed;
   top: 90px;
   left: 0;
-  visibility: hidden;
+  display: none;
   z-index: 1;
+  animation: drop_br_co_ye ease-out 0.4s;
 }
 
 :host #drop_countries {
@@ -84,7 +85,8 @@
   position: fixed;
   top: 90px;
   left: 0;
-  visibility: hidden;
+  display: none;
+  animation: drop_br_co_ye ease-out 0.4s;
 }
 
 :host #drop_years {
@@ -94,7 +96,8 @@
   position: fixed;
   top: 90px;
   left: 0;
-  visibility: hidden;
+  display: none;
+  animation: drop_br_co_ye ease-out 0.4s;
 }
 
 :host #drop_years ul {
@@ -109,7 +112,6 @@
   top: 90px;
   background-color: #141314;
   display: none;
-  animation-name: click_drop;
   font-weight: 500;
   letter-spacing: 2px;
   animation: drop_nav_animation ease-out 0.4s;
@@ -235,6 +237,14 @@
 @keyframes drop_nav_animation {
   from {
     transform: translateY(-500px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes drop_br_co_ye {
+  from {
+    transform: translateY(-300px);
   }
   to {
     transform: translateY(0);
