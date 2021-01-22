@@ -13,9 +13,12 @@ const drop_search = document.querySelector('#drop_search');
 const close_searching = document.querySelector('#close_searching');
 
   // listeners
-  const brands_listener = brands.addEventListener("mouseover", () => {
+ brands.addEventListener("mouseover", () => {
     if (drop_brands.style.display === "none" || drop_brands.style.display === "") {
       drop_brands.style.display = "block";
+      countries.addEventListener("mouseover", (event) =>{
+        event.stopPropagation();
+      }, true);
     }
     else {
       drop_brands.addEventListener("mouseout", () => {
@@ -25,33 +28,44 @@ const close_searching = document.querySelector('#close_searching');
   });
 
 
-  const countries_listener = countries.addEventListener("mouseover", () => {
+  countries.addEventListener("mouseover", () => {
     if (drop_countries.style.display === "none" || drop_countries.style.display === "") {
       drop_countries.style.display = "block";
+      brands.addEventListener("mouseover", (event) =>{
+        event.stopPropagation();
+      }, true);
+      years.addEventListener("mouseover", (event) =>{
+        event.stopPropagation();
+      }, true);
     }
     else {
-      drop_countries.addEventListener('mouseout', () => {
-        drop_countries.style.display = "none";
+
+      drop_countries.addEventListener("mouseout", () => {
+        drop_brands.style.display = "none";
       });
+
     }
   });
 
 
-  const years_listener = years.addEventListener("mouseover", () => {
+  years.addEventListener("mouseover", () => {
     if (drop_years.style.display === "" || drop_years.style.display === "none") {
       drop_years.style.display = "block";
+      brands.addEventListener("mouseover", (event) =>{
+        event.stopPropagation();
+      }, true);
+      countries.addEventListener("mouseover", (event) =>{
+        event.stopPropagation();
+      }, true);
     }
     else {
-      drop_years.addEventListener('mouseout', () => {
-        drop_years.style.display = "none";
+      drop_years.addEventListener("mouseout", () => {
+        drop_brands.style.display = "none";
       });
     }
   });
 
-  if(brands_listener) {
-    countries_listener.preventDefault();
-    years_listener.preventDefault();
-  }
+
   nav.addEventListener('click', () => {
     if (drop_nav.style.display === "") {
       drop_nav.style.display = "block";
