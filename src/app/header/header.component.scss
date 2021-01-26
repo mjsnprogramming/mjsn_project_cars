@@ -296,8 +296,7 @@ $header_color: #141314;
     font-size: 20px;
   }
   :host #drop_search {
-    height: 120vh;
-    overflow: hidden;
+    height: 150vh;
   }
   :host #close_searching {
     top: 270px;
@@ -311,6 +310,22 @@ $header_color: #141314;
 @media screen and (max-width: 400px) {
   :host #mjsncars, :host #search_input, :host #website_searching {
     left: 30px;
+  }
+  :host #close_searching {
+    top: 270px;
+    left: 55%;
+    font-size: 15px;
+  }
+  :host #drop_search {
+    height: 150vh;
+  }
+  :host #website_searching {
+    font-size: 20px;
+    top: 400px;
+  }
+  :host #search_input hr {
+    left: -30px;
+    width: 80%;
   }
 }
 
