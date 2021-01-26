@@ -312,7 +312,7 @@ $header_color: #141314;
     left: 30px;
   }
   :host #close_searching {
-    top: 270px;
+    top: 230px;
     left: 55%;
     font-size: 15px;
   }
@@ -320,12 +320,21 @@ $header_color: #141314;
     height: 150vh;
   }
   :host #website_searching {
-    font-size: 20px;
-    top: 400px;
+    font-size: 25px;
+    top: 350px;
+  }
+  :host #mjsncars {
+    top: 320px;
   }
   :host #search_input hr {
-    left: -30px;
+    left: -20px;
     width: 80%;
+  }
+  :host .faTimes {
+    left: 35%;
+  }
+  :host #search_input {
+    top: 370px;
   }
 }
 
