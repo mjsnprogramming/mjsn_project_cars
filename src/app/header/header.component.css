@@ -313,7 +313,41 @@
 }
 @media only screen and (max-width: 600px) {
   :host ul li {
-    left: -25px;
+    display: none;
+  }
+
+  :host #website_searching {
+    font-size: 30px;
+    top: 400px;
+  }
+
+  :host #mjsncars, :host #search_input, :host #website_searching {
+    left: 50px;
+  }
+
+  :host #search_input hr {
+    left: -10px;
+    width: 80%;
+  }
+
+  :host #mjsncars {
+    top: 370px;
+    font-size: 20px;
+  }
+
+  :host #drop_search {
+    height: 120vh;
+    overflow: hidden;
+  }
+
+  :host #close_searching {
+    top: 270px;
+    left: 65%;
+    font-size: 17px;
+  }
+
+  :host .faTimes {
+    left: 26%;
   }
 }
 

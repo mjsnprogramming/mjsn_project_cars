@@ -12,6 +12,7 @@ body {
   width: 100%;
   margin: 0;
   display: flex;
+  overflow: hidden;
 }
 
 #main_photo img,
@@ -95,13 +96,21 @@ section:before {
   top: 40px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) and (max-height: 1000px) {
   .circle {
     display: none;
   }
 
   #main_photo img {
-    height: auto;
+    transform: scale(3);
+    margin-left: 300px;
+    margin-top: 400px;
+    padding-bottom: 90px;
+  }
+
+  #second_main_photo img {
+    transform: scale(3);
+    margin-top: 300px;
   }
 }
 
