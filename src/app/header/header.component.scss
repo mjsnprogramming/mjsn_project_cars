@@ -217,6 +217,7 @@ $header_color: #141314;
     height: 100vh;
   }
 }
+
 @keyframes drop_nav_animation {
   from {
     height: 0;
@@ -233,6 +234,14 @@ $header_color: #141314;
   to {
     height: 300px;
     z-index: -0;
+  }
+}
+@keyframes drop_nav_mobile_animation {
+  from {
+    height: 0;
+  }
+  to {
+    height: 150vh;
   }
 }
 :host ::placeholder {
@@ -269,6 +278,9 @@ $header_color: #141314;
   animation-iteration-count: infinite;
   opacity: 1;
 }
+:host #languages_mobile {
+  display: none;
+}
 :host #search_input input:focus + i {
   display: none;
 }
@@ -296,7 +308,8 @@ $header_color: #141314;
     font-size: 20px;
   }
   :host #drop_search {
-    height: 150vh;
+    height: 120vh;
+    overflow: hidden;
   }
   :host #close_searching {
     top: 270px;
@@ -306,6 +319,26 @@ $header_color: #141314;
   :host .faTimes {
     left: 26%;
   }
+  :host #drop_nav {
+    height: 150vh;
+  }
+  :host #languages, :host #languages p, :host #drop_nav hr {
+    display: none;
+    visibility: hidden;
+  }
+  :host #drop_nav {
+    animation: drop_nav_mobile_animation ease-out 0.4s;
+  }
+  :host #languages_mobile {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+  }
+
 }
 @media screen and (max-width: 400px) {
   :host #mjsncars, :host #search_input, :host #website_searching {
@@ -337,8 +370,15 @@ $header_color: #141314;
   :host #search_input {
     position: absolute;
     top: 395px;
-
   }
+  :host #drop_nav {
+    height: 150vh;
+  }
+  :host #languages, :host #languages p, :host #drop_nav hr {
+    display: none;
+    visibility: hidden;
+  }
+
 }
 
 

@@ -11,9 +11,10 @@ const drop_nav = document.querySelector('#drop_nav');
 const search = document.querySelector('fa-icon');
 const drop_search = document.querySelector('#drop_search');
 const close_searching = document.querySelector('#close_searching');
+const body = document.querySelector('body');
 
   // listeners
-  brands.addEventListener("mouseenter", () => {
+  const brands_listener  = brands.addEventListener("mouseenter", () => {
     if (drop_brands.style.display === "none" || drop_brands.style.display === "") {
       drop_brands.style.display = "block";
 
@@ -85,9 +86,17 @@ const close_searching = document.querySelector('#close_searching');
       search.addEventListener('click', () => {
     if (drop_search.style.display === "") {
       drop_search.style.display = "block";
+      body.style.overflow = "hidden";
+     drop_brands.style.visibility = "hidden";
+      drop_countries.style.visibility = "hidden";
+      drop_years.style.visibility = "hidden";
     }
     else {
       drop_search.style.display = "";
+      body.style.overflow = "visible";
+      drop_brands.style.visibility = "visible";
+      drop_countries.style.visibility = "visible";
+      drop_years.style.visibility = "visible";
     }
     close_searching.addEventListener('click', () => {
       if (drop_search.style.display === "block") {
@@ -127,6 +136,7 @@ const close_searching = document.querySelector('#close_searching');
 if (drop_search.style.display === "block") {
   drop_nav.stopPropagation();
 }
+
 
 };
 
