@@ -99,6 +99,10 @@ section:before {
   .circle {
     display: none;
   }
+
+  #main_photo img {
+    height: auto;
+  }
 }
 
 /*# sourceMappingURL=app.component.css.map */
