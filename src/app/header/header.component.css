@@ -350,5 +350,10 @@
     left: 26%;
   }
 }
+@media screen and (max-width: 400px) {
+  :host #mjsncars, :host #search_input, :host #website_searching {
+    left: 30px;
+  }
+}
 
 /*# sourceMappingURL=header.component.css.map */
