@@ -370,7 +370,7 @@
   }
 
   :host #mjsncars {
-    top: 320px;
+    top: 330px;
   }
 
   :host #search_input hr {
@@ -384,7 +384,7 @@
 
   :host #search_input {
     position: absolute;
-    top: 365px;
+    top: 375px;
   }
 }
 
