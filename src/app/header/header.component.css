@@ -380,11 +380,12 @@
 
   :host .faTimes {
     left: 33%;
+    font-size: 17px;
   }
 
   :host #search_input {
     position: absolute;
-    top: 375px;
+    top: 395px;
   }
 }
 
