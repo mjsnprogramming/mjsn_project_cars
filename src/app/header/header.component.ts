@@ -9,6 +9,7 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons/faTimes';
 })
 export class HeaderComponent implements OnInit {
   title = 'search';
+  language = 'ENGLISH';
   faSearch = faSearch;
   faTimes = faTimes;
   constructor() { }

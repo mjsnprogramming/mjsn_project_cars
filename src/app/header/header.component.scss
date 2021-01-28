@@ -289,9 +289,11 @@ $header_color: #141314;
   to { opacity: 0; }
 }
 @media only screen and (max-width: 600px) {
-  :host ul li {
+
+  :host #brands, :host #countries, :host #years {
     display: none;
   }
+
   :host #website_searching {
     font-size: 30px;
     top: 400px;
@@ -334,10 +336,33 @@ $header_color: #141314;
     flex-direction: column;
     width: 50%;
     height: 50px;
-    background-color: white;
+    background-color: $header_color;
     position: fixed;
     left: 25%;
     bottom: 0;
+    cursor: pointer;
+  }
+  :host #languages_mobile_drop {
+    display: none;
+    width: 50%;
+    height: 500px;
+    background-color: white;
+    position: fixed;
+    bottom: 50px;
+    color: black!important;
+    z-index: 2;
+    text-decoration: none;
+    border-bottom: none;
+    animation: drop_languages_animation 0.5s ease-out;
+  }
+  :host #languages_mobile_drop ul li a{
+    color: black!important;
+    display: block!important;
+    flex-direction: column;
+    font-size: 12px;
+    margin-left: -16%;
+    margin-bottom: -10px;
+    text-decoration: none;
   }
   :host #nav_mobile ul li{
     display: flex;
@@ -351,14 +376,45 @@ $header_color: #141314;
     transition: none;
     padding: 20px;
   }
-  :host #nav_mobile ul li:hover {
+  :host .language_dyn_change {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  :host #languages_mobile_drop ul li {
+    position: relative;
+    left: 2%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
+  :host #nav_mobile ul li:hover, :host #languages_mobile_drop ul li a:hover {
     border-bottom: none;
     transition: none;
     transform-origin: unset;
+    text-decoration: none;
   }
-  :host #nav_mobile ul li:after {
+  :host #nav_mobile ul li:after,  :host #languages_mobile_drop ul li a:after{
     transition: none;
     border-bottom: none;
+    text-decoration: none;
+  }
+  .language_dyn_change {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  @keyframes drop_languages_animation {
+    from {
+      height: 0;
+      background-color: $header_color;
+      color: white;
+    }
+    to {
+      height: 500px;
+      background-color: white;
+      color: $header_color;
+    }
   }
 
 }
@@ -424,13 +480,13 @@ $header_color: #141314;
     padding: 20px;
   }
   :host #nav_mobile ul li:hover {
-    border-bottom: none;
-    transition: none;
-    transform-origin: unset;
+    border-bottom: none!important;
+    transition: none!important;
+    transform-origin: unset!important;
   }
   :host #nav_mobile ul li:after {
-    transition: none;
-    border-bottom: none;
+    transition: none!important;
+    border-bottom: none!important;
   }
 
 }

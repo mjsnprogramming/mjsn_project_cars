@@ -12,6 +12,9 @@ const search = document.querySelector('fa-icon');
 const drop_search = document.querySelector('#drop_search');
 const close_searching = document.querySelector('#close_searching');
 const body = document.querySelector('body');
+const languages_mobile = document.querySelector('#languages_mobile');
+const drop_lang_mobile = document.querySelector('#languages_mobile_drop');
+const language_color = document.querySelector('.language_dyn_change');
 
   // listeners
   const brands_listener  = brands.addEventListener("mouseenter", () => {
@@ -138,6 +141,19 @@ const body = document.querySelector('body');
 if (drop_search.style.display === "block") {
   drop_nav.stopPropagation();
 }
+
+languages_mobile.addEventListener('click', () => {
+    if (drop_lang_mobile.style.display === "none" || drop_lang_mobile.style.display === "") {
+      drop_lang_mobile.style.display = "block";
+      languages_mobile.style.backgroundColor = "white";
+      language_color.style.color = "#141314";
+    }
+    else {
+      drop_lang_mobile.style.display = "";
+      languages_mobile.style.backgroundColor = "#141314";
+      language_color.style.color = "white";
+    }
+})
 
 
 };
