@@ -16,6 +16,7 @@ const languages_mobile = document.querySelector('#languages_mobile');
 const drop_lang_mobile = document.querySelector('#languages_mobile_drop');
 const language_color = document.querySelector('.language_dyn_change');
 
+
   // listeners
   const brands_listener  = brands.addEventListener("mouseenter", () => {
     if (drop_brands.style.display === "none" || drop_brands.style.display === "") {
@@ -82,10 +83,12 @@ const language_color = document.querySelector('.language_dyn_change');
     if (drop_nav.style.display === "") {
       drop_nav.style.display = "block";
       body.style.overflow = "hidden";
+
     }
     else {
       drop_nav.style.display = "";
       body.style.overflow = "visible";
+
     }
   });
       search.addEventListener('click', () => {
@@ -153,7 +156,10 @@ languages_mobile.addEventListener('click', () => {
       languages_mobile.style.backgroundColor = "#141314";
       language_color.style.color = "white";
     }
+
 })
+
+
 
 
 };
