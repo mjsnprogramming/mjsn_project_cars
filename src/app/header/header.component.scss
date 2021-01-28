@@ -1,5 +1,7 @@
 $header_color: #141314;
-
+:host div {
+  outline-style: none;
+}
 :host #app-header {
   position: fixed;
   height: 90px;
