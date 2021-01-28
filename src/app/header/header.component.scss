@@ -278,7 +278,7 @@ $header_color: #141314;
   animation-iteration-count: infinite;
   opacity: 1;
 }
-:host #languages_mobile {
+:host #languages_mobile, :host #nav_mobile ul li {
   display: none;
 }
 :host #search_input input:focus + i {
@@ -320,23 +320,45 @@ $header_color: #141314;
     left: 26%;
   }
   :host #drop_nav {
-    height: 150vh;
+    height: 100%;
   }
   :host #languages, :host #languages p, :host #drop_nav hr {
     display: none;
     visibility: hidden;
   }
   :host #drop_nav {
-    animation: drop_nav_mobile_animation ease-out 0.4s;
+    animation: drop_nav_mobile_animation ease-out 0.8s;
   }
   :host #languages_mobile {
     display: flex;
     flex-direction: column;
-    width: 200px;
-    height: 100px;
+    width: 50%;
+    height: 50px;
     background-color: white;
-    position: absolute;
+    position: fixed;
+    left: 25%;
     bottom: 0;
+  }
+  :host #nav_mobile ul li{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    visibility: visible;
+    font-size: 27px;
+    position: relative;
+    left: -5%;
+    text-decoration: none;
+    transition: none;
+    padding: 20px;
+  }
+  :host #nav_mobile ul li:hover {
+    border-bottom: none;
+    transition: none;
+    transform-origin: unset;
+  }
+  :host #nav_mobile ul li:after {
+    transition: none;
+    border-bottom: none;
   }
 
 }
@@ -350,7 +372,7 @@ $header_color: #141314;
     font-size: 15px;
   }
   :host #drop_search {
-    height: 150vh;
+    height: 100%;
   }
   :host #website_searching {
     font-size: 25px;
@@ -377,6 +399,38 @@ $header_color: #141314;
   :host #languages, :host #languages p, :host #drop_nav hr {
     display: none;
     visibility: hidden;
+  }
+
+  :host #languages_mobile {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 50px;
+    background-color: white;
+    position: fixed;
+    left: 25%;
+    bottom: 0;
+  }
+  :host #nav_mobile ul li{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    visibility: visible;
+    font-size: 27px;
+    position: relative;
+    left: -5%;
+    text-decoration: none;
+    transition: none;
+    padding: 20px;
+  }
+  :host #nav_mobile ul li:hover {
+    border-bottom: none;
+    transition: none;
+    transform-origin: unset;
+  }
+  :host #nav_mobile ul li:after {
+    transition: none;
+    border-bottom: none;
   }
 
 }

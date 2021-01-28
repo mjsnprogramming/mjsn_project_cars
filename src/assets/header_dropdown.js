@@ -78,9 +78,11 @@ const body = document.querySelector('body');
   nav.addEventListener('click', () => {
     if (drop_nav.style.display === "") {
       drop_nav.style.display = "block";
+      body.style.overflow = "hidden";
     }
     else {
       drop_nav.style.display = "";
+      body.style.overflow = "visible";
     }
   });
       search.addEventListener('click', () => {
