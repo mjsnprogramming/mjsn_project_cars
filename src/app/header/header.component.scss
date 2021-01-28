@@ -469,6 +469,7 @@ $header_color: #141314;
     width: 50%;
     height: 50px;
     background-color: white;
+    color: $header_color;
     position: fixed;
     left: 25%;
     bottom: 0;
@@ -496,7 +497,7 @@ $header_color: #141314;
     border-bottom: none!important;
   }
   :host .language_dyn_change {
-    color: white;
+    color: $header_color;
     font-size: 20px;
     font-weight: 400;
   }
