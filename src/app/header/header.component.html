@@ -1,39 +1,40 @@
 <div id = "app-header">
     <ul>
-      <li id = "brands"><a routerLink="/brands" routerLinkActive="active">BRANDS</a></li>
-      <li id = "countries"><a routerLink="/countries" routerLinkActive="active">COUNTRIES</a></li>
-      <li id = "years"><a routerLink="/years" routerLinkActive="active">YEARS</a></li>
+      <li class = "dropdowns"><a routerLink="/brands" routerLinkActive="active">BRANDS</a>
+        <div id = "drop_brands" class = "drop_class">
+          <ul>
+            <li>fsfsdfs</li>
+            <li>sadadads</li>
+          </ul>
+        </div></li>
+      <li class = "dropdowns"><a routerLink="/countries" routerLinkActive="active">COUNTRIES</a>
+        <div id = "drop_countries" class = "drop_class">
+          <ul>
+            <li>hsdfgsj</li>
+            <li>lkdfjsdf</li>
+          </ul>
+        </div></li>
+      <li class = "dropdowns"><a routerLink="/years" routerLinkActive="active">YEARS</a>
+        <div id = "drop_years" class = "drop_class">
+          <ul>
+            <li><a routerLink="/years/1900" routerLinkActive="active">1900 - 1910</a></li>
+            <li><a routerLink="/years/1910" routerLinkActive="active">1910 - 1920</a></li>
+            <li><a routerLink="/years/1920" routerLinkActive="active">1920 - 1930</a></li>
+            <li><a routerLink="/years/1930" routerLinkActive="active">1930 - 1940</a></li>
+            <li><a routerLink="/years/1940" routerLinkActive="active">1940 - 1950</a></li>
+            <li><a routerLink="/years/1950" routerLinkActive="active">1950 - 1960</a></li>
+            <li><a routerLink="/years/1960" routerLinkActive="active">1960 - 1970</a></li>
+            <li><a routerLink="/years/1970" routerLinkActive="active">1970 - 1980</a></li>
+            <li><a routerLink="/years/1980" routerLinkActive="active">1980 - 1990</a></li>
+            <li><a routerLink="/years/1990" routerLinkActive="active">1990 - 2000</a></li>
+            <li><a routerLink="/years/2000" routerLinkActive="active">2000 - 2010</a></li>
+            <li><a routerLink="/years/2010" routerLinkActive="active">2010 - 2020</a></li>
+            <li><a routerLink="/years/2020" routerLinkActive="active">2020 - 2030</a></li>
+          </ul>
+        </div>
+      </li>
     </ul>
-  <div id = "drop_brands">
-    <ul>
-      <li>fsfsdfs</li>
-      <li>sadadads</li>
-    </ul>
-  </div>
-  <div id = "drop_countries">
-    <ul>
-      <li>hsdfgsj</li>
-      <li>lkdfjsdf</li>
-    </ul>
-  </div>
 
-      <div id = "drop_years">
-        <ul>
-          <li><a routerLink="/years/1900" routerLinkActive="active">1900 - 1910</a></li>
-          <li><a routerLink="/years/1910" routerLinkActive="active">1910 - 1920</a></li>
-          <li><a routerLink="/years/1920" routerLinkActive="active">1920 - 1930</a></li>
-          <li><a routerLink="/years/1930" routerLinkActive="active">1930 - 1940</a></li>
-          <li><a routerLink="/years/1940" routerLinkActive="active">1940 - 1950</a></li>
-          <li><a routerLink="/years/1950" routerLinkActive="active">1950 - 1960</a></li>
-          <li><a routerLink="/years/1960" routerLinkActive="active">1960 - 1970</a></li>
-          <li><a routerLink="/years/1970" routerLinkActive="active">1970 - 1980</a></li>
-          <li><a routerLink="/years/1980" routerLinkActive="active">1980 - 1990</a></li>
-          <li><a routerLink="/years/1990" routerLinkActive="active">1990 - 2000</a></li>
-          <li><a routerLink="/years/2000" routerLinkActive="active">2000 - 2010</a></li>
-          <li><a routerLink="/years/2010" routerLinkActive="active">2010 - 2020</a></li>
-          <li><a routerLink="/years/2020" routerLinkActive="active">2020 - 2030</a></li>
-        </ul>
-      </div>
 
   <fa-icon [icon]="faSearch"></fa-icon>
   <div id = "drop_search">

@@ -62,14 +62,24 @@ $header_color: #141314;
   height: 22px;
   cursor: pointer;
 }
+:host .dropdowns:hover .drop_class {
+  display: block;
+  position: absolute;
+  visibility: visible;
+}
+
+:host .drop_class {
+  display: none;
+  position: absolute;
+  visibility: hidden;
+}
 :host #drop_brands {
   height: 300px;
   width: 100%;
   background-color: $header_color;
   position: fixed;
-  top: 90px;
+  top: 70px;
   left: 0;
-  display: none;
   z-index: 0;
   animation: drop_br_co_ye ease-out 0.3s;
 }
@@ -79,9 +89,8 @@ $header_color: #141314;
   width: 100%;
   background-color: $header_color;
   position: fixed;
-  top: 90px;
+  top: 70px;
   left: 0;
-  display: none;
   z-index: 1;
   animation: drop_br_co_ye ease-out 0.3s;
 }
@@ -90,10 +99,9 @@ $header_color: #141314;
   width: 100%;
   background-color: $header_color;
   position: fixed;
-  top: 90px;
+  top: 70px;
   left: 0;
   z-index: 2;
-  display: none;
   animation: drop_br_co_ye ease-out 0.3s;
 }
 :host #drop_years ul {
@@ -281,8 +289,9 @@ $header_color: #141314;
   animation-iteration-count: infinite;
   opacity: 1;
 }
-:host #languages_mobile, :host #nav_mobile ul li {
+:host #languages_mobile, :host #nav_mobile ul li, :host #languages_mobile_drop {
   display: none;
+  visibility: hidden;
 }
 :host #search_input input:focus + i {
   display: none;
@@ -293,7 +302,7 @@ $header_color: #141314;
 }
 @media only screen and (max-width: 600px) {
 
-  :host #brands, :host #countries, :host #years {
+  :host .dropdowns {
     display: none!important;
     visibility: hidden;
   }
