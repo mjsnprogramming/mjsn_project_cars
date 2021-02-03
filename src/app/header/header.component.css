@@ -512,7 +512,7 @@
   }
 
   :host #drop_search {
-    height: 120vh;
+    height: 150vh;
   }
 
   :host #website_searching {
@@ -544,7 +544,7 @@
   }
 
   :host #drop_nav {
-    height: 120vh;
+    height: 150vh;
   }
 
   :host #languages, :host #languages p, :host #drop_nav hr {
