@@ -1,8 +1,4 @@
-:host input,
-:host textarea,
-:host button,
-:host select,
-:host a {
+:host body {
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -13,6 +9,7 @@
   background-color: #141314;
   z-index: 5;
   font-weight: 300;
+  -webkit-tap-highlight-color: transparent;
 }
 
 :host ul li {

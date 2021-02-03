@@ -1,9 +1,5 @@
 $header_color: #141314;
-:host input,
-:host textarea,
-:host button,
-:host select,
-:host a {
+:host body{
   -webkit-tap-highlight-color: transparent;
 }
 :host #app-header {
@@ -13,6 +9,7 @@ $header_color: #141314;
   background-color: $header_color;
   z-index: 5;
   font-weight: 300;
+  -webkit-tap-highlight-color: transparent;
 }
 :host ul li {
   display: inline-block;
