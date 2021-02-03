@@ -5,7 +5,6 @@
   background-color: #141314;
   z-index: 5;
   font-weight: 300;
-  -webkit-tap-highlight-color: transparent;
 }
 
 :host ul li {
@@ -513,7 +512,7 @@
   }
 
   :host #drop_search {
-    height: 150vh;
+    height: 120vh;
   }
 
   :host #website_searching {
@@ -545,7 +544,7 @@
   }
 
   :host #drop_nav {
-    height: 150vh;
+    height: 120vh;
   }
 
   :host #languages, :host #languages p, :host #drop_nav hr {

@@ -7,7 +7,6 @@ $header_color: #141314;
   background-color: $header_color;
   z-index: 5;
   font-weight: 300;
-  -webkit-tap-highlight-color: transparent;
 }
 :host ul li {
   display: inline-block;
@@ -465,7 +464,7 @@ $header_color: #141314;
     -webkit-tap-highlight-color: transparent;
   }
   :host #drop_search {
-    height: 150vh;
+    height: 120vh;
   }
   :host #website_searching {
     font-size: 25px;
@@ -491,7 +490,7 @@ $header_color: #141314;
     -webkit-tap-highlight-color: transparent;
   }
   :host #drop_nav {
-    height: 150vh;
+    height: 120vh;
   }
   :host #languages, :host #languages p, :host #drop_nav hr {
     display: none;
