@@ -460,6 +460,9 @@ $header_color: #141314;
     font-size: 15px;
     -webkit-tap-highlight-color: transparent;
   }
+  :host #nav {
+    -webkit-tap-highlight-color: transparent;
+  }
   :host #drop_search {
     height: 150vh;
   }
@@ -506,6 +509,7 @@ $header_color: #141314;
     bottom: 0;
     user-select: none;
     visibility: visible;
+    -webkit-tap-highlight-color: transparent;
   }
   :host #nav_mobile ul li{
     display: flex;
