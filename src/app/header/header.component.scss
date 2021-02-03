@@ -1,7 +1,5 @@
 $header_color: #141314;
-:host body{
-  -webkit-tap-highlight-color: transparent;
-}
+
 :host #app-header {
   position: fixed;
   height: 90px;
@@ -464,6 +462,7 @@ $header_color: #141314;
     top: 230px;
     left: 55%;
     font-size: 15px;
+    -webkit-tap-highlight-color: transparent;
   }
   :host #drop_search {
     height: 150vh;
@@ -484,10 +483,12 @@ $header_color: #141314;
   :host .faTimes {
     left: 33%;
     font-size: 17px;
+    -webkit-tap-highlight-color: transparent;
   }
   :host #search_input {
     position: absolute;
     top: 395px;
+    -webkit-tap-highlight-color: transparent;
   }
   :host #drop_nav {
     height: 150vh;
@@ -521,6 +522,7 @@ $header_color: #141314;
     text-decoration: none;
     transition: none;
     padding: 20px;
+    -webkit-tap-highlight-color: transparent;
   }
   :host #nav_mobile ul li:hover {
     border-bottom: none!important;
@@ -538,7 +540,8 @@ $header_color: #141314;
     text-align: center;
     margin-top: auto;
     margin-bottom: auto;
-    visibility: visible;
+    visibility: visible;-webkit-tap-highlight-color: transparent;
+
   }
   :host #languages_mobile_drop ul li {
     position: relative;
@@ -547,6 +550,7 @@ $header_color: #141314;
     display: flex;
     flex-direction: column;
     visibility: visible;
+    -webkit-tap-highlight-color: transparent;
   }
   :host #nav_mobile ul li:hover, :host #languages_mobile_drop ul li a:hover {
     border-bottom: none;
