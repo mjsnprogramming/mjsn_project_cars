@@ -199,6 +199,7 @@
   top: 250px;
   left: 250px;
   font-size: 35px;
+  animation: drop_mjsn_cars 0.4s ease-out;
 }
 
 :host #website_searching {
@@ -208,6 +209,8 @@
   left: 250px;
   font-size: 100px;
   font-weight: 900;
+  line-height: 70px;
+  animation: drop_website_searching 0.4s ease-out;
 }
 
 :host ::selection {
@@ -222,6 +225,7 @@
   font-size: 20px;
   font-weight: 300;
   cursor: pointer;
+  animation: drop_close_searching 0.4s ease-out;
 }
 
 :host .faTimes {
@@ -235,6 +239,7 @@
   position: relative;
   top: 400px;
   left: 250px;
+  animation: drop_search_input 0.4s ease-out;
 }
 
 :host .search_input {
@@ -246,6 +251,38 @@
   outline: none;
 }
 
+@keyframes drop_search_input {
+  from {
+    top: 0;
+  }
+  to {
+    top: 400px;
+  }
+}
+@keyframes drop_close_searching {
+  from {
+    top: 0;
+  }
+  to {
+    top: 250px;
+  }
+}
+@keyframes drop_mjsn_cars {
+  from {
+    top: 0;
+  }
+  to {
+    top: 250px;
+  }
+}
+@keyframes drop_website_searching {
+  from {
+    top: 0;
+  }
+  to {
+    top: 300px;
+  }
+}
 @keyframes drop_search_animation {
   from {
     height: 0;
@@ -556,6 +593,10 @@
     visibility: hidden;
   }
 
+  :host fa-icon {
+    -webkit-tap-highlight-color: transparent;
+  }
+
   :host #languages_mobile {
     display: flex;
     flex-direction: column;
@@ -634,6 +675,25 @@
   :host #languages_mobile_drop ul li a {
     position: relative;
     left: -35%;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  :host #website_searching {
+    left: 5%;
+    font-size: 70px;
+  }
+
+  :host #mjsncars {
+    left: 5%;
+  }
+
+  :host #search_input {
+    left: 5%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  #search_input p {
+    left: 20%;
   }
 }
 
