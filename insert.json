@@ -1,0 +1,451 @@
+[
+
+  {
+    "name": "Pagani",
+    "country": "Italy",
+    "year_of_create": 1992,
+    "year_of_liquidation": null
+  },
+  {
+    "name": "Passport",
+    "country": "Canada",
+    "year_of_create": 1988,
+    "year_of_liquidation": 1991
+  },
+  {
+    "name": "Panoz",
+    "country": "USA",
+    "year_of_create": 1989,
+    "year_of_liquidation": null
+  },
+  {
+    "name": "Pegaso",
+    "country": "Spain",
+    "year_of_create": 1946,
+    "year_of_liquidation": 1994
+  },
+  {
+    "name": "Piëch",
+    "country": "Switzerland",
+    "year_of_create": 2017,
+    "year_of_liquidation": null
+  },
+  {
+    "name": "Polestar",
+    "country": "Sweden",
+    "year_of_create": 2017,
+    "year_of_liquidation": null
+  },
+  {
+    "name": "Proton",
+    "country": "Malaysia",
+    "year_of_create": 1983,
+    "year_of_liquidation": null
+  },
+  {
+    "name": "Puma",
+    "country": "Brazil",
+    "year_of_create": 1966,
+    "year_of_liquidation": 1995
+  },
+  {
+    "name": "Pontiac",
+    "country": "USA",
+    "year_of_create": 1926,
+    "year_of_liquidation": 2010
+  },
+  {
+  "name": "Perodua",
+  "country": "Malaysia",
+  "year_of_create": 1993,
+  "year_of_liquidation": null
+},
+  {
+    "name": "Pininfarina",
+    "country": "Italy",
+    "year_of_create": 1930,
+    "year_of_liquidation": null
+  },
+  {
+    "name": "Plymouth",
+    "country": "USA",
+    "year_of_create": 1928,
+    "year_of_liquidation": 2001
+  },
+  {
+    "name": "Peugeot",
+    "country": "France",
+    "year_of_create": 1810,
+    "year_of_liquidation": null
+  },
+  {
+    "name": "Porsche",
+    "country": "Germany",
+    "year_of_create": 1931,
+    "year_of_liquidation": null
+  },
+  {
+    "name": "Rambler",
+    "country": "USA",
+    "year_of_create": 1902,
+    "year_of_liquidation": 1969
+  },
+  {
+    "name": "Ranger",
+    "country": "South Africa",
+    "year_of_create": 1968,
+    "year_of_liquidation": 1978
+  },
+  {
+  "name": "Rivian",
+  "country": "USA",
+  "year_of_create": 2009,
+  "year_of_liquidation": null
+},
+  {
+    "name": "Rover",
+    "country": "Great Britain",
+    "year_of_create": 1878,
+    "year_of_liquidation": 2006
+  },
+  {
+    "name": "Rimac",
+    "country": "Croatia",
+    "year_of_create": 2009,
+    "year_of_liquidation": null
+  },
+  {
+    "name": "Rossion",
+    "country": "USA",
+    "year_of_create": 2008,
+    "year_of_liquidation": 2018
+  },
+  {
+    "name": "Ram",
+    "country": "USA",
+    "year_of_create": 2010,
+    "year_of_liquidation": null
+  },
+  {
+    "name": "Renault",
+    "country": "France",
+    "year_of_create": 1899,
+    "year_of_liquidation": null
+  },
+  {
+    "name": "Rolls-Royce",
+    "country": "Great Britain",
+    "year_of_create": 1906,
+    "year_of_liquidation": null
+  },
+  {
+  "name": "Qiantu",
+  "country": "China",
+  "year_of_create": 2015,
+  "year_of_liquidation": null
+},
+  {
+    "name": "Qvale",
+    "country": "Italy",
+    "year_of_create": 1999,
+    "year_of_liquidation": 2001
+  },
+  {
+    "name": "Saehan",
+    "country": "South Korea",
+    "year_of_create": 1976,
+    "year_of_liquidation": 1983
+  },
+  {
+    "name": "Saenara",
+    "country": "South Korea",
+    "year_of_create": 1962,
+    "year_of_liquidation": 1963
+  },
+  {
+    "name": "Seres",
+    "country": "USA",
+    "year_of_create": 2016,
+    "year_of_liquidation": null
+  },
+  {
+    "name": "Shelby",
+    "country": "USA",
+    "year_of_create": 1962,
+    "year_of_liquidation": null
+  },
+  {
+    "name": "Shinjin",
+    "country": "South Korea",
+    "year_of_create": 1964,
+    "year_of_liquidation": 1972
+  },
+  {
+  "name": "Shuanghuan",
+  "country": "China",
+  "year_of_create": 1988,
+  "year_of_liquidation": null
+},
+  {
+    "name": "Singulato",
+    "country": "China",
+    "year_of_create": 2014,
+    "year_of_liquidation": null
+  },
+  {
+    "name": "Sinogold",
+    "country": "China",
+    "year_of_create": 2017,
+    "year_of_liquidation": null
+  },
+  {
+    "name": "SiTech",
+    "country": "China",
+    "year_of_create": 2018,
+    "year_of_liquidation": null
+  },
+  {
+    "name": "Sol",
+    "country": "China",
+    "year_of_create": 2018,
+    "year_of_liquidation": null
+  },
+  {
+    "name": "Solectria",
+    "country": "USA",
+    "year_of_create": 1989,
+    "year_of_liquidation": 2005
+  },
+  {
+    "name": "SRT",
+    "country": "USA",
+    "year_of_create": 2012,
+    "year_of_liquidation": 2014
+  },
+  {
+  "name": "SSC",
+  "country": "USA",
+  "year_of_create": 1998,
+  "year_of_liquidation": null
+},
+  {
+    "name": "Studebaker",
+    "country": "USA",
+    "year_of_create": 1736,
+    "year_of_liquidation": 1966
+  },
+  {
+    "name": "Saab",
+    "country": "Sweden",
+    "year_of_create": 1947,
+    "year_of_liquidation": 2012
+  },
+  {
+    "name": "Saturn",
+    "country": "USA",
+    "year_of_create": 1992,
+    "year_of_liquidation": 2010
+  },
+  {
+  "name": "Saic",
+  "country": "China",
+  "year_of_create": 2011,
+  "year_of_liquidation": null
+},
+  {
+    "name": "Saleen",
+    "country": "USA",
+    "year_of_create": 1983,
+    "year_of_liquidation": null
+  },
+  {
+    "name": "SEAT",
+    "country": "Spain",
+    "year_of_create": 1950,
+    "year_of_liquidation": null
+  },
+  {
+  "name": "Škoda",
+  "country": "Czech Republic",
+  "year_of_create": 1895,
+  "year_of_liquidation": null
+},
+  {
+    "name": "Smart",
+    "country": "Germany",
+    "year_of_create": 1994,
+    "year_of_liquidation": null
+  },
+  {
+    "name": "Spyker",
+    "country": "Netherlands",
+    "year_of_create": 2000,
+    "year_of_liquidation": null
+  },
+  {
+    "name": "SsangYong",
+    "country": "South Korea",
+    "year_of_create": 1954,
+    "year_of_liquidation": null
+  },
+  {
+    "name": "Statesman",
+    "country": "Australia",
+    "year_of_create": 1971,
+    "year_of_liquidation": 1984
+  },
+  {
+    "name": "Scion",
+    "country": "Japan",
+    "year_of_create": 2002,
+    "year_of_liquidation": 2016
+  },
+  {
+    "name": "Subaru",
+    "country": "Japan",
+    "year_of_create": 1953,
+    "year_of_liquidation": null
+  },
+  {
+  "name": "Suzuki",
+  "country": "Japan",
+  "year_of_create": 1909,
+  "year_of_liquidation": null
+},
+  {
+    "name": "Tesla",
+    "country": "USA",
+    "year_of_create": 2003,
+    "year_of_liquidation": null
+  },
+  {
+    "name": "Th!nk",
+    "country": "Norway",
+    "year_of_create": 1991,
+    "year_of_liquidation": 2012
+  },
+  {
+    "name": "Togg",
+    "country": "Turkey",
+    "year_of_create": 2018,
+    "year_of_liquidation": null
+  },
+  {
+    "name": "Tucker",
+    "country": "USA",
+    "year_of_create": 1947,
+    "year_of_liquidation": 1948
+  },
+  {
+    "name": "Tauro Sport Auto",
+    "country": "Spain",
+    "year_of_create": 2010,
+    "year_of_liquidation": null
+  },
+  {
+    "name": "Vector Motors",
+    "country": "USA",
+    "year_of_create": 1971,
+    "year_of_liquidation": null
+  },
+  {
+    "name": "Vega",
+    "country": "Sri Lanka",
+    "year_of_create": 2013,
+    "year_of_liquidation": null
+  },
+  {
+    "name": "Vinfast",
+    "country": "Vietnam",
+    "year_of_create": 2017,
+    "year_of_liquidation": null
+  },
+  {
+    "name": "Trion",
+    "country": "USA",
+    "year_of_create": 2012,
+    "year_of_liquidation": null
+  },
+  {
+    "name": "Triumph",
+    "country": "Great Britain",
+    "year_of_create": 1885,
+    "year_of_liquidation": 1984
+  },
+  {
+    "name": "Toyota",
+    "country": "Japan",
+    "year_of_create": 1937,
+    "year_of_liquidation": null
+  },
+  {
+    "name": "TVR",
+    "country": "Great Britain",
+    "year_of_create": 1947,
+    "year_of_liquidation": null
+  },
+  {
+    "name": "VLF",
+    "country": "USA",
+    "year_of_create": 2012,
+    "year_of_liquidation": null
+  },
+  {
+    "name": "Weltmeister",
+    "country": "China",
+    "year_of_create": 2015,
+    "year_of_liquidation": null
+  },
+  {
+    "name": "Wiesmann",
+    "country": "Germany",
+    "year_of_create": 1985,
+    "year_of_liquidation": null
+  },
+  {
+    "name": "Vencer",
+    "country": "Netherlands",
+    "year_of_create": 2015,
+    "year_of_liquidation": null
+  },
+  {
+    "name": "Zenvo",
+    "country": "Denmark",
+    "year_of_create": 2004,
+    "year_of_liquidation": null
+  },
+  {
+    "name": "Zenos",
+    "country": "Great Britain",
+    "year_of_create": 2012,
+    "year_of_liquidation": null
+  },
+  {
+    "name": "Ultima",
+    "country": "Great Britain",
+    "year_of_create": 1992,
+    "year_of_liquidation": null
+  },
+  {
+    "name": "Volkswagen",
+    "country": "Germany",
+    "year_of_create": 1938,
+    "year_of_liquidation": null
+  },
+  {
+    "name": "Volvo",
+    "country": "Sweden",
+    "year_of_create": 1927,
+    "year_of_liquidation": null
+  },
+  {
+    "name": "W Motors",
+    "country": "UAE",
+    "year_of_create": 2012,
+    "year_of_liquidation": null
+  }
+
+
+
+
+]

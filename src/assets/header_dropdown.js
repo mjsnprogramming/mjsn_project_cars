@@ -1,6 +1,5 @@
 window.onload = () => {
   //query selectors
-
 const drop_brands = document.querySelector('#drop_brands');
 const drop_countries = document.querySelector('#drop_countries');
 const drop_years = document.querySelector('#drop_years');
@@ -13,12 +12,7 @@ const body = document.querySelector('body');
 const languages_mobile = document.querySelector('#languages_mobile');
 const drop_lang_mobile = document.querySelector('#languages_mobile_drop');
 const language_color = document.querySelector('.language_dyn_change');
-
-
   // listeners
-
-
-
   nav.addEventListener('click', () => {
     if (drop_nav.style.display === "") {
       drop_nav.style.display = "block";
@@ -26,7 +20,6 @@ const language_color = document.querySelector('.language_dyn_change');
       drop_brands.style.visibility = "hidden";
       drop_countries.style.visibility = "hidden";
       drop_years.style.visibility = "hidden";
-
     }
     else {
       drop_nav.style.display = "";
@@ -34,7 +27,6 @@ const language_color = document.querySelector('.language_dyn_change');
       drop_brands.style.visibility = "visible";
       drop_countries.style.visibility = "visible";
       drop_years.style.visibility = "visible";
-
     }
   });
       search.addEventListener('click', () => {
@@ -44,7 +36,6 @@ const language_color = document.querySelector('.language_dyn_change');
      drop_brands.style.visibility = "hidden";
       drop_countries.style.visibility = "hidden";
       drop_years.style.visibility = "hidden";
-
     }
     else {
       drop_search.style.display = "";
@@ -52,7 +43,6 @@ const language_color = document.querySelector('.language_dyn_change');
       drop_brands.style.visibility = "visible";
       drop_countries.style.visibility = "visible";
       drop_years.style.visibility = "visible";
-
     }
     close_searching.addEventListener('click', () => {
       if (drop_search.style.display === "block") {
@@ -60,12 +50,12 @@ const language_color = document.querySelector('.language_dyn_change');
       }
     });
   });
-  const circle = document.querySelector('#circle');
+ /* const circle = document.querySelector('#circle');
   const circle_second = document.querySelector('#circle_second');
   const circle_third = document.querySelector('#circle_third');
   const circle_fourth = document.querySelector('#circle_fourth');
-
-  circle.addEventListener('click', () => {
+*/
+ /* circle.addEventListener('click', () => {
     document.documentElement.scrollTo( {
       top: 1250,
       behavior: 'smooth'
@@ -89,8 +79,7 @@ const language_color = document.querySelector('.language_dyn_change');
       behavior: 'smooth'
     });
   });
-
-
+*/
 languages_mobile.addEventListener('click', () => {
     if (drop_lang_mobile.style.display === "none" || drop_lang_mobile.style.display === "") {
       drop_lang_mobile.style.display = "block";
@@ -102,11 +91,7 @@ languages_mobile.addEventListener('click', () => {
       languages_mobile.style.backgroundColor = "#141314";
       language_color.style.color = "white";
     }
-
-})
-
-
-
+});
 
 };
 
