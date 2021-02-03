@@ -4,7 +4,7 @@ $header_color: #141314;
 :host button,
 :host select,
 :host a {
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
 }
 :host #app-header {
   position: fixed;
