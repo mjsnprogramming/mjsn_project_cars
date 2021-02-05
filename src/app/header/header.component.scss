@@ -331,6 +331,9 @@ $header_color: #141314;
   color: white;
   cursor: pointer;
 }
+:host .search_mobile {
+  display: none;
+}
 :host #search_input i {
   position: absolute;
   width: 1px;
@@ -362,8 +365,9 @@ $header_color: #141314;
   }
 
   :host #website_searching {
-    font-size: 30px;
+    font-size: 20px!important;
     top: 400px;
+    animation: drop_website_searching_mobile 0.4s ease-out;
   }
   :host #mjsncars, :host #search_input, :host #website_searching {
     left: 50px;
@@ -372,6 +376,7 @@ $header_color: #141314;
   :host #mjsncars {
     top: 370px;
     font-size: 20px;
+    animation: drop_mjsn_mobile 0.4s ease-out;
   }
   :host #drop_search {
     height: 120vh;
@@ -381,9 +386,10 @@ $header_color: #141314;
     top: 270px;
     left: 65%;
     font-size: 17px;
+    animation: drop_close_searching_mobile 0.4s ease-out;
   }
   :host .faTimes {
-    left: 26%;
+    left: 110%;
   }
   :host #drop_nav {
     height: 100%;
@@ -394,6 +400,12 @@ $header_color: #141314;
   }
   :host #drop_nav {
     animation: drop_nav_mobile_animation ease-out 0.8s;
+  }
+  :host .search_mobile {
+    display: block;
+    position: absolute;
+    left: 85%;
+    top: 0;
   }
   :host #languages_mobile {
     display: flex;
@@ -486,6 +498,35 @@ $header_color: #141314;
       color: $header_color;
     }
   }
+  :host #search_input {
+    p {
+      display: none;
+    }
+  }
+  @keyframes drop_mjsn_mobile {
+    from {
+      top: 0;
+    }
+    to {
+      top: 370px;
+    }
+  }
+  @keyframes drop_website_searching_mobile {
+    from {
+      top: 0;
+    }
+    to {
+      top: 400px;
+    }
+  }
+  @keyframes drop_close_searching_mobile {
+    from {
+      top: 0;
+    }
+    to {
+      top: 270px;
+    }
+  }
 }
 @media only screen and (max-width: 400px) {
   :host #mjsncars, :host #search_input, :host #website_searching {
@@ -494,8 +535,9 @@ $header_color: #141314;
   :host #close_searching {
     top: 230px;
     left: 55%;
-    font-size: 15px;
+    font-size: 15px!important;
     -webkit-tap-highlight-color: transparent;
+    animation: drop_close_searching_mobile_mini 0.4s ease-out;
   }
   :host #nav {
     -webkit-tap-highlight-color: transparent;
@@ -508,23 +550,30 @@ $header_color: #141314;
     top: 350px;
     margin-left: auto;
     margin-right: auto;
+    animation: drop_website_searching_mobile_mini 0.4s ease-out;
   }
   :host #mjsncars {
     top: 330px;
+    animation: drop_mjsn_mobile_mini 0.4s ease-out;
   }
   :host #search_input hr {
     left: -15px;
     width: 100%;
   }
+  :host #search_input {
+    width: 95%;
+  }
   :host .faTimes {
-    left: 33%;
+    left: 105%;
     font-size: 17px;
     -webkit-tap-highlight-color: transparent;
+    top: -32px;
   }
   :host #search_input {
     position: absolute;
-    top: 395px;
+    top: 430px;
     -webkit-tap-highlight-color: transparent;
+    animation: drop_search_input_mobile_mini 0.4s ease-out;
   }
   :host #drop_nav {
     height: 150vh;
@@ -604,12 +653,46 @@ $header_color: #141314;
     border-bottom: none;
     text-decoration: none;
   }
-
+  @keyframes drop_mjsn_mobile_mini {
+    from {
+      top: 0;
+    }
+    to {
+      top: 330px;
+    }
+  }
+  @keyframes drop_website_searching_mobile_mini {
+    from {
+      top: 0;
+    }
+    to {
+      top: 350px;
+    }
+  }
+  @keyframes drop_close_searching_mobile_mini {
+    from {
+      top: 0;
+    }
+    to {
+      top: 230px;
+    }
+  }
+  @keyframes drop_search_input_mobile_mini {
+    from {
+      top: 0;
+    }
+    to {
+      top: 430px;
+    }
+  }
 }
 @media screen and (max-width: 340px) {
   :host #languages_mobile_drop ul li a {
     position: relative;
     left: -35%;
+  }
+  :host .search_input {
+    font-size: 20px;
   }
 }
 @media only screen and (max-width: 1400px) {
@@ -627,7 +710,8 @@ $header_color: #141314;
 @media only screen and (max-width: 1000px) {
   #search_input {
     p {
-      left: 20%;
+      position: absolute;
+      left: 80%!important;
     }
   }
 }
