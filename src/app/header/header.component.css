@@ -249,6 +249,7 @@
   opacity: 0.5;
   font-weight: 100;
   outline: none;
+  color: white;
 }
 
 @keyframes drop_search_input {
@@ -488,7 +489,7 @@
     font-size: 12px;
     margin-left: -16%;
     margin-bottom: -10px;
-    text-decoration: none;
+    text-decoration: none !important;
     visibility: visible;
   }
 
@@ -525,16 +526,17 @@
   }
 
   :host #nav_mobile ul li:hover, :host #languages_mobile_drop ul li a:hover {
-    border-bottom: none;
-    transition: none;
-    transform-origin: unset;
-    text-decoration: none;
+    border-bottom: none !important;
+    transition: none !important;
+    transform-origin: unset !important;
+    text-decoration: none !important;
   }
 
   :host #nav_mobile ul li:after, :host #languages_mobile_drop ul li a:after {
-    transition: none;
-    border-bottom: none;
-    text-decoration: none;
+    transition: none !important;
+    border-bottom: none !important;
+    text-decoration: none !important;
+    transform-origin: unset !important;
   }
 
   @keyframes drop_languages_animation {
@@ -780,9 +782,17 @@
   }
 }
 @media only screen and (max-width: 1000px) {
-  #search_input p {
+  :host #search_input p {
     position: absolute;
     left: 80% !important;
+  }
+
+  :host #languages {
+    left: 10%;
+  }
+
+  :host #drop_nav hr {
+    left: 5%;
   }
 }
 
