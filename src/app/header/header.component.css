@@ -29,6 +29,14 @@
   color: #727272;
 }
 
+:host #drop_countries ul li {
+  color: #727272;
+}
+
+:host #drop_countries ul li:hover {
+  color: white;
+}
+
 :host #app-header ul li:after {
   content: "";
   display: block;
@@ -101,6 +109,11 @@
   animation: drop_br_co_ye ease-out 0.3s;
 }
 
+:host #drop_countries ul {
+  position: relative;
+  left: -70px;
+}
+
 :host #drop_years {
   height: 300px;
   width: 100%;
@@ -114,7 +127,7 @@
 
 :host #drop_years ul {
   position: relative;
-  left: -35px;
+  left: -55px;
 }
 
 :host #drop_nav {
