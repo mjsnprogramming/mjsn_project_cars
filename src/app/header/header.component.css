@@ -29,6 +29,22 @@
   color: #727272;
 }
 
+:host #drop_countries ul li {
+  color: #727272;
+}
+
+:host #drop_brands ul li {
+  color: #727272;
+}
+
+:host #drop_countries ul li:hover {
+  color: white;
+}
+
+:host #drop_brands ul li:hover {
+  color: white;
+}
+
 :host #app-header ul li:after {
   content: "";
   display: block;
@@ -87,7 +103,19 @@
   top: 70px;
   left: 0;
   z-index: 0;
-  animation: drop_br_co_ye ease-out 0.3s;
+  animation: drop_br_co_ye 0.3s ease-out alternate;
+  overflow: hidden;
+}
+
+:host #drop_brands ul {
+  position: relative;
+  left: -50px;
+  top: 50px;
+}
+
+:host #drop_years ul {
+  position: relative;
+  top: 20px;
 }
 
 :host #drop_countries {
@@ -99,6 +127,13 @@
   left: 0;
   z-index: 1;
   animation: drop_br_co_ye ease-out 0.3s;
+  overflow: hidden;
+}
+
+:host #drop_countries ul {
+  position: relative;
+  left: -70px;
+  top: 40px;
 }
 
 :host #drop_years {
@@ -114,7 +149,7 @@
 
 :host #drop_years ul {
   position: relative;
-  left: -35px;
+  left: -55px;
 }
 
 :host #drop_nav {
@@ -525,14 +560,7 @@
     flex-direction: column;
   }
 
-  :host #nav_mobile ul li:hover, :host #languages_mobile_drop ul li a:hover {
-    border-bottom: none !important;
-    transition: none !important;
-    transform-origin: unset !important;
-    text-decoration: none !important;
-  }
-
-  :host #nav_mobile ul li:after, :host #languages_mobile_drop ul li a:after {
+  :host #app-header ul li:after {
     transition: none !important;
     border-bottom: none !important;
     text-decoration: none !important;
@@ -793,6 +821,15 @@
 
   :host #drop_nav hr {
     left: 5%;
+  }
+
+  :host #drop_brands ul {
+    top: -20px;
+    left: -100px;
+  }
+
+  :host #drop_countries ul {
+    top: -10px;
   }
 }
 

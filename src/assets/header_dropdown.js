@@ -20,7 +20,7 @@ const language_color = document.querySelector('.language_dyn_change');
       drop_brands.style.visibility = "hidden";
       drop_countries.style.visibility = "hidden";
       drop_years.style.visibility = "hidden";
-      drop_search.style.display = "none";
+      drop_search.style.display = "";
     }
     else {
       drop_nav.style.display = "";
@@ -38,7 +38,7 @@ const language_color = document.querySelector('.language_dyn_change');
      drop_brands.style.visibility = "hidden";
       drop_countries.style.visibility = "hidden";
       drop_years.style.visibility = "hidden";
-      drop_nav.style.display = "none";
+      drop_nav.style.display = "";
     }
     else {
       drop_search.style.display = "";
@@ -46,7 +46,6 @@ const language_color = document.querySelector('.language_dyn_change');
       drop_brands.style.visibility = "visible";
       drop_countries.style.visibility = "visible";
       drop_years.style.visibility = "visible";
-
     }
     close_searching.addEventListener('click', () => {
       if (drop_search.style.display === "block") {
