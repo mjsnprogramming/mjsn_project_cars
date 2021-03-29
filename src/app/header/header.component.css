@@ -7,12 +7,21 @@
   font-weight: 300;
 }
 
+:host .mjsn_logo {
+  height: 70px;
+  width: 160px;
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  z-index: 5;
+}
+
 :host ul li {
   display: inline-block;
   padding: 15px;
   color: white;
   position: relative;
-  left: 70px;
+  left: 90px;
   top: 8px;
   cursor: pointer;
   font-size: 16px;
@@ -29,23 +38,23 @@
   color: #727272;
 }
 
-:host #drop_countries ul li {
+:host #drop_countries ul li a {
   color: #727272;
 }
 
-:host #drop_brands ul li {
+:host #drop_brands ul li a {
   color: #727272;
 }
 
-:host #drop_countries ul li:hover {
+:host #drop_countries ul li a:hover {
   color: white;
 }
 
-:host #drop_brands ul li:hover {
+:host #drop_brands ul li a:hover {
   color: white;
 }
 
-:host #app-header ul li:after {
+:host #app-header ul li a:after {
   content: "";
   display: block;
   border-bottom: 1px solid #fdfdfd;
@@ -56,12 +65,12 @@
   transition: 0.3s ease;
 }
 
-:host #app-header ul li:hover:after {
+:host #app-header ul li a:hover:after {
   width: 100%;
   transform-origin: left bottom;
 }
 
-:host #drop_years ul li:hover {
+:host #drop_years ul li a:hover {
   color: white;
 }
 
@@ -109,7 +118,7 @@
 
 :host #drop_brands ul {
   position: relative;
-  left: -50px;
+  left: -90px;
   top: 50px;
 }
 
@@ -125,7 +134,7 @@
   position: fixed;
   top: 70px;
   left: 0;
-  z-index: 1;
+  z-index: 0;
   animation: drop_br_co_ye ease-out 0.3s;
   overflow: hidden;
 }
@@ -143,7 +152,7 @@
   position: fixed;
   top: 70px;
   left: 0;
-  z-index: 2;
+  z-index: 0;
   animation: drop_br_co_ye ease-out 0.3s;
 }
 
@@ -338,11 +347,9 @@
 @keyframes drop_br_co_ye {
   from {
     height: 0;
-    z-index: -1;
   }
   to {
     height: 300px;
-    z-index: 0;
   }
 }
 @keyframes drop_nav_mobile_animation {

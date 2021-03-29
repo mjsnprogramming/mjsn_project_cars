@@ -1,3 +1,168 @@
+
 :host body {
-  background-color: white;
+  margin: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  background-color: #0c0c0b;
 }
+
+:host #main {
+  width: 100%;
+  background-color: #0c0c0b;
+  height: auto;
+  color: black;
+}
+
+:host .brands {
+  width: 300px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+  margin-top: 40px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0.3;
+  position: relative;
+  top: 100px;
+  left: 5%;
+  z-index: 2;
+  transition: all 0.5s ease-in-out;
+}
+:host .brands:hover {
+  animation: opacity_flags 0.5s ease-out;
+  opacity: 1;
+}
+
+@keyframes opacity_flags {
+  from {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+:host .brands_list_drop {
+  width: 700px;
+  height: 600px;
+  background-color: #141314;
+  color: white;
+  position: relative;
+  display: none;
+  left: 600px;
+  top: -240px;
+  z-index: 0;
+  animation: brands_list_drop 1.5s ease-out;
+}
+:host .brands_list_drop ul li {
+  list-style-type: none;
+  position: relative;
+  top: 40px;
+  margin: 10px;
+  font-size: 20px;
+  font-family: "Courier New";
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+}
+:host .goto {
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "Courier New", serif;
+  list-style-type: none;
+  right: 5%;
+  top: 550px;
+  visibility: visible;
+  animation: goto_anim 0.8s ease-out 0.3s;
+}
+:host .brands_toggle {
+  display: block;
+}
+@keyframes goto_anim {
+  from {
+    visibility: hidden;
+    top: 100px;
+  }
+  to {
+  visibility: visible;
+  top: 550px;
+}
+}
+@keyframes brands_list_drop {
+  0% {
+    left: 5%;
+    height: 200px;
+  }
+  20% {
+    left: 600px;
+    height: 200px;
+  }
+  40% {
+    height: 600px;
+  }
+  100% {
+    height: 600px;
+  }
+}
+
+:host .image_container {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  text-align: center;
+  z-index: 1;
+}
+:host .image_container img {
+  width: 100%;
+  height: 200px;
+}
+:host .brands:hover {
+  transform: scale(1.1);
+}
+:host .name {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  top: 20px;
+  text-align: center;
+}
+
+:host #main p {
+  font-size: 20px;
+  font-family: "Courier New";
+  font-weight: 700;
+  text-align: center;
+  color: white;
+}
+:host .name p {
+  font-size: 20px;
+  font-family: "Courier New";
+  font-weight: 700;
+  text-align: center;
+}
+:host footer {
+  width: 100%;
+  height: 300px;
+}
+@media only screen and (max-width: 900px) {
+  .brands {
+    margin-left: 50px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .brands {
+    width: 45%;
+    margin-left: 3%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .brands {
+    width: 93%;
+  }
+}
+

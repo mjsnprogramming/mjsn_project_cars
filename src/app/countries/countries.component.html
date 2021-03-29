@@ -1,2 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Countries</title>
+  <link rel = "stylesheet" href = "countries.component.scss">
+</head>
+<body>
+<div id = "header">
+<app-header></app-header>
+</div>
+<div id = "main">
+  <p>COUNTRIES</p>
+  <div class = "brands">
+    <div class = "image_container">
+      <img src = "../../assets/flags/argentina-flag-small.jpg" alt="argentina">
+    </div>
+    <div class = "name">
+      <p><i>Argentina</i></p>
+    </div>
+  </div>
+  <div class = "brands_list_drop">
+    <ul>
+      <li>Andino</li>
+      <li>Industrias Kaiser Argentina</li>
+    </ul>
+    <a routerLink="/countries/argentina" routerLinkActive="active"><li class = "goto">Go to Argentina -></li></a>
+  </div>
+  <div class = "brands">
+    <div class = "image_container">
+      <img src = "../../assets/flags/australia-flag-small.jpg" alt="australia">
+    </div>
+    <div class = "name">
+      <p><i>Australia</i></p>
+    </div>
+    <div class = "brands_list_drop">
+      <li class = "goto"><a routerLink="countries/australia" routerLinkActive="active">Go to Australia -></a></li>
+    </div>
+  </div>
+  <div class = "brands">
+    <div class = "image_container">
+      <img src = "../../assets/flags/austria-flag-small.jpg" alt="austria">
+    </div>
+    <div class = "name">
+      <p><i>Austria</i></p>
+    </div>
+    <div class = "brands_list_drop">
+      <li class = "goto"><a routerLink="countries/austria" routerLinkActive="active">Go to Austria -></a></li>
+    </div>
+  </div>
+  <div class = "brands">
+    <div class = "image_container">
+      <img src = "../../assets/flags/brazil-flag-small.jpg" alt="brazil">
+    </div>
+    <div class = "name">
+      <p><i>Brazil</i></p>
+    </div>
+    <div class = "brands_list_drop">
+      <li class = "goto"><a routerLink="countries/brazil" routerLinkActive="active">Go to Brazil -></a></li>
+    </div>
+  </div>
+  <div class = "brands">
+    <div class = "image_container">
+      <img src = "../../assets/flags/canada-flag-small.jpg">
+    </div>
+    <div class = "name">
+      <p><i>Canada</i></p>
+    </div>
+    <div class = "brands_list_drop">
+      <li class = "goto"><a routerLink="countries/canada" routerLinkActive="active">Go to Canada -></a></li>
+    </div>
+  </div>
+  <div class = "brands">
+    <div class = "image_container">
+      <img src = "../../assets/flags/china-flag-small.jpg">
+    </div>
+    <div class = "name">
+      <p><i>China</i></p>
+    </div>
+    <div class = "brands_list_drop">
+      <li class = "goto"><a routerLink="countries/china" routerLinkActive="active">Go to China -></a></li>
+    </div>
+  </div> <div class = "brands">
+  <div class = "image_container">
+    <img src = "../../assets/flags/croatia-flag-small.jpg">
+  </div>
+  <div class = "name">
+    <p><i>Croatia</i></p>
+  </div>
+  <div class = "brands_list_drop">
+    <li class = "goto"><a routerLink="countries/croatia" routerLinkActive="active">Go to Croatia -></a></li>
+  </div>
+</div> <div class = "brands">
+  <div class = "image_container">
+    <img src = "../../assets/flags/czech-republic-flag-small.jpg">
+  </div>
+  <div class = "name">
+    <p><i>Czech Republic</i></p>
+  </div>
+  <div class = "brands_list_drop">
+    <li class = "goto"><a routerLink="countries/czech_republic" routerLinkActive="active">Go to Czech Republic -></a></li>
+  </div>
+</div> <div class = "brands">
+  <div class = "image_container">
+    <img src = "../../assets/flags/denmark-flag-small.jpg">
+  </div>
+  <div class = "name">
+    <p><i>Denmark</i></p>
+  </div>
+  <div class = "brands_list_drop">
+    <li class = "goto"><a routerLink="countries/denmark" routerLinkActive="active">Go to Denmark -></a></li>
+  </div>
+</div> <div class = "brands">
+  <div class = "image_container">
+    <img src = "../../assets/flags/france-flag-small.jpg">
+  </div>
+  <div class = "name">
+    <p><i>France</i></p>
+  </div>
+  <div class = "brands_list_drop">
+    <li class = "goto"><a routerLink="countries/france" routerLinkActive="active">Go to France -></a></li>
+  </div>
+</div>
+  <div class = "brands">
+    <div class = "image_container">
+      <img src = "../../assets/flags/germany-flag-small.jpg">
+    </div>
+    <div class = "name">
+      <p><i>Germany</i></p>
+    </div>
+    <div class = "brands_list_drop">
+      <li class = "goto"><a routerLink="countries/germany" routerLinkActive="active">Go to Germany -></a></li>
+    </div>
+  </div>
+  <div class = "brands">
+    <div class = "image_container">
+      <img src = "../../assets/flags/italy-flag-small.jpg">
+    </div>
+    <div class = "name">
+      <p><i>Italy</i></p>
+    </div>
+    <div class = "brands_list_drop">
+      <li class = "goto"><a routerLink="countries/italy" routerLinkActive="active">Go to Italy -></a></li>
+    </div>
+  </div>
+  <div class = "brands">
+    <div class = "image_container">
+      <img src = "../../assets/flags/japan-flag-small.jpg" alt="">
+    </div>
+    <div class = "name">
+      <p><i>Japan</i></p>
+    </div>
+    <div class = "brands_list_drop">
+      <li class = "goto"><a routerLink="countries/japan" routerLinkActive="active">Go to Japan -></a></li>
+    </div>
+  </div>
+  <div class = "brands">
+    <div class = "image_container">
+      <img src = "../../assets/flags/malaysia-flag-small.jpg">
+    </div>
+    <div class = "name">
+      <p><i>Malaysia</i></p>
+    </div>
+    <div class = "brands_list_drop">
+      <li class = "goto"><a routerLink="countries/malaysia" routerLinkActive="active">Go to Malaysia -></a></li>
+    </div>
+  </div>
+  <div class = "brands">
+    <div class = "image_container">
+      <img src = "../../assets/flags/morocco-flag-small.jpg">
+    </div>
+    <div class = "name">
+      <p><i>Morocco</i></p>
+    </div>
+    <div class = "brands_list_drop">
+      <li class = "goto"><a routerLink="countries/morocco" routerLinkActive="active">Go to Morocco -></a></li>
+    </div>
+  </div>
+  <div class = "brands">
+    <div class = "image_container">
+      <img src = "../../assets/flags/netherlands-flag-small.jpg">
+    </div>
+    <div class = "name">
+      <p><i>Netherlands</i></p>
+    </div>
+    <div class = "brands_list_drop">
+      <li class = "goto"><a routerLink="countries/netherlands" routerLinkActive="active">Go to Netherlands -></a></li>
+    </div>
+  </div>
+  <div class = "brands">
+    <div class = "image_container">
+      <img src = "../../assets/flags/norway-flag-small.jpg">
+    </div>
+    <div class = "name">
+      <p><i>Norway</i></p>
+    </div>
+    <div class = "brands_list_drop">
+      <li class = "goto"><a routerLink="countries/norway" routerLinkActive="active">Go to Norway -></a></li>
+    </div>
+  </div>
+  <div class = "brands">
+    <div class = "image_container">
+      <img src = "../../assets/flags/poland-flag-small.jpg">
+    </div>
+    <div class = "name">
+      <p><i>Poland</i></p>
+    </div>
+    <div class = "brands_list_drop">
+      <li class = "goto"><a routerLink="countries/poland" routerLinkActive="active">Go to Poland -></a></li>
+    </div>
+  </div>
+  <div class = "brands">
+    <div class = "image_container">
+      <img src = "../../assets/flags/romania-flag-small.jpg">
+    </div>
+    <div class = "name">
+      <p><i>Romania</i></p>
+    </div>
+    <div class = "brands_list_drop">
+      <li class = "goto"><a routerLink="countries/romania" routerLinkActive="active">Go to Romania -></a></li>
+    </div>
+  </div>
+  <div class = "brands">
+    <div class = "image_container">
+      <img src = "../../assets/flags/russia-flag-small.jpg">
+    </div>
+    <div class = "name">
+      <p><i>Russia</i></p>
+    </div>
+    <div class = "brands_list_drop">
+      <li class = "goto"><a routerLink="countries/russia" routerLinkActive="active">Go to Russia -></a></li>
+    </div>
+  </div>
+  <div class = "brands">
+    <div class = "image_container">
+      <img src = "../../assets/flags/slovakia-flag-small.jpg">
+    </div>
+    <div class = "name">
+      <p><i>Slovakia</i></p>
+    </div>
+    <div class = "brands_list_drop">
+      <li class = "goto"><a routerLink="countries/slovakia" routerLinkActive="active">Go to Slovakia -></a></li>
+    </div>
+  </div>
+  <div class = "brands">
+    <div class = "image_container">
+      <img src = "../../assets/flags/slovenia-flag-small.jpg">
+    </div>
+    <div class = "name">
+      <p><i>Slovenia</i></p>
+    </div>
+    <div class = "brands_list_drop">
+      <li class = "goto"><a routerLink="countries/slovenia" routerLinkActive="active">Go to Slovenia -></a></li>
+    </div>
+  </div>
+  <div class = "brands">
+    <div class = "image_container">
+      <img src = "../../assets/flags/south-africa-flag-small.jpg">
+    </div>
+    <div class = "name">
+      <p><i>South Africa</i></p>
+    </div>
+    <div class = "brands_list_drop">
+      <li class = "goto"><a routerLink="countries/south_africa" routerLinkActive="active">Go to South Africa -></a></li>
+    </div>
+  </div>
+  <div class = "brands">
+    <div class = "image_container">
+      <img src = "../../assets/flags/south-korea-flag-small.jpg">
+    </div>
+    <div class = "name">
+      <p><i>South Korea</i></p>
+    </div>
+    <div class = "brands_list_drop">
+      <li class = "goto"><a routerLink="countries/south_korea" routerLinkActive="active">Go to South Korea -></a></li>
+    </div>
+  </div>
+  <div class = "brands">
+    <div class = "image_container">
+      <img src = "../../assets/flags/spain-flag-small.jpg">
+    </div>
+    <div class = "name">
+      <p><i>Spain</i></p>
+    </div>
+    <div class = "brands_list_drop">
+      <li class = "goto"><a routerLink="countries/spain" routerLinkActive="active">Go to Spain -></a></li>
+    </div>
+  </div>
+  <div class = "brands">
+    <div class = "image_container">
+      <img src = "../../assets/flags/sri-lanka-flag-small.jpg">
+    </div>
+    <div class = "name">
+      <p><i>Sri Lanka</i></p>
+    </div>
+    <div class = "brands_list_drop">
+      <li class = "goto"><a routerLink="countries/sri_lanka" routerLinkActive="active">Go to Sri Lanka -></a></li>
+    </div>
+  </div>
+  <div class = "brands">
+    <div class = "image_container">
+      <img src = "../../assets/flags/sweden-flag-small.jpg">
+    </div>
+    <div class = "name">
+      <p><i>Sweden</i></p>
+    </div>
+    <div class = "brands_list_drop">
+      <li class = "goto"><a routerLink="countries/sweden" routerLinkActive="active">Go to Sweden -></a></li>
+    </div>
+  </div>
+  <div class = "brands">
+    <div class = "image_container">
+      <img src = "../../assets/flags/switzerland-flag-small.jpg">
+    </div>
+    <div class = "name">
+      <p><i>Switzerland</i></p>
+    </div>
+    <div class = "brands_list_drop">
+      <li class = "goto"><a routerLink="countries/switzerland" routerLinkActive="active">Go to Switzerland -></a></li>
+    </div>
+  </div>
+  <div class = "brands">
+    <div class = "image_container">
+      <img src = "../../assets/flags/turkey-flag-small.jpg">
+    </div>
+    <div class = "name">
+      <p><i>Turkey</i></p>
+    </div>
+    <div class = "brands_list_drop">
+      <li class = "goto"><a routerLink="countries/turkey" routerLinkActive="active">Go to Turkey -></a></li>
+    </div>
+  </div>
+  <div class = "brands">
+    <div class = "image_container">
+      <img src = "../../assets/flags/united-arab-emirates-flag-small.jpg">
+    </div>
+    <div class = "name">
+      <p><i>United Arab Emirates</i></p>
+    </div>
+    <div class = "brands_list_drop">
+      <li class = "goto"><a routerLink="countries/uae" routerLinkActive="active">Go to United Arab Emirates -></a></li>
+    </div>
+  </div>
+  <div class = "brands">
+    <div class = "image_container">
+      <img src = "../../assets/flags/united-kingdom-flag-small.jpg">
+    </div>
+    <div class = "name">
+      <p><i>Great Britain</i></p>
+    </div>
+    <div class = "brands_list_drop">
+      <li class = "goto"><a routerLink="countries/great_britain" routerLinkActive="active">Go to Great Britain -></a></li>
+    </div>
+  </div>
+  <div class = "brands">
+    <div class = "image_container">
+      <img src = "../../assets/flags/vietnam-flag-small.jpg">
+    </div>
+    <div class = "name">
+      <p><i>Vietnam</i></p>
+    </div>
+    <div class = "brands_list_drop">
+      <li class = "goto"><a routerLink="countries/vietnam" routerLinkActive="active">Go to Vietnam -></a></li>
+    </div>
+  </div>
+  <footer></footer>
+
+</div>
+<script src = "../../assets/countries.js"></script>
+</body>
+</html>
+
 
 

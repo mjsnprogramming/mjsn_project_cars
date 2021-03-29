@@ -36,6 +36,40 @@ import { CzechComponent } from './languages/czech/czech.component';
 import { SlovakComponent } from './languages/slovak/slovak.component';
 import { PortugueseComponent } from './languages/portuguese/portuguese.component';
 import { DutchComponent } from './languages/dutch/dutch.component';
+import { MainComponent } from './main/main.component';
+import { ArgentinaComponent } from './countries/argentina/argentina.component';
+import { AustraliaComponent } from './countries/australia/australia.component';
+import { AustriaComponent } from './countries/austria/austria.component';
+import { BrazilComponent } from './countries/brazil/brazil.component';
+import { CanadaComponent } from './countries/canada/canada.component';
+import { ChinaComponent } from './countries/china/china.component';
+import { CroatiaComponent } from './countries/croatia/croatia.component';
+import { CzechRepublicComponent } from './countries/czech-republic/czech-republic.component';
+import { DenmarkComponent } from './countries/denmark/denmark.component';
+import { FranceComponent } from './countries/france/france.component';
+import { GermanyComponent } from './countries/germany/germany.component';
+import { ItalyComponent } from './countries/italy/italy.component';
+import { JapanComponent } from './countries/japan/japan.component';
+import { MalaysiaComponent } from './countries/malaysia/malaysia.component';
+import { MoroccoComponent } from './countries/morocco/morocco.component';
+import { NetherlandsComponent } from './countries/netherlands/netherlands.component';
+import { NorwayComponent } from './countries/norway/norway.component';
+import { PolandComponent } from './countries/poland/poland.component';
+import { RomaniaComponent } from './countries/romania/romania.component';
+import { RussiaComponent } from './countries/russia/russia.component';
+import { SlovakiaComponent } from './countries/slovakia/slovakia.component';
+import { SloveniaComponent } from './countries/slovenia/slovenia.component';
+import { SouthAfricaComponent } from './countries/south-africa/south-africa.component';
+import { SouthKoreaComponent } from './countries/south-korea/south-korea.component';
+import { SpainComponent } from './countries/spain/spain.component';
+import { SriLankaComponent } from './countries/sri-lanka/sri-lanka.component';
+import { SwedenComponent } from './countries/sweden/sweden.component';
+import { SwitzerlandComponent } from './countries/switzerland/switzerland.component';
+import { TurkeyComponent } from './countries/turkey/turkey.component';
+import { UaeComponent } from './countries/uae/uae.component';
+import { GreatBritainComponent } from './countries/great-britain/great-britain.component';
+import { VietnamComponent } from './countries/vietnam/vietnam.component';
+import { UsaComponent } from './countries/usa/usa.component';
 
 @NgModule({
   declarations: [
@@ -70,7 +104,41 @@ import { DutchComponent } from './languages/dutch/dutch.component';
     CzechComponent,
     SlovakComponent,
     PortugueseComponent,
-    DutchComponent
+    DutchComponent,
+    MainComponent,
+    ArgentinaComponent,
+    AustraliaComponent,
+    AustriaComponent,
+    BrazilComponent,
+    CanadaComponent,
+    ChinaComponent,
+    CroatiaComponent,
+    CzechRepublicComponent,
+    DenmarkComponent,
+    FranceComponent,
+    GermanyComponent,
+    ItalyComponent,
+    JapanComponent,
+    MalaysiaComponent,
+    MoroccoComponent,
+    NetherlandsComponent,
+    NorwayComponent,
+    PolandComponent,
+    RomaniaComponent,
+    RussiaComponent,
+    SlovakiaComponent,
+    SloveniaComponent,
+    SouthAfricaComponent,
+    SouthKoreaComponent,
+    SpainComponent,
+    SriLankaComponent,
+    SwedenComponent,
+    SwitzerlandComponent,
+    TurkeyComponent,
+    UaeComponent,
+    GreatBritainComponent,
+    VietnamComponent,
+    UsaComponent
   ],
   imports: [
     BrowserModule,

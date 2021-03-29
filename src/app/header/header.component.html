@@ -1,4 +1,5 @@
 <div id = "app-header">
+  <a routerLink="" routerLinkActive="active"><img class = "mjsn_logo" src = "assets/mjsn_logo.jpg" alt="mjsn logo"></a>
     <ul>
       <li class = "dropdowns"><a routerLink="/brands" routerLinkActive="active">BRANDS</a>
         <div id = "drop_brands" class = "drop_class">
@@ -53,39 +54,39 @@
       <li class = "dropdowns"><a routerLink="/countries" routerLinkActive="active">COUNTRIES</a>
         <div id = "drop_countries" class = "drop_class">
           <ul>
-            <li>ARGENTINA</li>
-            <li>AUSTRALIA</li>
-            <li>AUSTRIA</li>
-            <li>BRAZIL</li>
-            <li>CANADA</li>
-            <li>CHINA</li>
-            <li>CROATIA</li>
-            <li>CZECH REPUBLIC</li>
-            <li>DENMARK</li>
-            <li>FRANCE</li>
-            <li>GERMANY</li>
-            <li>GREAT BRITAIN</li>
-            <li>ITALY</li>
-            <li>JAPAN</li>
-            <li>MALAYSIA</li>
-            <li>MOROCCO</li>
-            <li>NETHERLANDS</li>
-            <li>NORWAY</li>
-            <li>POLAND</li>
-            <li>ROMANIA</li>
-            <li>RUSSIA</li>
-            <li>SLOVAKIA</li>
-            <li>SLOVENIA</li>
-            <li>SPAIN</li>
-            <li>SOUTH AFRICA</li>
-            <li>SOUTH KOREA</li>
-            <li>SRI LANKA</li>
-            <li>SWEDEN</li>
-            <li>SWITZERLAND</li>
-            <li>TURKEY</li>
-            <li>UAE</li>
-            <li>USA</li>
-            <li>VIETNAM</li>
+            <li><a routerLink="/countries/argentina" routerLinkActive="active">ARGENTINA</a></li>
+            <li><a routerLink="/countries/australia" routerLinkActive="active">AUSTRALIA</a></li>
+            <li><a routerLink="/countries/austria" routerLinkActive="active">AUSTRIA</a></li>
+            <li><a routerLink="/countries/brazil" routerLinkActive="active">BRAZIL</a></li>
+            <li><a routerLink="/countries/canada" routerLinkActive="active">CANADA</a></li>
+            <li><a routerLink="/countries/china" routerLinkActive="active">CHINA</a></li>
+            <li><a routerLink="/countries/croatia" routerLinkActive="active">CROATIA</a></li>
+            <li><a routerLink="/countries/czech_republic" routerLinkActive="active">CZECH REPUBLIC</a></li>
+            <li><a routerLink="/countries/denmark" routerLinkActive="active">DENMARK</a></li>
+            <li><a routerLink="/countries/france" routerLinkActive="active">FRANCE</a></li>
+            <li><a routerLink="/countries/germany" routerLinkActive="active">GERMANY</a></li>
+            <li><a routerLink="/countries/great_britain" routerLinkActive="active">GREAT BRITAIN</a></li>
+            <li><a routerLink="/countries/italy" routerLinkActive="active">ITALY</a></li>
+            <li><a routerLink="/countries/japan" routerLinkActive="active">JAPAN</a></li>
+            <li><a routerLink="/countries/malaysia" routerLinkActive="active">MALAYSIA</a></li>
+            <li><a routerLink="/countries/morocco" routerLinkActive="active">MOROCCO</a></li>
+            <li><a routerLink="/countries/netherlands" routerLinkActive="active">NETHERLANDS</a></li>
+            <li><a routerLink="/countries/norway" routerLinkActive="active">NORWAY</a></li>
+            <li><a routerLink="/countries/poland" routerLinkActive="active">POLAND</a></li>
+            <li><a routerLink="/countries/romania" routerLinkActive="active">ROMANIA</a></li>
+            <li><a routerLink="/countries/russia" routerLinkActive="active">RUSSIA</a></li>
+            <li><a routerLink="/countries/slovakia" routerLinkActive="active">SLOVAKIA</a></li>
+            <li><a routerLink="/countries/slovenia" routerLinkActive="active">SLOVENIA</a></li>
+            <li><a routerLink="/countries/spain" routerLinkActive="active">SPAIN</a></li>
+            <li><a routerLink="/countries/south_africa" routerLinkActive="active">SOUTH AFRICA</a></li>
+            <li><a routerLink="/countries/south_korea" routerLinkActive="active">SOUTH KOREA</a></li>
+            <li><a routerLink="/countries/sri_lanka" routerLinkActive="active">SRI LANKA</a></li>
+            <li><a routerLink="/countries/sweden" routerLinkActive="active">SWEDEN</a></li>
+            <li><a routerLink="/countries/switzerland" routerLinkActive="active">SWITZERLAND</a></li>
+            <li><a routerLink="/countries/turkey" routerLinkActive="active">TURKEY</a></li>
+            <li><a routerLink="/countries/uae" routerLinkActive="active">UAE</a></li>
+            <li><a routerLink="/countries/usa" routerLinkActive="active">USA</a></li>
+            <li><a routerLink="/countries/vietnam" routerLinkActive="active">VIETNAM</a></li>
           </ul>
         </div></li>
       <li class = "dropdowns"><a routerLink="/years" routerLinkActive="active">YEARS</a>
@@ -119,7 +120,9 @@
       <fa-icon class = "faTimes" [icon]="faTimes"></fa-icon>
     </div>
     <div id = "search_input">
-      <input class = "search_input" type = "text" placeholder = "Search on mjsn-cars.com">
+      <label>
+        <input class = "search_input" type = "text" placeholder = "Search on mjsn-cars.com">
+      </label>
       <p>SEARCH</p>
       <fa-icon class = "search_mobile" [icon]="faSearch"></fa-icon>
       <hr>
@@ -177,12 +180,7 @@
       </ul>
     </div>
   </div>
-
-
-
-
-
   <router-outlet></router-outlet>
-
+<script src = "../../assets/header_dropdown.js"></script>
 </div>
 
