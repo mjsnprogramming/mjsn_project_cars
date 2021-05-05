@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ScrollDownButtonComponent } from './scroll-down-button/scroll-down-button.component';
 import { HeaderComponent } from './header/header.component';
-import { SubCarPagesComponent } from './sub-car-pages/sub-car-pages.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BrandsComponent } from './brands/brands.component';
 import { CountriesComponent } from './countries/countries.component';
@@ -70,13 +69,234 @@ import { UaeComponent } from './countries/uae/uae.component';
 import { GreatBritainComponent } from './countries/great-britain/great-britain.component';
 import { VietnamComponent } from './countries/vietnam/vietnam.component';
 import { UsaComponent } from './countries/usa/usa.component';
+import { AlfaRomeoComponent } from './brands/alfa-romeo/alfa-romeo.component';
+import { AstonMartinComponent } from './brands/aston-martin/aston-martin.component';
+import { AudiComponent } from './brands/audi/audi.component';
+import { BentleyComponent } from './brands/bentley/bentley.component';
+import { BmwComponent } from './brands/bmw/bmw.component';
+import { BugattiComponent } from './brands/bugatti/bugatti.component';
+import { ChevroletComponent } from './brands/chevrolet/chevrolet.component';
+import { CitroenComponent } from './brands/citroen/citroen.component';
+import { DodgeComponent } from './brands/dodge/dodge.component';
+import { FerrariComponent } from './brands/ferrari/ferrari.component';
+import { FiatComponent } from './brands/fiat/fiat.component';
+import { FordComponent } from './brands/ford/ford.component';
+import { GmcComponent } from './brands/gmc/gmc.component';
+import { HennesseyComponent } from './brands/hennessey/hennessey.component';
+import { HyundaiComponent } from './brands/hyundai/hyundai.component';
+import { InfinitiComponent } from './brands/infiniti/infiniti.component';
+import { JaguarComponent } from './brands/jaguar/jaguar.component';
+import { JeepComponent } from './brands/jeep/jeep.component';
+import { KiaComponent } from './brands/kia/kia.component';
+import { KoenigseggComponent } from './brands/koenigsegg/koenigsegg.component';
+import { LamborghiniComponent } from './brands/lamborghini/lamborghini.component';
+import { LandRoverComponent } from './brands/land-rover/land-rover.component';
+import { LotusComponent } from './brands/lotus/lotus.component';
+import { LexusComponent } from './brands/lexus/lexus.component';
+import { MaseratiComponent } from './brands/maserati/maserati.component';
+import { MclarenComponent } from './brands/mclaren/mclaren.component';
+import { MercedesComponent } from './brands/mercedes/mercedes.component';
+import { MitsubishiComponent } from './brands/mitsubishi/mitsubishi.component';
+import { MiniComponent } from './brands/mini/mini.component';
+import { NissanComponent } from './brands/nissan/nissan.component';
+import { OpelComponent } from './brands/opel/opel.component';
+import { PaganiComponent } from './brands/pagani/pagani.component';
+import { PolestarComponent } from './brands/polestar/polestar.component';
+import { PeugeotComponent } from './brands/peugeot/peugeot.component';
+import { PorscheComponent } from './brands/porsche/porsche.component';
+import { RenaultComponent } from './brands/renault/renault.component';
+import { RollsRoyceComponent } from './brands/rolls-royce/rolls-royce.component';
+import { SeatComponent } from './brands/seat/seat.component';
+import { SkodaComponent } from './brands/skoda/skoda.component';
+import { SubaruComponent } from './brands/subaru/subaru.component';
+import { SuzukiComponent } from './brands/suzuki/suzuki.component';
+import { TeslaComponent } from './brands/tesla/tesla.component';
+import { ToyotaComponent } from './brands/toyota/toyota.component';
+import { VolkswagenComponent } from './brands/volkswagen/volkswagen.component';
+import { VolvoComponent } from './brands/volvo/volvo.component';
+import { AbarthComponent } from './brands/abarth/abarth.component';
+import { AcadianComponent } from './brands/acadian/acadian.component';
+import { AionComponent } from './brands/aion/aion.component';
+import { AiwaysComponent } from './brands/aiways/aiways.component';
+import { AixamComponent } from './brands/aixam/aixam.component';
+import { AlpineComponent } from './brands/alpine/alpine.component';
+import { AlvisComponent } from './brands/alvis/alvis.component';
+import { AndinoComponent } from './brands/andino/andino.component';
+import { ApolloComponent } from './brands/apollo/apollo.component';
+import { ArcfoxComponent } from './brands/arcfox/arcfox.component';
+import { ArielComponent } from './brands/ariel/ariel.component';
+import { ArrineraComponent } from './brands/arrinera/arrinera.component';
+import { AscariComponent } from './brands/ascari/ascari.component';
+import { AsparkComponent } from './brands/aspark/aspark.component';
+import { AsunaComponent } from './brands/asuna/asuna.component';
+import { AcuraComponent } from './brands/acura/acura.component';
+import { ArashComponent } from './brands/arash/arash.component';
+import { ArtegaComponent } from './brands/artega/artega.component';
+import { AustinComponent } from './brands/austin/austin.component';
+import { AutobianchiComponent } from './brands/autobianchi/autobianchi.component';
+import { BeaumontComponent } from './brands/beaumont/beaumont.component';
+import { BitterComponent } from './brands/bitter/bitter.component';
+import { BollingerComponent } from './brands/bollinger/bollinger.component';
+import { BorgwardComponent } from './brands/borgward/borgward.component';
+import { BydComponent } from './brands/byd/byd.component';
+import { BolwellComponent } from './brands/bolwell/bolwell.component';
+import { BristolCarsComponent } from './brands/bristol-cars/bristol-cars.component';
+import { BuickComponent } from './brands/buick/buick.component';
+import { BytonComponent } from './brands/byton/byton.component';
+import { BrillianceComponent } from './brands/brilliance/brilliance.component';
+import { BrabhamComponent } from './brands/brabham/brabham.component';
+import { ChatenetComponent } from './brands/chatenet/chatenet.component';
+import { CodaComponent } from './brands/coda/coda.component';
+import { ContinentalComponent } from './brands/continental/continental.component';
+import { CupraComponent } from './brands/cupra/cupra.component';
+import { CzingerComponent } from './brands/czinger/czinger.component';
+import { CadillacComponent } from './brands/cadillac/cadillac.component';
+import { CaterhamComponent } from './brands/caterham/caterham.component';
+import { ChryslerComponent } from './brands/chrysler/chrysler.component';
+import { DaewooComponent } from './brands/daewoo/daewoo.component';
+import { DaciaComponent } from './brands/dacia/dacia.component';
+import { DaihatsuComponent } from './brands/daihatsu/daihatsu.component';
+import { DearccComponent } from './brands/dearcc/dearcc.component';
+import { DeloreanComponent } from './brands/delorean/delorean.component';
+import { DenzaComponent } from './brands/denza/denza.component';
+import { DrakoComponent } from './brands/drako/drako.component';
+import { DevelComponent } from './brands/devel/devel.component';
+import { DonkervoortComponent } from './brands/donkervoort/donkervoort.component';
+import { DetomasoComponent } from './brands/detomaso/detomaso.component';
+import { DsComponent } from './brands/ds/ds.component';
+import { DatsunComponent } from './brands/datsun/datsun.component';
+import { EagleComponent } from './brands/eagle/eagle.component';
+import { EdselComponent } from './brands/edsel/edsel.component';
+import { ElfinComponent } from './brands/elfin/elfin.component';
+import { EnvoyComponent } from './brands/envoy/envoy.component';
+import { EnzmannComponent } from './brands/enzmann/enzmann.component';
+import { ElementalComponent } from './brands/elemental/elemental.component';
+import { FacelVegaComponent } from './brands/facel-vega/facel-vega.component';
+import { FaradayFutureComponent } from './brands/faraday-future/faraday-future.component';
+import { FiskerComponent } from './brands/fisker/fisker.component';
+import { FsoComponent } from './brands/fso/fso.component';
+import { GeelyComponent } from './brands/geely/geely.component';
+import { GeoComponent } from './brands/geo/geo.component';
+import { GeometryComponent } from './brands/geometry/geometry.component';
+import { GinettaComponent } from './brands/ginetta/ginetta.component';
+import { GoggomobilComponent } from './brands/goggomobil/goggomobil.component';
+import { GregoireComponent } from './brands/gregoire/gregoire.component';
+import { HiphiComponent } from './brands/hiphi/hiphi.component';
+import { HoldenComponent } from './brands/holden/holden.component';
+import { HycanComponent } from './brands/hycan/hycan.component';
+import { HavalComponent } from './brands/haval/haval.component';
+import { ImperialComponent } from './brands/imperial/imperial.component';
+import { ImvComponent } from './brands/imv/imv.component';
+import { IndustriasKaiserArgentinaComponent } from './brands/industrias-kaiser-argentina/industrias-kaiser-argentina.component';
+import { IsderaComponent } from './brands/isdera/isdera.component';
+import { IzeraComponent } from './brands/izera/izera.component';
+import { HummerComponent } from './brands/hummer/hummer.component';
+import { IsuzuComponent } from './brands/isuzu/isuzu.component';
+import { JianglingComponent } from './brands/jiangling/jiangling.component';
+import { JoMobilComponent } from './brands/jo-mobil/jo-mobil.component';
+import { K1EngineeringComponent } from './brands/k1-engineering/k1-engineering.component';
+import { KandiComponent } from './brands/kandi/kandi.component';
+import { KarmaComponent } from './brands/karma/karma.component';
+import { KeatingComponent } from './brands/keating/keating.component';
+import { KtmComponent } from './brands/ktm/ktm.component';
+import { LagondaComponent } from './brands/lagonda/lagonda.component';
+import { LanciaComponent } from './brands/lancia/lancia.component';
+import { LarakiComponent } from './brands/laraki/laraki.component';
+import { LigierComponent } from './brands/ligier/ligier.component';
+import { LeaheadComponent } from './brands/leahead/leahead.component';
+import { LeapmotorComponent } from './brands/leapmotor/leapmotor.component';
+import { LiAutoComponent } from './brands/li-auto/li-auto.component';
+import { LincolnComponent } from './brands/lincoln/lincoln.component';
+import { LordstownComponent } from './brands/lordstown/lordstown.component';
+import { LucidComponent } from './brands/lucid/lucid.component';
+import { LadaComponent } from './brands/lada/lada.component';
+import { MarcosComponent } from './brands/marcos/marcos.component';
+import { MarussiaComponent } from './brands/marussia/marussia.component';
+import { MelkusComponent } from './brands/melkus/melkus.component';
+import { MeteorComponent } from './brands/meteor/meteor.component';
+import { MaybachComponent } from './brands/maybach/maybach.component';
+import { MazzantiComponent } from './brands/mazzanti/mazzanti.component';
+import { MercuryComponent } from './brands/mercury/mercury.component';
+import { MitsuokaComponent } from './brands/mitsuoka/mitsuoka.component';
+import { MgComponent } from './brands/mg/mg.component';
+import { MoslerComponent } from './brands/mosler/mosler.component';
+import { MonarchComponent } from './brands/monarch/monarch.component';
+import { MonteverdiComponent } from './brands/monteverdi/monteverdi.component';
+import { MorganComponent } from './brands/morgan/morgan.component';
+import { MorrisComponent } from './brands/morris/morris.component';
+import { MtxComponent } from './brands/mtx/mtx.component';
+import { NetaComponent } from './brands/neta/neta.component';
+import { NioComponent } from './brands/nio/nio.component';
+import { NobleComponent } from './brands/noble/noble.component';
+import { OraComponent } from './brands/ora/ora.component';
+import { OldsmobileComponent } from './brands/oldsmobile/oldsmobile.component';
+import { PanhardComponent } from './brands/panhard/panhard.component';
+import { PassportComponent } from './brands/passport/passport.component';
+import { PanozComponent } from './brands/panoz/panoz.component';
+import { PegasoComponent } from './brands/pegaso/pegaso.component';
+import { PiechComponent } from './brands/piech/piech.component';
+import { ProtonComponent } from './brands/proton/proton.component';
+import { PumaComponent } from './brands/puma/puma.component';
+import { PontiacComponent } from './brands/pontiac/pontiac.component';
+import { PeroduaComponent } from './brands/perodua/perodua.component';
+import { PininfarinaComponent } from './brands/pininfarina/pininfarina.component';
+import { PlymouthComponent } from './brands/plymouth/plymouth.component';
+import { RamblerComponent } from './brands/rambler/rambler.component';
+import { RangerComponent } from './brands/ranger/ranger.component';
+import { RivianComponent } from './brands/rivian/rivian.component';
+import { RoverComponent } from './brands/rover/rover.component';
+import { RimacComponent } from './brands/rimac/rimac.component';
+import { RossionComponent } from './brands/rossion/rossion.component';
+import { RamComponent } from './brands/ram/ram.component';
+import { QiantuComponent } from './brands/qiantu/qiantu.component';
+import { QvaleComponent } from './brands/qvale/qvale.component';
+import { SaehanComponent } from './brands/saehan/saehan.component';
+import { SaenaraComponent } from './brands/saenara/saenara.component';
+import { SeresComponent } from './brands/seres/seres.component';
+import { ShelbyComponent } from './brands/shelby/shelby.component';
+import { ShinjinComponent } from './brands/shinjin/shinjin.component';
+import { ShuanghuanComponent } from './brands/shuanghuan/shuanghuan.component';
+import { SingulatoComponent } from './brands/singulato/singulato.component';
+import { SinogoldComponent } from './brands/sinogold/sinogold.component';
+import { SitechComponent } from './brands/sitech/sitech.component';
+import { SolComponent } from './brands/sol/sol.component';
+import { SolectriaComponent } from './brands/solectria/solectria.component';
+import { SrtComponent } from './brands/srt/srt.component';
+import { SscComponent } from './brands/ssc/ssc.component';
+import { StudebakerComponent } from './brands/studebaker/studebaker.component';
+import { SaabComponent } from './brands/saab/saab.component';
+import { SaturnComponent } from './brands/saturn/saturn.component';
+import { SaicComponent } from './brands/saic/saic.component';
+import { SaleenComponent } from './brands/saleen/saleen.component';
+import { SmartComponent } from './brands/smart/smart.component';
+import { SpykerComponent } from './brands/spyker/spyker.component';
+import { SsangYongComponent } from './brands/ssang-yong/ssang-yong.component';
+import { StatesmanComponent } from './brands/statesman/statesman.component';
+import { ScionComponent } from './brands/scion/scion.component';
+import { ThinkComponent } from './brands/think/think.component';
+import { ToggComponent } from './brands/togg/togg.component';
+import { TuckerComponent } from './brands/tucker/tucker.component';
+import { TauroSportAutoComponent } from './brands/tauro-sport-auto/tauro-sport-auto.component';
+import { VectorComponent } from './brands/vector/vector.component';
+import { VegaComponent } from './brands/vega/vega.component';
+import { VinfastComponent } from './brands/vinfast/vinfast.component';
+import { TrionComponent } from './brands/trion/trion.component';
+import { TriumphComponent } from './brands/triumph/triumph.component';
+import { TvrComponent } from './brands/tvr/tvr.component';
+import { VlfComponent } from './brands/vlf/vlf.component';
+import { WeltmeisterComponent } from './brands/weltmeister/weltmeister.component';
+import { WiesmannComponent } from './brands/wiesmann/wiesmann.component';
+import { VencerComponent } from './brands/vencer/vencer.component';
+import { ZenvoComponent } from './brands/zenvo/zenvo.component';
+import { ZenosComponent } from './brands/zenos/zenos.component';
+import { UltimaComponent } from './brands/ultima/ultima.component';
+import { WMotorsComponent } from './brands/w-motors/w-motors.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ScrollDownButtonComponent,
     HeaderComponent,
-    SubCarPagesComponent,
     BrandsComponent,
     CountriesComponent,
     YearsComponent,
@@ -138,7 +358,229 @@ import { UsaComponent } from './countries/usa/usa.component';
     UaeComponent,
     GreatBritainComponent,
     VietnamComponent,
-    UsaComponent
+    UsaComponent,
+    AlfaRomeoComponent,
+    AstonMartinComponent,
+    AudiComponent,
+    BentleyComponent,
+    BmwComponent,
+    BugattiComponent,
+    ChevroletComponent,
+    CitroenComponent,
+    DodgeComponent,
+    FerrariComponent,
+    FiatComponent,
+    FordComponent,
+    GmcComponent,
+    HennesseyComponent,
+    HyundaiComponent,
+    InfinitiComponent,
+    JaguarComponent,
+    JeepComponent,
+    KiaComponent,
+    KoenigseggComponent,
+    LamborghiniComponent,
+    LandRoverComponent,
+    LotusComponent,
+    LexusComponent,
+    MaseratiComponent,
+    MclarenComponent,
+    MercedesComponent,
+    MitsubishiComponent,
+    MiniComponent,
+    NissanComponent,
+    OpelComponent,
+    PaganiComponent,
+    PolestarComponent,
+    PeugeotComponent,
+    PorscheComponent,
+    RenaultComponent,
+    RollsRoyceComponent,
+    SeatComponent,
+    SkodaComponent,
+    SubaruComponent,
+    SuzukiComponent,
+    TeslaComponent,
+    ToyotaComponent,
+    VolkswagenComponent,
+    VolvoComponent,
+    AbarthComponent,
+    AcadianComponent,
+    AionComponent,
+    AiwaysComponent,
+    AixamComponent,
+    AlpineComponent,
+    AlvisComponent,
+    AndinoComponent,
+    ApolloComponent,
+    ArcfoxComponent,
+    ArielComponent,
+    ArrineraComponent,
+    AscariComponent,
+    AsparkComponent,
+    AsunaComponent,
+    AcuraComponent,
+    ArashComponent,
+    ArtegaComponent,
+    AustinComponent,
+    AutobianchiComponent,
+    BeaumontComponent,
+    BitterComponent,
+    BollingerComponent,
+    BorgwardComponent,
+    BydComponent,
+    BolwellComponent,
+    BristolCarsComponent,
+    BuickComponent,
+    BytonComponent,
+    BrillianceComponent,
+    BrabhamComponent,
+    ChatenetComponent,
+    CodaComponent,
+    ContinentalComponent,
+    CupraComponent,
+    CzingerComponent,
+    CadillacComponent,
+    CaterhamComponent,
+    ChryslerComponent,
+    DaewooComponent,
+    DaciaComponent,
+    DaihatsuComponent,
+    DearccComponent,
+    DeloreanComponent,
+    DenzaComponent,
+    DrakoComponent,
+    DevelComponent,
+    DonkervoortComponent,
+    DetomasoComponent,
+    DsComponent,
+    DatsunComponent,
+    EagleComponent,
+    EdselComponent,
+    ElfinComponent,
+    EnvoyComponent,
+    EnzmannComponent,
+    ElementalComponent,
+    FacelVegaComponent,
+    FaradayFutureComponent,
+    FiskerComponent,
+    FsoComponent,
+    GeelyComponent,
+    GeoComponent,
+    GeometryComponent,
+    GinettaComponent,
+    GoggomobilComponent,
+    GregoireComponent,
+    HiphiComponent,
+    HoldenComponent,
+    HycanComponent,
+    HavalComponent,
+    ImperialComponent,
+    ImvComponent,
+    IndustriasKaiserArgentinaComponent,
+    IsderaComponent,
+    IzeraComponent,
+    HummerComponent,
+    IsuzuComponent,
+    JianglingComponent,
+    JoMobilComponent,
+    K1EngineeringComponent,
+    KandiComponent,
+    KarmaComponent,
+    KeatingComponent,
+    KtmComponent,
+    LagondaComponent,
+    LanciaComponent,
+    LarakiComponent,
+    LigierComponent,
+    LeaheadComponent,
+    LeapmotorComponent,
+    LiAutoComponent,
+    LincolnComponent,
+    LordstownComponent,
+    LucidComponent,
+    LadaComponent,
+    MarcosComponent,
+    MarussiaComponent,
+    MelkusComponent,
+    MeteorComponent,
+    MaybachComponent,
+    MazzantiComponent,
+    MercuryComponent,
+    MitsuokaComponent,
+    MgComponent,
+    MoslerComponent,
+    MonarchComponent,
+    MonteverdiComponent,
+    MorganComponent,
+    MorrisComponent,
+    MtxComponent,
+    NetaComponent,
+    NioComponent,
+    NobleComponent,
+    OraComponent,
+    OldsmobileComponent,
+    PanhardComponent,
+    PassportComponent,
+    PanozComponent,
+    PegasoComponent,
+    PiechComponent,
+    ProtonComponent,
+    PumaComponent,
+    PontiacComponent,
+    PeroduaComponent,
+    PininfarinaComponent,
+    PlymouthComponent,
+    RamblerComponent,
+    RangerComponent,
+    RivianComponent,
+    RoverComponent,
+    RimacComponent,
+    RossionComponent,
+    RamComponent,
+    QiantuComponent,
+    QvaleComponent,
+    SaehanComponent,
+    SaenaraComponent,
+    SeresComponent,
+    ShelbyComponent,
+    ShinjinComponent,
+    ShuanghuanComponent,
+    SingulatoComponent,
+    SinogoldComponent,
+    SitechComponent,
+    SolComponent,
+    SolectriaComponent,
+    SrtComponent,
+    SscComponent,
+    StudebakerComponent,
+    SaabComponent,
+    SaturnComponent,
+    SaicComponent,
+    SaleenComponent,
+    SmartComponent,
+    SpykerComponent,
+    SsangYongComponent,
+    StatesmanComponent,
+    ScionComponent,
+    ThinkComponent,
+    ToggComponent,
+    TuckerComponent,
+    TauroSportAutoComponent,
+    VectorComponent,
+    VegaComponent,
+    VinfastComponent,
+    TrionComponent,
+    TriumphComponent,
+    TvrComponent,
+    VlfComponent,
+    WeltmeisterComponent,
+    WiesmannComponent,
+    VencerComponent,
+    ZenvoComponent,
+    ZenosComponent,
+    UltimaComponent,
+    WMotorsComponent
   ],
   imports: [
     BrowserModule,

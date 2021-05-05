@@ -28,7 +28,7 @@
   top: 100px;
   left: 5%;
   z-index: 2;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-out;
 }
 :host .brands:hover {
   animation: opacity_flags 0.5s ease-out;
@@ -81,7 +81,7 @@
   animation: goto_anim 0.8s ease-out 0.3s;
 }
 :host .brands_toggle {
-  display: block;
+    display: block;
 }
 @keyframes goto_anim {
   from {
@@ -89,8 +89,8 @@
     top: 100px;
   }
   to {
-  visibility: visible;
-  top: 550px;
+    visibility: visible;
+    top: 550px;
 }
 }
 @keyframes brands_list_drop {

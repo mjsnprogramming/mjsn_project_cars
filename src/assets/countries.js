@@ -1,11 +1,11 @@
 
 window.onload = () => {
-  const countries = document.querySelectorAll('.brands');
+  const countries = document.querySelector('.brands');
 
 const brands_list_drop = document.querySelector('.brands_list_drop');
 
-countries.forEach(drop => {
-    drop.addEventListener('click', () => {
+
+    countries.addEventListener('click', () => {
         if (brands_list_drop.style.display === "") {
         brands_list_drop.classList.toggle('brands_toggle');
     }
@@ -13,5 +13,4 @@ countries.forEach(drop => {
         brands_list_drop.style.display = "";
     }
 })
-});
-}
+};
