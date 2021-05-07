@@ -1,3 +1,27 @@
+.brands {
+  width: 80%;
+  height: 250px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 150px;
+  margin-bottom: 70px;
+  box-shadow: 5px 5px 5px 6px #ccc;
+}
 
+.brands img {
+  height: 200px;
+  width: 200px;
+  left: 4%;
+  position: relative;
+  top: 25px;
+}
+
+.description {
+  left: 40%;
+  position: relative;
+  background-color: #5da1c4;
+}
 
 /*# sourceMappingURL=brands.component.css.map */

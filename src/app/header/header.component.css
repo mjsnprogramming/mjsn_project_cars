@@ -50,10 +50,6 @@
   color: white;
 }
 
-:host #drop_brands ul li a:hover {
-  color: white;
-}
-
 :host #app-header ul li a:after {
   content: "";
   display: block;
@@ -112,7 +108,7 @@
   top: 70px;
   left: 0;
   z-index: 0;
-  animation: drop_br_co_ye 0.3s ease-out alternate;
+  animation: drop_br_co_ye 0.3s ease-out;
   overflow: hidden;
 }
 
