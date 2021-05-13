@@ -8,6 +8,7 @@
   margin-bottom: 70px;
   box-shadow: 5px 5px 5px 6px #ccc;
   background-color: white;
+  overflow: hidden;
 }
 .brands img {
   height: 200px;
@@ -31,4 +32,5 @@
   color: black;
   bottom: 150px;
   font-weight: bold;
+  cursor: pointer;
 }
