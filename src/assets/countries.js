@@ -1,4 +1,4 @@
-
+/*
 window.onload = () => {
   const countries = document.querySelector('.brands');
 
@@ -14,3 +14,5 @@ const brands_list_drop = document.querySelector('.brands_list_drop');
     }
 })
 };
+
+ */

@@ -5,7 +5,7 @@ $header_color: #141314;
   height: 90px;
   width: 100%;
   background-color: $header_color;
-  z-index: 5;
+  z-index: 2;
   font-weight: 300;
 }
 :host .mjsn_logo {
@@ -14,7 +14,7 @@ $header_color: #141314;
   position: absolute;
   left: 5px;
   top: 10px;
-  z-index: 5;
+  z-index: 4;
 }
 :host ul {
   li {
@@ -22,12 +22,12 @@ $header_color: #141314;
     padding: 15px;
     color: white;
     position: relative;
-    left: 90px;
+    left: 120px;
     top: 8px;
     cursor: pointer;
     font-size: 16px;
     text-decoration: none;
-    z-index: 6;
+    z-index: 3;
   }
 }
 :host a {
@@ -103,7 +103,7 @@ $header_color: #141314;
 }
 :host #drop_brands ul {
   position: relative;
-  left: -90px;
+  left: -6%;
   top: 50px;
 }
 :host #drop_years ul {
@@ -124,7 +124,7 @@ $header_color: #141314;
 }
 :host #drop_countries ul {
   position: relative;
-  left: -70px;
+  left: 5%;
   top: 40px;
 }
 :host #drop_years {
