@@ -20,13 +20,11 @@ $header_color: #141314;
   li {
     display: inline-block;
     padding: 15px;
-    color: white;
     position: relative;
     left: 120px;
     top: 8px;
     cursor: pointer;
     font-size: 16px;
-    text-decoration: none;
     z-index: 3;
   }
 }
@@ -34,16 +32,10 @@ $header_color: #141314;
   color: white;
   text-decoration: none;
 }
-:host #drop_years ul li a{
+:host #drop_brands ul li a, #drop_countries ul li a, #drop_years ul li a {
   color: #727272;
 }
-:host #drop_countries ul li a{
-  color: #727272;
-}
-:host #drop_brands ul li a{
-  color: #727272;
-}
-:host #drop_countries ul li a:hover {
+:host #drop_brands ul li a:hover, #drop_countries ul li a:hover, #drop_years ul li a:hover  {
   color: white;
 }
 :host #app-header ul li a:after {
@@ -53,6 +45,7 @@ $header_color: #141314;
   width: 0;
   position: relative;
   left: 0;
+  top: 5px;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
@@ -60,9 +53,7 @@ $header_color: #141314;
   width: 100%;
   transform-origin: left bottom;
 }
-:host #drop_years ul li a:hover {
-  color: white;
-}
+
 :host .navs {
   height: 1px;
   background-color: #dedede;
@@ -84,13 +75,10 @@ $header_color: #141314;
   position: absolute;
   visibility: visible;
 }
-
 :host .drop_class {
   display: none;
-  position: absolute;
-  visibility: hidden;
 }
-:host #drop_brands {
+:host #drop_brands, #drop_countries, #drop_years {
   height: 300px;
   width: 100%;
   background-color: $header_color;
@@ -100,46 +88,13 @@ $header_color: #141314;
   z-index: 0;
   animation: drop_br_co_ye  0.3s ease-out;
   overflow: hidden;
-}
-:host #drop_brands ul {
-  position: relative;
-  left: -6%;
-  top: 50px;
-}
-:host #drop_years ul {
-  position: relative;
-  top: 20px;
-}
 
-:host #drop_countries {
-  height: 300px;
-  width: 100%;
-  background-color: $header_color;
-  position: fixed;
-  top: 70px;
-  left: 0;
-  z-index: 0;
-  animation: drop_br_co_ye ease-out 0.3s;
-  overflow: hidden;
+
 }
-:host #drop_countries ul {
+:host #drop_brands ul, #drop_countries ul, #drop_years ul {
   position: relative;
-  left: 5%;
-  top: 40px;
-}
-:host #drop_years {
-  height: 300px;
-  width: 100%;
-  background-color: $header_color;
-  position: fixed;
-  top: 70px;
-  left: 0;
-  z-index: 0;
-  animation: drop_br_co_ye ease-out 0.3s;
-}
-:host #drop_years ul {
-  position: relative;
-  left: -55px;
+  left: -120px;
+  top: 50px;
 }
 :host #drop_nav {
   width: 100%;
@@ -151,6 +106,7 @@ $header_color: #141314;
   font-weight: 500;
   letter-spacing: 2px;
   animation: drop_nav_animation ease-out 0.4s;
+
 }
 :host #languages ul li:after{
   transition: none!important;
@@ -391,6 +347,14 @@ $header_color: #141314;
   from { opacity: 1; }
   to { opacity: 0; }
 }
+
+@media only screen and (max-width: 1240px) and (min-width: 600px) {
+  :host #drop_brands ul, #drop_countries ul, #drop_years ul{
+    position: relative;
+    top: 30px !important;
+    line-height: 5px;
+  }
+}
 @media only screen and (max-width: 600px) {
 
   :host .dropdowns {
@@ -412,6 +376,13 @@ $header_color: #141314;
     font-size: 20px;
     animation: drop_mjsn_mobile 0.4s ease-out;
   }
+
+  :host #drop_brands ul, #drop_countries ul, #drop_years ul{
+    position: relative;
+    top: 60px;
+    line-height: 2px;
+  }
+
   :host #drop_search {
     height: 120vh;
     overflow: hidden;

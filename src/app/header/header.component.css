@@ -19,13 +19,11 @@
 :host ul li {
   display: inline-block;
   padding: 15px;
-  color: white;
   position: relative;
   left: 120px;
   top: 8px;
   cursor: pointer;
   font-size: 16px;
-  text-decoration: none;
   z-index: 3;
 }
 
@@ -34,19 +32,11 @@
   text-decoration: none;
 }
 
-:host #drop_years ul li a {
+:host #drop_brands ul li a, #drop_countries ul li a, #drop_years ul li a {
   color: #727272;
 }
 
-:host #drop_countries ul li a {
-  color: #727272;
-}
-
-:host #drop_brands ul li a {
-  color: #727272;
-}
-
-:host #drop_countries ul li a:hover {
+:host #drop_brands ul li a:hover, #drop_countries ul li a:hover, #drop_years ul li a:hover {
   color: white;
 }
 
@@ -57,6 +47,7 @@
   width: 0;
   position: relative;
   left: 0;
+  top: 5px;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
@@ -64,10 +55,6 @@
 :host #app-header ul li a:hover:after {
   width: 100%;
   transform-origin: left bottom;
-}
-
-:host #drop_years ul li a:hover {
-  color: white;
 }
 
 :host .navs {
@@ -96,11 +83,9 @@
 
 :host .drop_class {
   display: none;
-  position: absolute;
-  visibility: hidden;
 }
 
-:host #drop_brands {
+:host #drop_brands, #drop_countries, #drop_years {
   height: 300px;
   width: 100%;
   background-color: #141314;
@@ -112,49 +97,10 @@
   overflow: hidden;
 }
 
-:host #drop_brands ul {
+:host #drop_brands ul, #drop_countries ul, #drop_years ul {
   position: relative;
-  left: -6%;
+  left: -120px;
   top: 50px;
-}
-
-:host #drop_years ul {
-  position: relative;
-  top: 20px;
-}
-
-:host #drop_countries {
-  height: 300px;
-  width: 100%;
-  background-color: #141314;
-  position: fixed;
-  top: 70px;
-  left: 0;
-  z-index: 0;
-  animation: drop_br_co_ye ease-out 0.3s;
-  overflow: hidden;
-}
-
-:host #drop_countries ul {
-  position: relative;
-  left: 5%;
-  top: 40px;
-}
-
-:host #drop_years {
-  height: 300px;
-  width: 100%;
-  background-color: #141314;
-  position: fixed;
-  top: 70px;
-  left: 0;
-  z-index: 0;
-  animation: drop_br_co_ye ease-out 0.3s;
-}
-
-:host #drop_years ul {
-  position: relative;
-  left: -55px;
 }
 
 :host #drop_nav {
@@ -431,6 +377,13 @@
     opacity: 0;
   }
 }
+@media only screen and (max-width: 1240px) and (min-width: 600px) {
+  :host #drop_brands ul, #drop_countries ul, #drop_years ul {
+    position: relative;
+    top: 30px !important;
+    line-height: 5px;
+  }
+}
 @media only screen and (max-width: 600px) {
   :host .dropdowns {
     display: none !important;
@@ -451,6 +404,12 @@
     top: 370px;
     font-size: 20px;
     animation: drop_mjsn_mobile 0.4s ease-out;
+  }
+
+  :host #drop_brands ul, #drop_countries ul, #drop_years ul {
+    position: relative;
+    top: 60px;
+    line-height: 2px;
   }
 
   :host #drop_search {
