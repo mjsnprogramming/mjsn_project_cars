@@ -103,19 +103,26 @@ $full_width: 100%;
 @media only screen and (max-width: 580px) {
 
   #explore {
-    top: 150px !important;
+    top: 110px !important;
     font-size: 40px;
   }
   .hexagon {
     $hexagon-size: 120px;
     width: ($hexagon-size * 0.645) !important;
     height: $hexagon-size !important;
+    top: 80px !important;
   }
   .mid {
     font-size: 100px !important;
     position: relative;
     left: 17px !important;
     top: 45px !important;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .hexagon {
+    position: relative;
+    top: 120px !important;
   }
 }
 
