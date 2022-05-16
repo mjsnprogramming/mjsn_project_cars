@@ -1,13 +1,13 @@
 $full_width: 100%;
 @import "../../../fontawesome-free-5.13.0-web/css/fontawesome.css";
 :host body {
-  margin: 0;
-  box-sizing: border-box;
-  overflow: hidden;
-  background-image: url("../../assets/720S_rain.jpg");
-  background-position: left;
+   margin: 0;
+   box-sizing: border-box;
+   overflow: hidden;
+   background-image: url("../../assets/720S_rain.jpg");
+   background-position: left;
 
-}
+ }
 :host #explore {
   position: fixed;
   left: 55%;
