@@ -285,853 +285,861 @@ import { ZenosComponent } from './brands/zenos/zenos.component';
 import { ZenvoComponent } from './brands/zenvo/zenvo.component';
 
 const routes: Routes = [
-  { path: '', component: MainComponent },
-  { path: 'brands', component: BrandsComponent, children: [
+      { path: '', component: MainComponent },
       {
-        path: 'abarth', component: AbarthComponent
+        path: 'brands', component: BrandsComponent
       },
       {
-        path: 'acadian', component: AcadianComponent
+        path: 'brands/abarth', component: AbarthComponent
       },
       {
-        path: 'acura', component: AcuraComponent
+        path: 'brands/acadian', component: AcadianComponent
       },
       {
-        path: 'aion', component: AionComponent
+        path: 'brands/acura', component: AcuraComponent
       },
       {
-        path: 'aiways', component: AiwaysComponent
+        path: 'brands/aion', component: AionComponent
       },
       {
-        path: 'aixam', component: AixamComponent
+        path: 'brands/aiways', component: AiwaysComponent
       },
       {
-        path: 'alfa-romeo', component: AlfaRomeoComponent
+        path: 'brands/aixam', component: AixamComponent
       },
       {
-        path: 'alpine', component: AlpineComponent
+        path: 'brands/alfa-romeo', component: AlfaRomeoComponent
       },
       {
-        path: 'alvis', component: AlvisComponent
+        path: 'brands/alpine', component: AlpineComponent
       },
       {
-        path: 'andino', component: AndinoComponent
+        path: 'brands/alvis', component: AlvisComponent
       },
       {
-        path: 'apollo', component: ApolloComponent
+        path: 'brands/andino', component: AndinoComponent
       },
       {
-        path: 'arash', component: ArashComponent
+        path: 'brands/apollo', component: ApolloComponent
       },
       {
-        path: 'arcfox', component: ArcfoxComponent
+        path: 'brands/arash', component: ArashComponent
       },
       {
-        path: 'ariel', component: ArielComponent
+        path: 'brands/arcfox', component: ArcfoxComponent
       },
       {
-        path: 'arrinera', component: ArrineraComponent
+        path: 'brands/ariel', component: ArielComponent
       },
       {
-        path: 'artega', component: ArrineraComponent
+        path: 'brands/arrinera', component: ArrineraComponent
       },
       {
-        path: 'ascari', component: AscariComponent
+        path: 'brands/artega', component: ArrineraComponent
       },
       {
-        path: 'aspark', component: AsparkComponent
+        path: 'brands/ascari', component: AscariComponent
       },
       {
-        path: 'aston-martin', component: AstonMartinComponent
+        path: 'brands/aspark', component: AsparkComponent
       },
       {
-        path: 'asuna', component: AsunaComponent
+        path: 'brands/aston-martin', component: AstonMartinComponent
       },
       {
-        path: 'audi', component: AudiComponent
+        path: 'brands/asuna', component: AsunaComponent
       },
       {
-        path: 'austin', component: AustinComponent
+        path: 'brands/audi', component: AudiComponent
       },
       {
-        path: 'autobianchi', component: AutobianchiComponent
+        path: 'brands/austin', component: AustinComponent
       },
       {
-        path: 'beaumont', component: BeaumontComponent
+        path: 'brands/autobianchi', component: AutobianchiComponent
       },
       {
-        path: 'bentley', component: BentleyComponent
+        path: 'brands/beaumont', component: BeaumontComponent
       },
       {
-        path: 'bitter', component: BitterComponent
+        path: 'brands/bentley', component: BentleyComponent
       },
       {
-        path: 'bmw', component: BmwComponent
+        path: 'brands/bitter', component: BitterComponent
       },
       {
-        path: 'bollinger', component: BollingerComponent
+        path: 'brands/bmw', component: BmwComponent
       },
       {
-        path: 'bolwell', component: BolwellComponent
+        path: 'brands/bollinger', component: BollingerComponent
       },
       {
-        path: 'borgward', component: BorgwardComponent
+        path: 'brands/bolwell', component: BolwellComponent
       },
       {
-        path: 'brabham', component: BrabhamComponent
+        path: 'brands/borgward', component: BorgwardComponent
       },
       {
-        path: 'brilliance', component: BrillianceComponent
+        path: 'brands/brabham', component: BrabhamComponent
       },
       {
-        path: 'bristol-cars', component: BristolCarsComponent
+        path: 'brands/brilliance', component: BrillianceComponent
       },
       {
-        path: 'bugatti', component: BugattiComponent
+        path: 'brands/bristol-cars', component: BristolCarsComponent
       },
       {
-        path: 'buick', component: BuickComponent
+        path: 'brands/bugatti', component: BugattiComponent
       },
       {
-        path: 'byd', component: BydComponent
+        path: 'brands/buick', component: BuickComponent
       },
       {
-        path: 'byton', component: BytonComponent
+        path: 'brands/byd', component: BydComponent
       },
       {
-        path: 'cadillac', component: CadillacComponent
+        path: 'brands/byton', component: BytonComponent
       },
       {
-        path: 'caterham', component: CaterhamComponent
+        path: 'brands/cadillac', component: CadillacComponent
       },
       {
-        path: 'chatenet', component: ChatenetComponent
+        path: 'brands/caterham', component: CaterhamComponent
       },
       {
-        path: 'chevrolet', component: ChevroletComponent
+        path: 'brands/chatenet', component: ChatenetComponent
       },
       {
-        path: 'chrysler', component: ChryslerComponent
+        path: 'brands/chevrolet', component: ChevroletComponent
       },
       {
-        path: 'citroen', component: CitroenComponent
+        path: 'brands/chrysler', component: ChryslerComponent
       },
       {
-        path: 'coda', component: CodaComponent
+        path: 'brands/citroen', component: CitroenComponent
       },
       {
-        path: 'continental', component: ContinentalComponent
+        path: 'brands/coda', component: CodaComponent
       },
       {
-        path: 'cupra', component: CupraComponent
+        path: 'brands/continental', component: ContinentalComponent
       },
       {
-        path: 'czinger', component: CzingerComponent
+        path: 'brands/cupra', component: CupraComponent
       },
       {
-        path: 'dacia', component: DaciaComponent
+        path: 'brands/czinger', component: CzingerComponent
       },
       {
-        path: 'daewoo', component: DaewooComponent
+        path: 'brands/dacia', component: DaciaComponent
       },
       {
-        path: 'daihatsu', component: DaihatsuComponent
+        path: 'brands/daewoo', component: DaewooComponent
       },
       {
-        path: 'datsun', component: DatsunComponent
+        path: 'brands/daihatsu', component: DaihatsuComponent
       },
       {
-        path: 'dearcc', component: DearccComponent
+        path: 'brands/datsun', component: DatsunComponent
       },
       {
-        path: 'delorean', component: DeloreanComponent
+        path: 'brands/dearcc', component: DearccComponent
       },
       {
-        path: 'denza', component: DenzaComponent
+        path: 'brands/delorean', component: DeloreanComponent
       },
       {
-        path: 'detomaso', component: DetomasoComponent
+        path: 'brands/denza', component: DenzaComponent
       },
       {
-        path: 'devel', component: DevelComponent
+        path: 'brands/detomaso', component: DetomasoComponent
       },
       {
-        path: 'dodge', component: DodgeComponent
+        path: 'brands/devel', component: DevelComponent
       },
       {
-        path: 'donkervoort', component: DonkervoortComponent
+        path: 'brands/dodge', component: DodgeComponent
       },
       {
-        path: 'drako', component: DrakoComponent
+        path: 'brands/donkervoort', component: DonkervoortComponent
       },
       {
-        path: 'ds', component: DsComponent
+        path: 'brands/drako', component: DrakoComponent
       },
       {
-        path: 'eagle', component: EagleComponent
+        path: 'brands/ds', component: DsComponent
       },
       {
-        path: 'edsel', component: EdselComponent
+        path: 'brands/eagle', component: EagleComponent
       },
       {
-        path: 'elemental', component: ElementalComponent
+        path: 'brands/edsel', component: EdselComponent
       },
       {
-        path: 'elfin', component: ElfinComponent
+        path: 'brands/elemental', component: ElementalComponent
       },
       {
-        path: 'envoy', component: EnvoyComponent
+        path: 'brands/elfin', component: ElfinComponent
       },
       {
-        path: 'enzmann', component: EnzmannComponent
+        path: 'brands/envoy', component: EnvoyComponent
       },
       {
-        path: 'facel-vega', component: FacelVegaComponent
+        path: 'brands/enzmann', component: EnzmannComponent
       },
       {
-        path: 'faraday-future', component: FaradayFutureComponent
+        path: 'brands/facel-vega', component: FacelVegaComponent
       },
       {
-        path: 'ferrari', component: FerrariComponent
+        path: 'brands/faraday-future', component: FaradayFutureComponent
       },
       {
-        path: 'fiat', component: FiatComponent
+        path: 'brands/ferrari', component: FerrariComponent
       },
       {
-        path: 'fisker', component: FiskerComponent
+        path: 'brands/fiat', component: FiatComponent
       },
       {
-        path: 'ford', component: FordComponent
+        path: 'brands/fisker', component: FiskerComponent
       },
       {
-        path: 'fso', component: FsoComponent
+        path: 'brands/ford', component: FordComponent
       },
       {
-        path: 'geely', component: GeelyComponent
+        path: 'brands/fso', component: FsoComponent
       },
       {
-        path: 'geo', component: GeoComponent
+        path: 'brands/geely', component: GeelyComponent
       },
       {
-        path: 'geometry', component: GeometryComponent
+        path: 'brands/geo', component: GeoComponent
       },
       {
-        path: 'ginetta', component: GinettaComponent
+        path: 'brands/geometry', component: GeometryComponent
       },
       {
-        path: 'gmc', component: GmcComponent
+        path: 'brands/ginetta', component: GinettaComponent
       },
       {
-        path: 'goggomobil', component: GoggomobilComponent
+        path: 'brands/gmc', component: GmcComponent
       },
       {
-        path: 'gregoire', component: GregoireComponent
+        path: 'brands/goggomobil', component: GoggomobilComponent
       },
       {
-        path: 'haval', component: HavalComponent
+        path: 'brands/gregoire', component: GregoireComponent
       },
       {
-        path: 'hennessey', component: HennesseyComponent
+        path: 'brands/haval', component: HavalComponent
       },
       {
-        path: 'hiphi', component: HiphiComponent
+        path: 'brands/hennessey', component: HennesseyComponent
       },
       {
-        path: 'holden', component: HoldenComponent
+        path: 'brands/hiphi', component: HiphiComponent
       },
       {
-        path: 'hummer', component: HummerComponent
+        path: 'brands/holden', component: HoldenComponent
       },
       {
-        path: 'hycan', component: HycanComponent
+        path: 'brands/hummer', component: HummerComponent
       },
       {
-        path: 'hyundai', component: HyundaiComponent
+        path: 'brands/hycan', component: HycanComponent
       },
       {
-        path: 'imperial', component: ImperialComponent
+        path: 'brands/hyundai', component: HyundaiComponent
       },
       {
-        path: 'imv', component: ImvComponent
+        path: 'brands/imperial', component: ImperialComponent
       },
       {
-        path: 'industrias-kaiser-argentina', component: IndustriasKaiserArgentinaComponent
+        path: 'brands/imv', component: ImvComponent
       },
       {
-        path: 'infiniti', component: InfinitiComponent
+        path: 'brands/industrias-kaiser-argentina', component: IndustriasKaiserArgentinaComponent
       },
       {
-        path: 'isdera', component: IsderaComponent
+        path: 'brands/infiniti', component: InfinitiComponent
       },
       {
-        path: 'isuzu', component: IsuzuComponent
+        path: 'brands/isdera', component: IsderaComponent
       },
       {
-        path: 'izera', component: IzeraComponent
+        path: 'brands/isuzu', component: IsuzuComponent
       },
       {
-        path: 'jaguar', component: JaguarComponent
+        path: 'brands/izera', component: IzeraComponent
       },
       {
-        path: 'jeep', component: JeepComponent
+        path: 'brands/jaguar', component: JaguarComponent
       },
       {
-        path: 'jiangling', component: JianglingComponent
+        path: 'brands/jeep', component: JeepComponent
       },
       {
-        path: 'jo-mobil', component: JoMobilComponent
+        path: 'brands/jiangling', component: JianglingComponent
       },
       {
-        path: 'k1-engineering', component: K1EngineeringComponent
+        path: 'brands/jo-mobil', component: JoMobilComponent
       },
       {
-        path: 'kandi', component: KandiComponent
+        path: 'brands/k1-engineering', component: K1EngineeringComponent
       },
       {
-        path: 'karma', component: KarmaComponent
+        path: 'brands/kandi', component: KandiComponent
       },
       {
-        path: 'keating', component: KeatingComponent
+        path: 'brands/karma', component: KarmaComponent
       },
       {
-        path: 'kia', component: KiaComponent
+        path: 'brands/keating', component: KeatingComponent
       },
       {
-        path: 'koenigsegg', component: KoenigseggComponent
+        path: 'brands/kia', component: KiaComponent
       },
       {
-        path: 'ktm', component: KtmComponent
+        path: 'brands/koenigsegg', component: KoenigseggComponent
       },
       {
-        path: 'lada', component: LadaComponent
+        path: 'brands/ktm', component: KtmComponent
       },
       {
-        path: 'lagonda', component: LagondaComponent
+        path: 'brands/lada', component: LadaComponent
       },
       {
-        path: 'lamborghini', component: LamborghiniComponent
+        path: 'brands/lagonda', component: LagondaComponent
       },
       {
-        path: 'lancia', component: LanciaComponent
+        path: 'brands/lamborghini', component: LamborghiniComponent
       },
       {
-        path: 'land-rover', component: LandRoverComponent
+        path: 'brands/lancia', component: LanciaComponent
       },
       {
-        path: 'laraki', component: LarakiComponent
+        path: 'brands/land-rover', component: LandRoverComponent
       },
       {
-        path: 'leahead', component: LeaheadComponent
+        path: 'brands/laraki', component: LarakiComponent
       },
       {
-        path: 'leapmotor', component: LeapmotorComponent
+        path: 'brands/leahead', component: LeaheadComponent
       },
       {
-        path: 'lexus', component: LexusComponent
+        path: 'brands/leapmotor', component: LeapmotorComponent
       },
       {
-        path: 'li-auto', component: LiAutoComponent
+        path: 'brands/lexus', component: LexusComponent
       },
       {
-        path: 'ligier', component: LigierComponent
+        path: 'brands/li-auto', component: LiAutoComponent
       },
       {
-        path: 'lincoln', component: LincolnComponent
+        path: 'brands/ligier', component: LigierComponent
       },
       {
-        path: 'lordstown', component: LordstownComponent
+        path: 'brands/lincoln', component: LincolnComponent
       },
       {
-        path: 'lotus', component: LotusComponent
+        path: 'brands/lordstown', component: LordstownComponent
       },
       {
-        path: 'lucid', component: LucidComponent
+        path: 'brands/lotus', component: LotusComponent
       },
       {
-        path: 'marcos', component: MarcosComponent
+        path: 'brands/lucid', component: LucidComponent
       },
       {
-        path: 'marussia', component: MarussiaComponent
+        path: 'brands/marcos', component: MarcosComponent
       },
       {
-        path: 'maserati', component: MaseratiComponent
+        path: 'brands/marussia', component: MarussiaComponent
       },
       {
-        path: 'maybach', component: MaybachComponent
+        path: 'brands/maserati', component: MaseratiComponent
       },
       {
-        path: 'mazzanti', component: MazzantiComponent
+        path: 'brands/maybach', component: MaybachComponent
       },
       {
-        path: 'mclaren', component: MclarenComponent
+        path: 'brands/mazzanti', component: MazzantiComponent
       },
       {
-        path: 'melkus', component: MelkusComponent
+        path: 'brands/mclaren', component: MclarenComponent
       },
       {
-        path: 'mercedes', component: MercedesComponent
+        path: 'brands/melkus', component: MelkusComponent
       },
       {
-        path: 'mercury', component: MercuryComponent
+        path: 'brands/mercedes', component: MercedesComponent
       },
       {
-        path: 'meteor', component: MeteorComponent
+        path: 'brands/mercury', component: MercuryComponent
       },
       {
-        path: 'mg', component: MgComponent
+        path: 'brands/meteor', component: MeteorComponent
       },
       {
-        path: 'mini', component: MiniComponent
+        path: 'brands/mg', component: MgComponent
       },
       {
-        path: 'mitsubishi', component: MitsubishiComponent
+        path: 'brands/mini', component: MiniComponent
       },
       {
-        path: 'mitsuoka', component: MitsuokaComponent
+        path: 'brands/mitsubishi', component: MitsubishiComponent
       },
       {
-        path: 'monarch', component: MonarchComponent
+        path: 'brands/mitsuoka', component: MitsuokaComponent
       },
       {
-        path: 'monteverdi', component: MonteverdiComponent
+        path: 'brands/monarch', component: MonarchComponent
       },
       {
-        path: 'morgan', component: MorganComponent
+        path: 'brands/monteverdi', component: MonteverdiComponent
       },
       {
-        path: 'morris', component: MorrisComponent
+        path: 'brands/morgan', component: MorganComponent
       },
       {
-        path: 'mosler', component: MoslerComponent
+        path: 'brands/morris', component: MorrisComponent
       },
       {
-        path: 'mtx', component: MtxComponent
+        path: 'brands/mosler', component: MoslerComponent
       },
       {
-        path: 'neta', component: NetaComponent
+        path: 'brands/mtx', component: MtxComponent
       },
       {
-        path: 'nio', component: NioComponent
+        path: 'brands/neta', component: NetaComponent
       },
       {
-        path: 'nissan', component: NissanComponent
+        path: 'brands/nio', component: NioComponent
       },
       {
-        path: 'noble', component: NobleComponent
+        path: 'brands/nissan', component: NissanComponent
       },
       {
-        path: 'oldsmobile', component: OldsmobileComponent
+        path: 'brands/noble', component: NobleComponent
       },
       {
-        path: 'opel', component: OpelComponent
+        path: 'brands/oldsmobile', component: OldsmobileComponent
       },
       {
-        path: 'ora', component: OraComponent
+        path: 'brands/opel', component: OpelComponent
       },
       {
-        path: 'pagani', component: PaganiComponent
+        path: 'brands/ora', component: OraComponent
       },
       {
-        path: 'panhard', component: PanhardComponent
+        path: 'brands/pagani', component: PaganiComponent
       },
       {
-        path: 'panoz', component: PanozComponent
+        path: 'brands/panhard', component: PanhardComponent
       },
       {
-        path: 'passport', component: PassportComponent
+        path: 'brands/panoz', component: PanozComponent
       },
       {
-        path: 'pegaso', component: PegasoComponent
+        path: 'brands/passport', component: PassportComponent
       },
       {
-        path: 'perodua', component: PeroduaComponent
+        path: 'brands/pegaso', component: PegasoComponent
       },
       {
-        path: 'peugeot', component: PeugeotComponent
+        path: 'brands/perodua', component: PeroduaComponent
       },
       {
-        path: 'piech', component: PiechComponent
+        path: 'brands/peugeot', component: PeugeotComponent
       },
       {
-        path: 'pininfarina', component: PininfarinaComponent
+        path: 'brands/piech', component: PiechComponent
       },
       {
-        path: 'plymouth', component: PlymouthComponent
+        path: 'brands/pininfarina', component: PininfarinaComponent
       },
       {
-        path: 'polestar', component: PolestarComponent
+        path: 'brands/plymouth', component: PlymouthComponent
       },
       {
-        path: 'pontiac', component: PontiacComponent
+        path: 'brands/polestar', component: PolestarComponent
       },
       {
-        path: 'porsche', component: PorscheComponent
+        path: 'brands/pontiac', component: PontiacComponent
       },
       {
-        path: 'proton', component: ProtonComponent
+        path: 'brands/porsche', component: PorscheComponent
       },
       {
-        path: 'puma', component: PumaComponent
+        path: 'brands/proton', component: ProtonComponent
       },
       {
-        path: 'qiantu', component: QiantuComponent
+        path: 'brands/puma', component: PumaComponent
       },
       {
-        path: 'qvale', component: QvaleComponent
+        path: 'brands/qiantu', component: QiantuComponent
       },
       {
-        path: 'ram', component: RamComponent
+        path: 'brands/qvale', component: QvaleComponent
       },
       {
-        path: 'rambler', component: RamblerComponent
+        path: 'brands/ram', component: RamComponent
       },
       {
-        path: 'ranger', component: RangerComponent
+        path: 'brands/rambler', component: RamblerComponent
       },
       {
-        path: 'renault', component: RenaultComponent
+        path: 'brands/ranger', component: RangerComponent
       },
       {
-        path: 'rimac', component: RimacComponent
+        path: 'brands/renault', component: RenaultComponent
       },
       {
-        path: 'rivian', component: RivianComponent
+        path: 'brands/rimac', component: RimacComponent
       },
       {
-        path: 'rolls-royce', component: RollsRoyceComponent
+        path: 'brands/rivian', component: RivianComponent
       },
       {
-        path: 'rossion', component: RossionComponent
+        path: 'brands/rolls-royce', component: RollsRoyceComponent
       },
       {
-        path: 'rover', component: RoverComponent
+        path: 'brands/rossion', component: RossionComponent
       },
       {
-        path: 'saab', component: SaabComponent
+        path: 'brands/rover', component: RoverComponent
       },
       {
-        path: 'saehan', component: SaehanComponent
+        path: 'brands/saab', component: SaabComponent
       },
       {
-        path: 'saenara', component: SaenaraComponent
+        path: 'brands/saehan', component: SaehanComponent
       },
       {
-        path: 'saic', component: SaicComponent
+        path: 'brands/saenara', component: SaenaraComponent
       },
       {
-        path: 'saleen', component: SaleenComponent
+        path: 'brands/saic', component: SaicComponent
       },
       {
-        path: 'saturn', component: SaturnComponent
+        path: 'brands/saleen', component: SaleenComponent
       },
       {
-        path: 'scion', component: ScionComponent
+        path: 'brands/saturn', component: SaturnComponent
       },
       {
-        path: 'seat', component: SeatComponent
+        path: 'brands/scion', component: ScionComponent
       },
       {
-        path: 'seres', component: SeresComponent
+        path: 'brands/seat', component: SeatComponent
       },
       {
-        path: 'shelby', component: ShelbyComponent
+        path: 'brands/seres', component: SeresComponent
       },
       {
-        path: 'shinjin', component: ShinjinComponent
+        path: 'brands/shelby', component: ShelbyComponent
       },
       {
-        path: 'shuanghuan', component: ShuanghuanComponent
+        path: 'brands/shinjin', component: ShinjinComponent
       },
       {
-        path: 'singulato', component: SingulatoComponent
+        path: 'brands/shuanghuan', component: ShuanghuanComponent
       },
       {
-        path: 'sinogold', component: SinogoldComponent
+        path: 'brands/singulato', component: SingulatoComponent
       },
       {
-        path: 'sitech', component: SitechComponent
+        path: 'brands/sinogold', component: SinogoldComponent
       },
       {
-        path: 'skoda', component: SkodaComponent
+        path: 'brands/sitech', component: SitechComponent
       },
       {
-        path: 'smart', component: SmartComponent
+        path: 'brands/skoda', component: SkodaComponent
       },
       {
-        path: 'sol', component: SolComponent
+        path: 'brands/smart', component: SmartComponent
       },
       {
-        path: 'solectria', component: SolectriaComponent
+        path: 'brands/sol', component: SolComponent
       },
       {
-        path: 'spyker', component: SpykerComponent
+        path: 'brands/solectria', component: SolectriaComponent
       },
       {
-        path: 'srt', component: SrtComponent
+        path: 'brands/spyker', component: SpykerComponent
       },
       {
-        path: 'ssangy-yong', component: SsangYongComponent
+        path: 'brands/srt', component: SrtComponent
       },
       {
-        path: 'ssc', component: SscComponent
+        path: 'brands/ssangy-yong', component: SsangYongComponent
       },
       {
-        path: 'statesman', component: StatesmanComponent
+        path: 'brands/ssc', component: SscComponent
       },
       {
-        path: 'studebaker', component: StudebakerComponent
+        path: 'brands/statesman', component: StatesmanComponent
       },
       {
-        path: 'subaru', component: SubaruComponent
+        path: 'brands/studebaker', component: StudebakerComponent
       },
       {
-        path: 'suzuki', component: SuzukiComponent
+        path: 'brands/subaru', component: SubaruComponent
       },
       {
-        path: 'tauro-sport-auto', component: TauroSportAutoComponent
+        path: 'brands/suzuki', component: SuzukiComponent
       },
       {
-        path: 'tesla', component: TeslaComponent
+        path: 'brands/tauro-sport-auto', component: TauroSportAutoComponent
       },
       {
-        path: 'think', component: ThinkComponent
+        path: 'brands/tesla', component: TeslaComponent
       },
       {
-        path: 'togg', component: ToggComponent
+        path: 'brands/think', component: ThinkComponent
       },
       {
-        path: 'toyota', component: ToyotaComponent
+        path: 'brands/togg', component: ToggComponent
       },
       {
-        path: 'trion', component: TrionComponent
+        path: 'brands/toyota', component: ToyotaComponent
       },
       {
-        path: 'triumph', component: TriumphComponent
+        path: 'brands/trion', component: TrionComponent
       },
       {
-        path: 'tucker', component: TuckerComponent
+        path: 'brands/triumph', component: TriumphComponent
       },
       {
-        path: 'tvr', component: TvrComponent
+        path: 'brands/tucker', component: TuckerComponent
       },
       {
-        path: 'ultima', component: UltimaComponent
+        path: 'brands/tvr', component: TvrComponent
       },
       {
-        path: 'vector', component: VectorComponent
+        path: 'brands/ultima', component: UltimaComponent
       },
       {
-        path: 'vega', component: VegaComponent
+        path: 'brands/vector', component: VectorComponent
       },
       {
-        path: 'vencer', component: VencerComponent
+        path: 'brands/vega', component: VegaComponent
       },
       {
-        path: 'vinfast', component: VinfastComponent
+        path: 'brands/vencer', component: VencerComponent
       },
       {
-        path: 'vlf', component: VlfComponent
+        path: 'brands/vinfast', component: VinfastComponent
       },
       {
-        path: 'volkswagen', component: VolkswagenComponent
+        path: 'brands/vlf', component: VlfComponent
       },
       {
-        path: 'volvo', component: VolvoComponent
+        path: 'brands/volkswagen', component: VolkswagenComponent
       },
       {
-        path: 'w-motors', component: WMotorsComponent
+        path: 'brands/volvo', component: VolvoComponent
       },
       {
-        path: 'weltmeister', component: WeltmeisterComponent
+        path: 'brands/w-motors', component: WMotorsComponent
       },
       {
-        path: 'wiesmann', component: WiesmannComponent
+        path: 'brands/weltmeister', component: WeltmeisterComponent
       },
       {
-        path: 'zenos', component: ZenosComponent
+        path: 'brands/wiesmann', component: WiesmannComponent
       },
       {
-        path: 'zenvo', component: ZenvoComponent
-      }
-    ]},
-  { path: 'countries', component: CountriesComponent, children: [
+        path: 'brands/zenos', component: ZenosComponent
+      },
+      {
+        path: 'brands/zenvo', component: ZenvoComponent
+      },
+
+
+
+
+
+      { path: 'countries', component: CountriesComponent },
       {
-        path: 'argentina', component: ArgentinaComponent
+        path: 'countries/argentina', component: ArgentinaComponent
       },
       {
-        path: 'australia', component: AustraliaComponent
+        path: 'countries/australia', component: AustraliaComponent
       },
       {
-        path: 'austria', component: AustriaComponent
+        path: 'countries/austria', component: AustriaComponent
       },
       {
-        path: 'brazil', component: BrazilComponent
+        path: 'countries/brazil', component: BrazilComponent
       },
       {
-        path: 'canada', component: CanadaComponent
+        path: 'countries/canada', component: CanadaComponent
       },
       {
-        path: 'china', component: ChinaComponent
+        path: 'countries/china', component: ChinaComponent
       },
       {
-        path: 'croatia', component: CroatiaComponent
+        path: 'countries/croatia', component: CroatiaComponent
       },
       {
-        path: 'czech_republic', component: CzechRepublicComponent
+        path: 'countries/czech_republic', component: CzechRepublicComponent
       },
       {
-        path: 'denmark', component: DenmarkComponent
+        path: 'countries/denmark', component: DenmarkComponent
       },
       {
-        path: 'france', component: FranceComponent
+        path: 'countries/france', component: FranceComponent
       },
       {
-        path: 'germany', component: GermanyComponent
+        path: 'countries/germany', component: GermanyComponent
       },
       {
-        path: 'great_britain', component: GreatBritainComponent
+        path: 'countries/great_britain', component: GreatBritainComponent
       },
       {
-        path: 'italy', component: ItalyComponent
+        path: 'countries/italy', component: ItalyComponent
       },
       {
-        path: 'japan', component: JapanComponent
+        path: 'countries/japan', component: JapanComponent
       },
       {
-        path: 'malaysia', component: MalaysiaComponent
+        path: 'countries/malaysia', component: MalaysiaComponent
       },
       {
-        path: 'morocco', component: MoroccoComponent
+        path: 'countries/morocco', component: MoroccoComponent
       },
       {
-        path: 'netherlands', component: NetherlandsComponent
+        path: 'countries/netherlands', component: NetherlandsComponent
       },
       {
-        path: 'norway', component: NorwayComponent
+        path: 'countries/norway', component: NorwayComponent
       },
       {
-        path: 'poland', component: PolandComponent
+        path: 'countries/poland', component: PolandComponent
       },
       {
-        path: 'romania', component: RomaniaComponent
+        path: 'countries/romania', component: RomaniaComponent
       },
       {
-        path: 'russia', component: RussiaComponent
+        path: 'countries/russia', component: RussiaComponent
       },
       {
-        path: 'slovakia', component: SlovakiaComponent
+        path: 'countries/slovakia', component: SlovakiaComponent
       },
       {
-        path: 'slovenia', component: SloveniaComponent
+        path: 'countries/slovenia', component: SloveniaComponent
       },
       {
-        path: 'south_africa', component: SouthAfricaComponent
+        path: 'countries/south_africa', component: SouthAfricaComponent
       },
       {
-        path: 'south_korea', component: SouthKoreaComponent
+        path: 'countries/south_korea', component: SouthKoreaComponent
       },
       {
-        path: 'spain', component: SpainComponent
+        path: 'countries/spain', component: SpainComponent
       },
       {
-        path: 'sri_lanka', component: SriLankaComponent
+        path: 'countries/sri_lanka', component: SriLankaComponent
       },
       {
-        path: 'sweden', component: SwedenComponent
+        path: 'countries/sweden', component: SwedenComponent
       },
       {
-        path: 'switzerland', component: SwitzerlandComponent
+        path: 'countries/switzerland', component: SwitzerlandComponent
       },
       {
-        path: 'turkey', component: TurkeyComponent
+        path: 'countries/turkey', component: TurkeyComponent
       },
       {
-        path: 'usa', component: UsaComponent
+        path: 'countries/usa', component: UsaComponent
       },
       {
-        path: 'uae', component: UaeComponent
+        path: 'countries/uae', component: UaeComponent
       },
       {
-        path: 'vietnam', component: VietnamComponent
-      }
-    ]},
-  { path: 'years', component: YearsComponent, children: [
+        path: 'countries/vietnam', component: VietnamComponent
+      },
+
+
+
+
+  { path: 'years', component: YearsComponent },
     {
-      path: '1900', component: NineteenComponent
+      path: 'years/1900', component: NineteenComponent
     },
     {
-      path: '1910', component: NineteenTenComponent
+      path: 'years/1910', component: NineteenTenComponent
     },
     {
-      path: '1920', component: NineteenTwentyComponent
+      path: 'years/1920', component: NineteenTwentyComponent
     },
     {
-      path: '1930', component: NineteenThirtyComponent
+      path: 'years/1930', component: NineteenThirtyComponent
     },
     {
-      path: '1940', component: NineteenFourtyComponent
+      path: 'years/1940', component: NineteenFourtyComponent
     },
     {
-      path: '1950', component: NineteenFiftyComponent
+      path: 'years/1950', component: NineteenFiftyComponent
     },
     {
-      path: '1960', component: NineteenSixtyComponent
+      path: 'years/1960', component: NineteenSixtyComponent
     },
     {
-      path: '1970', component: NineteenSeventyComponent
+      path: 'years/1970', component: NineteenSeventyComponent
     },
     {
-      path: '1980', component: NineteenEightyComponent
+      path: 'years/1980', component: NineteenEightyComponent
     },
     {
-      path: '1990', component: NineteenNinetyComponent
+      path: 'years/1990', component: NineteenNinetyComponent
     },
     {
-      path: '2000', component: TwentyComponent
+      path: 'years/2000', component: TwentyComponent
     },
     {
-      path: '2010', component: TwentyTenComponent
+      path: 'years/2010', component: TwentyTenComponent
     },
     {
-      path: '2020', component: TwentyTwentyComponent
-    }
-    ]},
-    { path: 'languages', component: LanguagesComponent,  children: [
+      path: 'years/2020', component: TwentyTwentyComponent
+    },
+
+
+    { path: 'languages', component: LanguagesComponent },
     {
-      path: 'english', component: EnglishComponent
+      path: 'languages/english', component: EnglishComponent
     },
     {
-      path: 'german', component: GermanComponent
+      path: 'languages/german', component: GermanComponent
     },
     {
-      path: 'italian', component: ItalianComponent
+      path: 'languages/italian', component: ItalianComponent
     },
     {
-      path: 'spanish', component: SpanishComponent
+      path: 'languages/spanish', component: SpanishComponent
     },
     {
-      path: 'hungarian', component: HungarianComponent
+      path: 'languages/hungarian', component: HungarianComponent
     },
     {
-      path: 'dutch', component: DutchComponent
+      path: 'languages/dutch', component: DutchComponent
     },
     {
-      path: 'slovak', component: SlovakComponent
+      path: 'languages/slovak', component: SlovakComponent
     },
     {
-      path: 'czech', component: CzechComponent
+      path: 'languages/czech', component: CzechComponent
     },
     {
-      path: 'portuguese', component: PortugueseComponent
+      path: 'languages/portuguese', component: PortugueseComponent
     },
     {
-      path: 'croatian', component: CroatianComponent
+      path: 'languages/croatian', component: CroatianComponent
     },
     {
-      path: 'polish', component: PolishComponent
+      path: 'languages/polish', component: PolishComponent
     },
-  ]
-  }
 ];
 
 @NgModule({

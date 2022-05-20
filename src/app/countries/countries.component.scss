@@ -27,7 +27,7 @@
   position: relative;
   top: 100px;
   left: 5%;
-  z-index: 2;
+  z-index: 1;
   transition: all 0.5s ease-out;
 }
 :host .brands:hover {
@@ -68,6 +68,10 @@
   cursor: pointer;
   color: white;
 }
+:host .brands_list_drop a {
+  text-decoration: none;
+  color: white;
+}
 :host .goto {
   position: absolute;
   color: white;
@@ -77,7 +81,6 @@
   list-style-type: none;
   right: 5%;
   top: 550px;
-  visibility: visible;
   animation: goto_anim 0.8s ease-out 0.3s;
 }
 :host .brands_toggle {
@@ -85,7 +88,7 @@
 }
 @keyframes goto_anim {
   from {
-    visibility: hidden;
+    visibility: visible;
     top: 100px;
   }
   to {
