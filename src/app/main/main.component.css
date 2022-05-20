@@ -11,7 +11,7 @@
   position: fixed;
   left: 55%;
   top: 220px;
-  color: #7d89c4;
+  color: #f4f9f2;
   font-size: 75px;
   font-family: Arial;
   font-weight: 700;
@@ -26,7 +26,8 @@
   top: -20px;
   width: 96.75px;
   height: 150px;
-  background-image: linear-gradient(90deg, #7280ff, #7c63ce);
+  background-image: linear-gradient(#fff9f8, white);
+  opacity: 0.9;
   border-radius: 15px;
   transition: transform 400ms ease;
 }
@@ -52,18 +53,18 @@
 :host .hexagon .mid {
   position: relative;
   font-size: 120px;
-  color: white;
+  color: #020202;
   z-index: 1;
   top: 60px;
   left: 22px;
   overflow-wrap: break-word;
   white-space: normal;
-  text-shadow: 3px 3px 0 #3f6ba980;
+  text-shadow: none;
   list-style-type: none;
 }
 :host .hexagon .mid li a {
   text-decoration: none;
-  color: white;
+  color: #020202;
 }
 
 .hexagon:hover {
@@ -102,7 +103,7 @@
 }
 @media only screen and (max-width: 580px) {
   #explore {
-    top: 150px !important;
+    top: 120px !important;
     font-size: 45px !important;
   }
 

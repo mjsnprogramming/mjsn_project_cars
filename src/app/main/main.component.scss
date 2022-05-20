@@ -12,7 +12,7 @@ $full_width: 100%;
   position: fixed;
   left: 55%;
   top: 220px;
-  color: #7d89c4;
+  color: #f4f9f2;
   font-size: 75px;
   font-family: Arial;
   font-weight: 700;
@@ -26,12 +26,13 @@ $full_width: 100%;
   left: 400px;
   top: -20px;
   $hexagon-size: 150px;
-  $hexagon-color-1: #7280ff;
-  $hexagon-color-2: #7c63ce;
+  $hexagon-color-1: #fff9f8;
+  $hexagon-color-2: white;
 
   width: ($hexagon-size * 0.645);
   height: $hexagon-size;
-  background-image: linear-gradient(90deg, $hexagon-color-1, $hexagon-color-2);
+  background-image: linear-gradient($hexagon-color-1, $hexagon-color-2);
+   opacity: 0.9;
   border-radius: ($hexagon-size / 10);
   transition: transform 400ms ease;
 
@@ -61,18 +62,18 @@ $full_width: 100%;
    .mid {
      position: relative;
      font-size: 120px;
-     color: white;
+     color: #020202;
      z-index: 1;
      top: 60px;
      left: 22px;
      overflow-wrap: break-word;
      white-space: normal;
-     text-shadow: 3px 3px 0 #3f6ba980;
+     text-shadow: none;
      list-style-type: none;
    }
    .mid li a {
      text-decoration: none;
-     color: white;
+     color: #020202;
    }
 }
 .hexagon:hover {
@@ -112,7 +113,7 @@ $full_width: 100%;
 @media only screen and (max-width: 580px) {
 
   #explore {
-    top: 150px !important;
+    top: 120px !important;
     font-size: 45px !important;
   }
   .hexagon {
