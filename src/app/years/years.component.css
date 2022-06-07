@@ -68,13 +68,18 @@ app-header {
   font-family: "Gill Sans Ultra Bold", "sans-serif";
 }
 
-.description .goto {
+.goto {
   position: relative;
   margin-left: 1000px;
   font-size: 20px;
   font-family: Arial, sans-serif;
-  margin-top: 70px;
+  bottom: -60px;
   cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 footer {
