@@ -1,6 +1,5 @@
 body {
   background-color: #1a1919;
-  margin: 0;
 }
 app-header {
   top: 0;
@@ -12,7 +11,7 @@ app-header {
   top: 50px;
 }
 #years {
-  width: 80%;
+  width: 1600px;
   position: relative;
   margin-right: auto;
   margin-left: auto;
@@ -20,11 +19,10 @@ app-header {
 .tales {
   background-color: #2d2929;
   margin-top: 90px;
-  width: 100%;
   height: 250px;
 }
 .image {
-  width: 200px;
+  width: 400px;
   height: 250px;
 }
 .image p {
@@ -41,4 +39,34 @@ app-header {
   width: 400px;
   height: 250px;
   filter: brightness(50%);
+}
+.description {
+  position: relative;
+  left: 400px;
+  top: -250px;
+  width: 1160px;
+  height: 210px;
+  padding: 20px;
+}
+.description p {
+  position: relative;
+  left: 20px;
+  top: 20px;
+  color: white;
+  font-size: 25px;
+  overflow-wrap: break-word;
+  line-height: 30px;
+  font-family: "Gill Sans Ultra Bold", "sans-serif";
+}
+.description .goto{
+  position: relative;
+  margin-left: 1000px;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  margin-top: 70px;
+  cursor: pointer;
+}
+footer {
+  height: 100px;
+  background-color: #1a1919;
 }
