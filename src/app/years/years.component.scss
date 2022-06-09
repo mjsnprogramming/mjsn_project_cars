@@ -10,12 +10,13 @@ app-header {
   position: relative;
   top: 50px;
 }
-#years {
+#years, .tales {
   width: 1600px;
   position: relative;
   margin-right: auto;
   margin-left: auto;
 }
+
 .tales {
   background-color: #2d2929;
   margin-top: 90px;
@@ -54,24 +55,63 @@ app-header {
   top: 20px;
   color: white;
   font-size: 25px;
-  overflow-wrap: break-word;
-  line-height: 30px;
+  line-height: 35px;
   font-family: "Gill Sans Ultra Bold", "sans-serif";
 }
 .goto{
   position: relative;
   margin-left: 1000px;
   font-size: 20px;
-  font-family: Arial, sans-serif;
+  font-family: Calibri;
   bottom: -60px;
   cursor: pointer;
 }
 a {
   text-decoration: none;
-  color: white;
+  color: #cccaff;
 
 }
 footer {
   height: 100px;
   background-color: #1a1919;
 }
+@media only screen and (max-width: 1630px) {
+  #years {
+    width: 800px;
+    overflow: hidden;
+  }
+  .description p {
+    font-size: 15px;
+    position: relative;
+    margin-left: -20px;
+    margin-top: -20px;
+  }
+  .description {
+    width: 360px;
+  }
+  .goto {
+    font-size: 15px;
+    left: 270px;
+    top: 5px;
+  }
+}
+@media only screen and (max-width: 830px) {
+  #years {
+    width: 400px;
+  }
+  .description {
+    width: 420px;
+    position: relative;
+    height: 350px;
+    left: 0;
+    top: 0;
+  }
+  .description p {
+    overflow-wrap: break-word;
+  }
+  .tales {
+    height: 600px;
+  }
+}
+
+
