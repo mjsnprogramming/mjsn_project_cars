@@ -89,7 +89,6 @@ footer {
 @media only screen and (max-width: 1630px) {
   #years {
     width: 800px;
-    overflow: hidden;
   }
 
   .description p {
