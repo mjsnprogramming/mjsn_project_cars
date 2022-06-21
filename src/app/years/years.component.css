@@ -105,8 +105,9 @@ footer {
 
   .goto {
     font-size: 15px;
-    left: 270px;
-    top: 5px;
+    position: absolute;
+    margin-left: 270px;
+    bottom: 15px;
   }
 }
 @media only screen and (max-width: 830px) {
@@ -115,19 +116,24 @@ footer {
   }
 
   .description {
-    width: 420px;
+    width: 360px;
     position: relative;
     height: 350px;
-    left: 0;
+    left: -5px;
     top: 0;
   }
 
   .description p {
-    overflow-wrap: break-word;
+    margin-left: -20px;
+    margin-top: -20px;
   }
 
   .tales {
     height: 600px;
+  }
+
+  .goto {
+    bottom: 70px;
   }
 }
 @media only screen and (max-width: 430px) {
@@ -139,16 +145,27 @@ footer {
   }
 
   .description {
-    width: 250px;
+    width: 200px;
+    height: 500px;
   }
 
   .image img {
-    width: 250px !important;
+    width: 300px !important;
   }
 
   .image p {
     position: relative;
     left: 65px;
+  }
+
+  .tales {
+    height: 650px;
+  }
+
+  .goto {
+    position: absolute;
+    bottom: 160px;
+    margin-left: 130px;
   }
 }
 @media only screen and (max-width: 268px) {
