@@ -1,4 +1,6 @@
-window.onload = () => {
+
+
+
   //query selectors
 
 
@@ -91,7 +93,6 @@ window.onload = () => {
       language_color.style.color = "white";
     }
   });
-};
 
 
 
