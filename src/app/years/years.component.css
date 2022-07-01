@@ -11,16 +11,18 @@ app-header {
   background-color: #1a1919;
   position: relative;
   top: 50px;
+  width: 100%;
 }
 
-#years, .tales {
+#years {
+  width: 100%;
+}
+
+.tales {
   width: 1600px;
   position: relative;
   margin-right: auto;
   margin-left: auto;
-}
-
-.tales {
   background-color: #2d2929;
   margin-top: 90px;
   height: 250px;
@@ -87,7 +89,7 @@ footer {
 }
 
 @media only screen and (max-width: 1630px) {
-  #years {
+  .tales {
     width: 800px;
   }
 
@@ -111,7 +113,8 @@ footer {
 }
 @media only screen and (max-width: 830px) {
   #years {
-    width: 400px;
+    width: 100%;
+    overflow: hidden;
   }
 
   .description {
@@ -122,13 +125,9 @@ footer {
     top: 0;
   }
 
-  .description p {
-    margin-left: -20px;
-    margin-top: -20px;
-  }
-
   .tales {
     height: 600px;
+    width: 400px;
   }
 
   .goto {
@@ -136,15 +135,8 @@ footer {
   }
 }
 @media only screen and (max-width: 430px) {
-  #years {
-    width: 250px;
-    overflow-x: hidden;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .description {
-    width: 200px;
+    width: 260px;
     height: 500px;
   }
 
@@ -159,12 +151,13 @@ footer {
 
   .tales {
     height: 650px;
+    width: 300px;
   }
 
   .goto {
     position: absolute;
     bottom: 160px;
-    margin-left: 130px;
+    margin-left: 180px;
   }
 }
 @media only screen and (max-width: 268px) {
