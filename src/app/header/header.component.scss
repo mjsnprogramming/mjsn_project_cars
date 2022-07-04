@@ -118,7 +118,7 @@ $header_color: #141314;
   position: relative;
   top: 195px;
   left: 300px;
-  animation: languages_going_down 0.4s ease-out;
+  animation: languages_going_down 0.6s ease-out;
 }
 :host #languages p {
   position: relative;
@@ -285,7 +285,7 @@ $header_color: #141314;
 }
 @keyframes languages_going_down {
   from {
-    top: 0;
+    top: -30px;
   }
   to {
     top: 195px;

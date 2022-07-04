@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 .brands {
   width: 80%;
   height: 250px;

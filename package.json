@@ -37,7 +37,8 @@
     "multer-gridfs-storage": "^4.2.0",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
-    "zone.js": "~0.10.2"
+    "zone.js": "~0.10.2",
+    "bson": "latest"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.901.15",

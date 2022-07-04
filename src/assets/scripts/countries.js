@@ -1,6 +1,5 @@
 
 
-
   const countries = document.querySelector(".brands");
 
 
