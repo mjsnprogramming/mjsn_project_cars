@@ -7,8 +7,26 @@
 </head>
 <body>
 <header>
-
+    <div id = "nav">
+      <ul>
+        <li><a routerLink="../.." routerLinkActive="active">HOME</a></li>
+        <li><a routerLink = "../abarth/models" routerLinkActive="active">MODELS</a></li>
+        <li><a routerLink="../abarth/dealership" routerLinkActive="active">DEALERSHIP</a></li>
+      </ul>
+        <h1>ABARTH</h1>
+      <ul id = "nav_right">
+        <li><a routerLink="../abarth/museum" routerLinkActive="active">MUSEUM</a></li>
+        <li><a routerLink="../abarth/history" routerLinkActive="active">HISTORY</a></li>
+        <li><a href = "https://www.abarth.com/">OFFICIAL</a></li>
+      </ul>
+    </div>
 </header>
+
+<main>
+  <div id = "main_image">
+    <img src="../../../assets/brands_sites_images/Abarth-595-performance_TB-720x520.jpg" alt="abarth595"/>
+  </div>
+</main>
 <router-outlet></router-outlet>
 </body>
 

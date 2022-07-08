@@ -1,7 +1,6 @@
 
 
-window.onload = () =>
-{
+window.onload = () => {
   //query selectors
 
 
@@ -17,35 +16,34 @@ window.onload = () =>
   //header dropdown languages
 
 
-    nav.addEventListener('click', () => {
-      const drop_brands = document.querySelector('#drop_brands');
-      const drop_countries = document.querySelector('#drop_countries');
-      const drop_years = document.querySelector('#drop_years');
-      const drop_search = document.querySelector('#drop_search');
-      const drop_nav = document.querySelector('#drop_nav');
-      const body = document.querySelector('body');
+  nav.addEventListener('click', () => {
+    const drop_brands = document.querySelector('#drop_brands');
+    const drop_countries = document.querySelector('#drop_countries');
+    const drop_years = document.querySelector('#drop_years');
+    const drop_search = document.querySelector('#drop_search');
+    const drop_nav = document.querySelector('#drop_nav');
+    const body = document.querySelector('body');
 
-      if (drop_nav.style.display === "") {
-        drop_nav.style.display = "block";
-        body.style.overflow = "hidden";
-        drop_brands.style.visibility = "hidden";
-        drop_countries.style.visibility = "hidden";
-        drop_years.style.visibility = "hidden";
-        drop_search.style.display = "";
-      } else {
-        drop_nav.style.display = "";
-        body.style.overflow = "visible";
-        drop_brands.style.visibility = "visible";
-        drop_countries.style.visibility = "visible";
-        drop_years.style.visibility = "visible";
-      }
+    if (drop_nav.style.display === "") {
+      drop_nav.style.display = "block";
+      body.style.overflow = "hidden";
+      drop_brands.style.visibility = "hidden";
+      drop_countries.style.visibility = "hidden";
+      drop_years.style.visibility = "hidden";
+      drop_search.style.display = "";
+    } else {
+      drop_nav.style.display = "";
+      body.style.overflow = "visible";
+      drop_brands.style.visibility = "visible";
+      drop_countries.style.visibility = "visible";
+      drop_years.style.visibility = "visible";
+    }
 
-    });
+  });
 
 
-};
 //header dropdown search
- /* search.addEventListener('click', () => {
+  search.addEventListener('click', () => {
     const drop_brands = document.querySelector('#drop_brands');
     const drop_countries = document.querySelector('#drop_countries');
     const drop_years = document.querySelector('#drop_years');
@@ -71,7 +69,7 @@ window.onload = () =>
 
 
 //header close searching
-  /*close_search.addEventListener('click', () => {
+  close_search.addEventListener('click', () => {
     const drop_search = document.querySelector('#drop_search');
     if (drop_search.style.display === "block") {
       drop_search.style.display = "";
@@ -96,8 +94,8 @@ window.onload = () =>
       languages_mobile.style.backgroundColor = "#141314";
       language_color.style.color = "white";
     }
-  });*/
-
+  });
+};
 
 
 
