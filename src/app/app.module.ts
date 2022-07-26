@@ -291,6 +291,9 @@ import { ZenvoComponent } from './brands/zenvo/zenvo.component';
 import { ZenosComponent } from './brands/zenos/zenos.component';
 import { UltimaComponent } from './brands/ultima/ultima.component';
 import { WMotorsComponent } from './brands/w-motors/w-motors.component';
+import { ModelsComponent } from './brands/abarth/models/models.component';
+import { MuseumComponent } from './brands/abarth/museum/museum.component';
+import { HistoryComponent } from './brands/abarth/history/history.component';
 
 @NgModule({
   declarations: [
@@ -580,7 +583,10 @@ import { WMotorsComponent } from './brands/w-motors/w-motors.component';
     ZenvoComponent,
     ZenosComponent,
     UltimaComponent,
-    WMotorsComponent
+    WMotorsComponent,
+    ModelsComponent,
+    MuseumComponent,
+    HistoryComponent
   ],
   imports: [
     BrowserModule,

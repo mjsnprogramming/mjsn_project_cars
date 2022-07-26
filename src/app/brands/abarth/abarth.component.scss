@@ -3,6 +3,8 @@ body {
   background-color: black;
   margin: 0;
   overflow: hidden!important;
+  background-image: url("../../../assets/brands_sites_images/Abarth2.jpg");
+  background-size: cover;
 }
 #nav {
   width: 100%;
@@ -10,9 +12,10 @@ body {
   color: white;
   background-color: #000000;
 }
+
 #left_links {
   font-size: 20px;
-  background-color: #a5aa39;
+  background-color: #000000;
   width: 600px;
   position: absolute;
   top: 25px;
@@ -34,7 +37,7 @@ body {
 }
 #right_links {
   font-size: 20px;
-  background-color: #a5aa39;
+  background-color: #000000;
   width: 600px;
   position: absolute;
   top: 25px;
@@ -166,4 +169,24 @@ body {
     .bottom_hr {
       width: 97%;
     }
+  #drop_nav {
+    width: 27px;
+    display: block;
+    margin: 1em 0 0 1em;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    height: 22px;
+    cursor: pointer;
+    left: 30px;
+  }
+  .navs {
+    height: 1px;
+    background-color: #dedede;
+    margin: 5px 0;
+    display: block;
+  }
+  #left_links, #right_links {
+    display: none;
+  }
 }
