@@ -1,6 +1,8 @@
 body {
+  box-sizing: border-box;
   background-color: black;
   margin: 0;
+  overflow: hidden !important;
 }
 
 #nav {
@@ -12,7 +14,7 @@ body {
 
 #left_links {
   font-size: 20px;
-  background-color: #000000;
+  background-color: #a5aa39;
   width: 600px;
   position: absolute;
   top: 25px;
@@ -29,14 +31,14 @@ body {
   list-style-type: none;
   display: inline-block;
   position: relative;
-  left: -60px;
+  right: 60px;
   padding-left: 100px;
   text-align: center;
 }
 
 #right_links {
   font-size: 20px;
-  background-color: #000000;
+  background-color: #a5aa39;
   width: 600px;
   position: absolute;
   top: 25px;
@@ -78,7 +80,7 @@ body {
 #info {
   color: white;
   width: 500px;
-  position: absolute;
+  position: relative;
   left: 100px;
   top: 300px;
 }
@@ -86,20 +88,28 @@ body {
 #main_image img {
   width: 1000px;
   height: 700px;
-  position: absolute;
-  top: 50%;
+  position: relative;
+  top: 250px;
   left: 50%;
   transform: translate(-50%, -50%);
+  overflow: hidden;
 }
 
 .bold {
-  font-weight: bold;
+  font-weight: 900;
+  font-family: "Gill Sans Ultra Bold", serif;
+}
+
+.bottom_hr {
+  position: fixed;
+  top: 740px;
+  left: 10px;
+  width: 99%;
 }
 
 .search {
-  position: absolute;
-  bottom: 150px;
-  right: 200px;
+  position: relative;
+  bottom: 110px;
   background-color: black;
   color: white;
   border: 1px solid white;
@@ -107,6 +117,8 @@ body {
   width: 250px;
   height: 40px;
   font-size: 18px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .search i {
@@ -123,12 +135,14 @@ body {
 }
 
 #search_input p {
-  position: absolute;
-  right: 210px;
-  bottom: 150px;
+  position: relative;
+  bottom: 154px;
   color: white;
   font-size: 20px;
   cursor: pointer;
+  margin-left: 70px;
+  left: 100%;
+  transform: translate(-50%, -50%);
 }
 
 @keyframes blink {
@@ -154,9 +168,28 @@ body {
     padding-left: 30px;
   }
 
+  #left_links ul li {
+    right: 30px;
+  }
+
+  #right_links {
+    right: 0;
+  }
+
   #right_links {
     right: 0;
     width: 400px;
+  }
+
+  #info {
+    top: 110px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media only screen and (max-width: 960px) {
+  .bottom_hr {
+    width: 97%;
   }
 }
 
