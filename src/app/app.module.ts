@@ -291,9 +291,64 @@ import { ZenvoComponent } from './brands/zenvo/zenvo.component';
 import { ZenosComponent } from './brands/zenos/zenos.component';
 import { UltimaComponent } from './brands/ultima/ultima.component';
 import { WMotorsComponent } from './brands/w-motors/w-motors.component';
-import { ModelsComponent } from './brands/abarth/models/models.component';
-import { MuseumComponent } from './brands/abarth/museum/museum.component';
-import { HistoryComponent } from './brands/abarth/history/history.component';
+import { AbarthModelsComponent } from './brands/abarth/abarth-models/abarth-models.component';
+import { AbarthHistoryComponent } from './brands/abarth/abarth-history/abarth-history.component';
+import { AbarthMuseumComponent } from './brands/abarth/abarth-museum/abarth-museum.component';
+import { AcadianModelsComponent } from './brands/acadian/acadian-models/acadian-models.component';
+import { AcadianHistoryComponent } from './brands/acadian/acadian-history/acadian-history.component';
+import { AcadianMuseumComponent } from './brands/acadian/acadian-museum/acadian-museum.component';
+import { AcuraModelsComponent } from './brands/acura/acura-models/acura-models.component';
+import { AcuraHistoryComponent } from './brands/acura/acura-history/acura-history.component';
+import { AcuraMuseumComponent } from './brands/acura/acura-museum/acura-museum.component';
+import { AionModelsComponent } from './brands/aion/aion-models/aion-models.component';
+import { AionHistoryComponent } from './brands/aion/aion-history/aion-history.component';
+import { AionMuseumComponent } from './brands/aion/aion-museum/aion-museum.component';
+import { AiwaysModelsComponent } from './brands/aiways/aiways-models/aiways-models.component';
+import { AiwaysHistoryComponent } from './brands/aiways/aiways-history/aiways-history.component';
+import { AiwaysMuseumComponent } from './brands/aiways/aiways-museum/aiways-museum.component';
+import { AixamModelsComponent } from './brands/aixam/aixam-models/aixam-models.component';
+import { AixamHistoryComponent } from './brands/aixam/aixam-history/aixam-history.component';
+import { AixamMuseumComponent } from './brands/aixam/aixam-museum/aixam-museum.component';
+import { AlfaRomeoModelsComponent } from './brands/alfa-romeo/alfa-romeo-models/alfa-romeo-models.component';
+import { AlfaRomeoHistoryComponent } from './brands/alfa-romeo/alfa-romeo-history/alfa-romeo-history.component';
+import { AlfaRomeoMuseumComponent } from './brands/alfa-romeo/alfa-romeo-museum/alfa-romeo-museum.component';
+import { AlpineModelsComponent } from './brands/alpine/alpine-models/alpine-models.component';
+import { AlpineHistoryComponent } from './brands/alpine/alpine-history/alpine-history.component';
+import { AlpineMuseumComponent } from './brands/alpine/alpine-museum/alpine-museum.component';
+import { AlvisModelsComponent } from './brands/alvis/alvis-models/alvis-models.component';
+import { AlvisHistoryComponent } from './brands/alvis/alvis-history/alvis-history.component';
+import { AlvisMuseumComponent } from './brands/alvis/alvis-museum/alvis-museum.component';
+import { AndinoModelsComponent } from './brands/andino/andino-models/andino-models.component';
+import { AndinoHistoryComponent } from './brands/andino/andino-history/andino-history.component';
+import { AndinoMuseumComponent } from './brands/andino/andino-museum/andino-museum.component';
+import { ApolloModelsComponent } from './brands/apollo/apollo-models/apollo-models.component';
+import { ApolloHistoryComponent } from './brands/apollo/apollo-history/apollo-history.component';
+import { ApolloMuseumComponent } from './brands/apollo/apollo-museum/apollo-museum.component';
+import { ArashModelsComponent } from './brands/arash/arash-models/arash-models.component';
+import { ArashHistoryComponent } from './brands/arash/arash-history/arash-history.component';
+import { ArashMuseumComponent } from './brands/arash/arash-museum/arash-museum.component';
+import { ArcfoxModelsComponent } from './brands/arcfox/arcfox-models/arcfox-models.component';
+import { ArcfoxHistoryComponent } from './brands/arcfox/arcfox-history/arcfox-history.component';
+import { ArcfoxMuseumComponent } from './brands/arcfox/arcfox-museum/arcfox-museum.component';
+import { ArielModelsComponent } from './brands/ariel/ariel-models/ariel-models.component';
+import { ArielHistoryComponent } from './brands/ariel/ariel-history/ariel-history.component';
+import { ArielMuseumComponent } from './brands/ariel/ariel-museum/ariel-museum.component';
+import { ArrineraModelsComponent } from './brands/arrinera/arrinera-models/arrinera-models.component';
+import { ArrineraHistoryComponent } from './brands/arrinera/arrinera-history/arrinera-history.component';
+import { ArrineraMuseumComponent } from './brands/arrinera/arrinera-museum/arrinera-museum.component';
+import { ArtegaModelsComponent } from './brands/artega/artega-models/artega-models.component';
+import { ArtegaHistoryComponent } from './brands/artega/artega-history/artega-history.component';
+import { ArtegaMuseumComponent } from './brands/artega/artega-museum/artega-museum.component';
+import { AscariModelsComponent } from './brands/ascari/ascari-models/ascari-models.component';
+import { AscariHistoryComponent } from './brands/ascari/ascari-history/ascari-history.component';
+import { AscariMuseumComponent } from './brands/ascari/ascari-museum/ascari-museum.component';
+import { AsparkModelsComponent } from './brands/aspark/aspark-models/aspark-models.component';
+import { AsparkHistoryComponent } from './brands/aspark/aspark-history/aspark-history.component';
+import { AsparkMuseumComponent } from './brands/aspark/aspark-museum/aspark-museum.component';
+import { AstonMartinModelsComponent } from './brands/aston-martin/aston-martin-models/aston-martin-models.component';
+import { AstonMartinHistoryComponent } from './brands/aston-martin/aston-martin-history/aston-martin-history.component';
+import { AstonMartinMuseumComponent } from './brands/aston-martin/aston-martin-museum/aston-martin-museum.component';
+
 
 @NgModule({
   declarations: [
@@ -584,9 +639,63 @@ import { HistoryComponent } from './brands/abarth/history/history.component';
     ZenosComponent,
     UltimaComponent,
     WMotorsComponent,
-    ModelsComponent,
-    MuseumComponent,
-    HistoryComponent
+    AbarthModelsComponent,
+    AbarthHistoryComponent,
+    AbarthMuseumComponent,
+    AcadianModelsComponent,
+    AcadianHistoryComponent,
+    AcadianMuseumComponent,
+    AcuraModelsComponent,
+    AcuraHistoryComponent,
+    AcuraMuseumComponent,
+    AionModelsComponent,
+    AionHistoryComponent,
+    AionMuseumComponent,
+    AiwaysModelsComponent,
+    AiwaysHistoryComponent,
+    AiwaysMuseumComponent,
+    AixamModelsComponent,
+    AixamHistoryComponent,
+    AixamMuseumComponent,
+    AlfaRomeoModelsComponent,
+    AlfaRomeoHistoryComponent,
+    AlfaRomeoMuseumComponent,
+    AlpineModelsComponent,
+    AlpineHistoryComponent,
+    AlpineMuseumComponent,
+    AlvisModelsComponent,
+    AlvisHistoryComponent,
+    AlvisMuseumComponent,
+    AndinoModelsComponent,
+    AndinoHistoryComponent,
+    AndinoMuseumComponent,
+    ApolloModelsComponent,
+    ApolloHistoryComponent,
+    ApolloMuseumComponent,
+    ArashModelsComponent,
+    ArashHistoryComponent,
+    ArashMuseumComponent,
+    ArcfoxModelsComponent,
+    ArcfoxHistoryComponent,
+    ArcfoxMuseumComponent,
+    ArielModelsComponent,
+    ArielHistoryComponent,
+    ArielMuseumComponent,
+    ArrineraModelsComponent,
+    ArrineraHistoryComponent,
+    ArrineraMuseumComponent,
+    ArtegaModelsComponent,
+    ArtegaHistoryComponent,
+    ArtegaMuseumComponent,
+    AscariModelsComponent,
+    AscariHistoryComponent,
+    AscariMuseumComponent,
+    AsparkModelsComponent,
+    AsparkHistoryComponent,
+    AsparkMuseumComponent,
+    AstonMartinModelsComponent,
+    AstonMartinHistoryComponent,
+    AstonMartinMuseumComponent,
   ],
   imports: [
     BrowserModule,

@@ -283,6 +283,9 @@ import { WeltmeisterComponent } from './brands/weltmeister/weltmeister.component
 import { WiesmannComponent } from './brands/wiesmann/wiesmann.component';
 import { ZenosComponent } from './brands/zenos/zenos.component';
 import { ZenvoComponent } from './brands/zenvo/zenvo.component';
+import { AbarthHistoryComponent } from './brands/abarth/abarth-history/abarth-history.component';
+import { AbarthModelsComponent } from './brands/abarth/abarth-models/abarth-models.component';
+import { AbarthMuseumComponent } from './brands/abarth/abarth-museum/abarth-museum.component';
 
 const routes: Routes = [
       { path: '', component: MainComponent },
@@ -1140,6 +1143,16 @@ const routes: Routes = [
     {
       path: 'languages/polish', component: PolishComponent
     },
+
+  {
+    path: 'abarth/models', component: AbarthModelsComponent
+  },
+  {
+    path: 'abarth/history', component: AbarthHistoryComponent
+  },
+  {
+    path: 'abarth/museum', component: AbarthMuseumComponent
+  }
 ];
 
 @NgModule({
