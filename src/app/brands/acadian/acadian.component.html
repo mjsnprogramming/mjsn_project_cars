@@ -1,1 +1,62 @@
-<p>acadian works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Acadian</title>
+  <link rel = "stylesheet" href = "acadian.component.scss">
+</head>
+<body>
+<header>
+  <div id = "nav">
+    <div id = "left_links">
+      <ul>
+        <li><a routerLink="../.." routerLinkActive="active">HOME</a></li>
+        <li><a routerLink = "../acadian/models" routerLinkActive="active">MODELS</a></li>
+        <li><a href = "https://www.abarthcars.co.uk/retailers" target = "_blank">DEALERSHIP</a></li>
+      </ul>
+    </div>
+    <div id = "brand_name">
+      <h1>ACADIAN</h1>
+    </div>
+    <div id = "right_links">
+      <ul>
+        <li><a routerLink="../acadian/museum" routerLinkActive="active">MUSEUM</a></li>
+        <li><a routerLink="../acadian/history" routerLinkActive="active">HISTORY</a></li>
+        <li><a href = "https://www.abarth.com/" target = "_blank">OFFICIAL</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id = "drop_nav">
+    <div class = "navs"></div>
+    <div class = "navs"></div>
+    <div class = "navs"></div>
+  </div>
+
+  <div id = "drop_nav_visible">
+
+  </div>
+</header>
+
+<main>
+  <div id = "info">
+    <p> Name:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    Abarth</p><br>
+    <p>Country: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Italy</p><br>
+    <p>Founded:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     31 March 1949</p><br>
+    <p>Founders:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      Carlo Abarth, Armando Scagliarini</p><br>
+    <p>Headquarters:   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     Corso Giovanni Agnelli, 200, 10135 Torino, Italy</p>
+  </div>
+</main>
+<footer>
+
+  <div id = "search_input">
+    <label>
+      <input class = "search" type = "text" placeholder = "Search on Abarth">
+    </label>
+    <p>></p>
+  </div>
+</footer>
+<router-outlet></router-outlet>
+<script src = "../../../assets/scripts/brands_header_dropdown.js"></script>
+</body>
+
+

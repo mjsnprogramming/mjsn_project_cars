@@ -1,5 +1,5 @@
 
-
+/*
 window.onload = () => {
   //query selectors
 
@@ -99,7 +99,7 @@ window.onload = () => {
 
 
 
-
+*/
 
 
 
